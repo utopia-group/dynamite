@@ -1,0 +1,1 @@
+Friend(person: String, friends_with: String)

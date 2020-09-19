@@ -1,0 +1,21 @@
+{
+    "games": [{
+        "attendance": 35055,
+        "away_final_score": 3,
+        "away_team": "sln",
+        "date": "2015-04-05",
+        "elapsed_time": 184,
+        "g_id": 201500001,
+        "home_final_score": 0,
+        "home_team": "chn",
+        "start_time": "7:17 PM",
+        "umpire_1B": "Mark Wegner",
+        "umpire_2B": "Marty Foster",
+        "umpire_3B": "Mike Muchlinski",
+        "umpire_HP": "Mike Winters",
+        "venue_name": "Wrigley Field",
+        "weather": "44 degrees, clear",
+        "wind": "7 mph, In from CF",
+        "delay": 0
+    }]
+}

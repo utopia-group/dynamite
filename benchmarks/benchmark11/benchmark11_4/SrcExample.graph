@@ -1,0 +1,173 @@
+[
+  {
+    "type": "node",
+    "id": "5849",
+    "labels": [
+      "Movie"
+    ],
+    "properties": {
+      "genres": "Drama",
+      "movieid": "3200",
+      "title": "Last Detail, The (1973)"
+    }
+  },
+  {
+    "type": "node",
+    "id": "3430",
+    "labels": [
+      "Rating"
+    ],
+    "properties": {
+      "rating": "5.0",
+      "time": "955944250",
+      "userid": "217"
+    }
+  },
+  {
+    "type": "node",
+    "id": "7423",
+    "labels": [
+      "Movie"
+    ],
+    "properties": {
+      "genres": "Fantasy",
+      "movieid": "5618",
+      "title": "Spirited Away (Sen to Chihiro no kamikakushi) (2001)"
+    }
+  },
+  {
+    "type": "node",
+    "id": "1",
+    "labels": [
+      "Rating"
+    ],
+    "properties": {
+      "rating": "5.0",
+      "time": "1054037190",
+      "userid": "20"
+    }
+  },
+  {
+    "type": "node",
+    "id": "14003",
+    "labels": [
+      "Rating"
+    ],
+    "properties": {
+      "rating": "4.0",
+      "time": "1443200445",
+      "userid": "63"
+    }
+  },
+  {
+    "id": "297769",
+    "type": "relationship",
+    "label": "RELabout",
+    "start": {
+      "id": "1",
+      "labels": [
+        "Rating"
+      ]
+    },
+    "end": {
+      "id": "5618",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "id": "297769",
+    "type": "relationship",
+    "label": "RELabout",
+    "start": {
+      "id": "14003",
+      "labels": [
+        "Rating"
+      ]
+    },
+    "end": {
+      "id": "5618",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "id": "297769",
+    "type": "relationship",
+    "label": "RELabout",
+    "start": {
+      "id": "3430",
+      "labels": [
+        "Rating"
+      ]
+    },
+    "end": {
+      "id": "3200",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "node",
+    "id": "296",
+    "labels": [
+      "Tag"
+    ],
+    "properties": {
+      "movieid": "3200",
+      "time": "1498456396",
+      "tag": "good music",
+      "userid": "599"
+    }
+  },
+  {
+    "id": "297769",
+    "type": "relationship",
+    "label": "RELabout",
+    "start": {
+      "id": "296",
+      "labels": [
+        "Tag"
+      ]
+    },
+    "end": {
+      "id": "3200",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "node",
+    "id": "1862",
+    "labels": [
+      "Tag"
+    ],
+    "properties": {
+      "movieid": "5618",
+      "time": "1137206076",
+      "tag": "anime",
+      "userid": "474"
+    }
+  },
+  {
+    "id": "297769",
+    "type": "relationship",
+    "label": "RELabout",
+    "start": {
+      "id": "1862",
+      "labels": [
+        "Tag"
+      ]
+    },
+    "end": {
+      "id": "5618",
+      "labels": [
+        "Movie"
+      ]
+    }
+  }
+]

@@ -1,0 +1,1 @@
+Tip(bid: String, uid: String, text: String, likes: Int, date: String)

@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl country?province(__id: Rel, area: StrAttr, capital: StrAttr, city: Rel, country: StrAttr, id: StrAttr, name: StrAttr, population: Rel)
+.input country?province
+.decl country(area: StrAttr, border: Rel, capital: StrAttr, car_code: StrAttr, ethnicgroup: Rel, gdp_agri: StrAttr, gdp_ind: StrAttr, gdp_serv: StrAttr, gdp_total: IntAttr, government: StrAttr, indep_date: Rel, infant_mortality: StrAttr, inflation: StrAttr, language: Rel, memberships: StrAttr, name: StrAttr, population: Rel, population_growth: StrAttr, province: Rel, religion: Rel, unemployment: StrAttr)
+.input country
+.decl Province(code: StrAttr, name: StrAttr, country_code: StrAttr, area: StrAttr, capital: StrAttr)
+.output Province(delimiter="\t")
+
+Province(v_Province?code, v_Province?name, v_Province?country_code, v_Province?area, v_Province?capital) :-
+    country(_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, v_0, _, _),
+    country?province(v_0, v_Province?area, v_Province?capital, _, v_Province?country_code, v_Province?code, v_Province?name, _).
+

@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Status(s_id: StrAttr, station_id: StrAttr, bikes_available: IntAttr, docks_available: IntAttr, time: StrAttr)
+.input Status
+.decl status(bikes_available: IntAttr, docks_available: IntAttr, station_id: StrAttr, time: StrAttr)
+.output status(delimiter="\t")
+
+status(v_status?bikes_available, v_status?docks_available, v_status?station_id, v_status?time) :-
+    Status(_, v_status?station_id, v_status?bikes_available, v_status?docks_available, v_status?time).
+

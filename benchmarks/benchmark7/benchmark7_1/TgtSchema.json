@@ -1,0 +1,19 @@
+{
+    "caseDocs": [{
+        "case_row_id": "String",
+        "assigned_to": "String",
+        "referred_to": "String",
+        "date_filed": "String",
+        "date_closed": "String",
+        "date_last_filed": "String",
+        "documents": [{
+            "doc_count": "Int",
+            "attachment": "String",
+            "date_filed": "String",
+            "long_description": "String",
+            "doc_number": "Int",
+            "short_description": "String",
+            "upload_date": "String"
+        }]
+    }]
+}

@@ -1,0 +1,19 @@
+{
+    "trips": [{
+        "id": "String",
+        "duration": "Int",
+        "start_date": "String",
+        "start_station": [{
+            "id": "String",
+            "name": "String"
+        }],
+        "end_date": "String",
+        "end_station": [{
+            "id": "String",
+            "name": "String"
+        }],
+        "bike_id": "Int",
+        "subscription_type": "String",
+        "zip_code": "String"
+    }]
+}

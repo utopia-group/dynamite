@@ -1,0 +1,90 @@
+[
+    {
+        "type": "node",
+        "labels": ["Airport"],
+        "properties": {
+            "city": "String",
+            "country": "String",
+            "latitude": "String",
+            "longitude": "String",
+            "elevation": "Float",
+            "gmtOffset": "Float"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["AirportName"],
+        "properties": { }
+    },
+    {
+        "type": "relationship",
+        "label": "AIRPORT_NAME",
+        "properties": { }
+    },
+    {
+        "type": "node",
+        "labels": ["Desert"],
+        "properties": {
+            "country": "String",
+            "type": "String",
+            "area": "Float",
+            "latitude": "Float",
+            "longitude": "Float"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["DesertName"],
+        "properties": { }
+    },
+    {
+        "type": "relationship",
+        "label": "DESERT_NAME",
+        "properties": { }
+    },
+    {
+        "type": "node",
+        "labels": ["DesertLocation"],
+        "properties": {
+            "country": "String"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "DESERT_LOCATION",
+        "properties": { }
+    },
+    {
+        "type": "node",
+        "labels": ["Mountain"],
+        "properties": {
+            "country": "String",
+            "mountains": "String",
+            "latitude": "Float",
+            "longitude": "Float",
+            "elevation": "Float"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["MountainName"],
+        "properties": { }
+    },
+    {
+        "type": "relationship",
+        "label": "MOUNTAIN_NAME",
+        "properties": { }
+    },
+    {
+        "type": "node",
+        "labels": ["MountainLocation"],
+        "properties": {
+            "country": "String"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "MOUNTAIN_LOCATION",
+        "properties": { }
+    }
+]

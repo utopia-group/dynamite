@@ -1,0 +1,4 @@
+EditorProceeding(name: String, pid: String)
+"Kurt Jensen", "journals/topnoc/2009-2"
+"Wil M. P. van der Aalst", "journals/topnoc/2009-2"
+"Per Stenstrm", "journals/thipeac/2009-2"

@@ -1,0 +1,1 @@
+Country_Population(country_code: String, year: Int, population: Int)

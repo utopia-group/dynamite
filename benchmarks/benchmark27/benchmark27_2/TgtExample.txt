@@ -1,0 +1,2 @@
+documents(d_id: String, case_row_id: String, case_name: String, doc_count: Int, attachment: String, date_filed: String, long_description: String, doc_number: Int, short_description: String, upload_date: String)
+D1,427,Banner Engineering v. Harris Instrument,1,2,2000-01-04,COMPLAINT - Summons issued. Assigned to Judge Ann D. Montgomery per patent list and referred to Magistrate Judge Arthur J. Boylan. Receipt 232554. (28 pgs) (cc: Patent office) (MKC),3,Complaint,UD1

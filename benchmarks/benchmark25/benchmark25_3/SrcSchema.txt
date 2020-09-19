@@ -1,0 +1,1 @@
+Games(attendance: Int, away_final_score: Int, away_team: String, date: String, elapsed_time: Int, g_id: Int, home_final_score: Int, home_team: String, start_time: String, umpire_1B: String, umpire_2B: String, umpire_3B: String, umpire_HP: String, venue_name: String, weather: String, wind: String, delay: Int)

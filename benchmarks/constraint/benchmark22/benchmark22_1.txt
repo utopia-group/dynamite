@@ -1,0 +1,3 @@
+Reviews?listing_id -> Listings?id
+Reviews?listing_id -> Calendar?listing_id
+[Listings?neighbourhood, Listings?neighbourhood_group] --> [Neighbourhoods?neighbourhood, Neighbourhoods?neighbourhood_group]

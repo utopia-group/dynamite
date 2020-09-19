@@ -1,0 +1,21 @@
+{
+	"countries": [{
+		"country": "String",
+		"country_name": "String",
+		"clubs": [
+			{
+				"id": "String",
+				"name": "String",
+      			"url": "String"
+			}
+		],
+		"players": [
+			{
+				"id": "String",
+				"name": "String",
+				"position": "String",
+				"url": "String"
+			}
+		]
+	}]
+}

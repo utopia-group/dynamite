@@ -1,0 +1,31 @@
+{
+  "calendar": [
+    {
+      "listing_id": 2015,
+      "dates": [
+        {
+          "date": "2019-09-10",
+          "available": "f",
+          "price": null
+        }, {
+          "date": "2019-05-05",
+          "available": "t",
+          "price": "$76.00"
+        }
+      ]
+    }, {
+      "listing_id": 158890,
+      "dates": [
+        {
+          "date": "2019-11-06",
+          "available": "t",
+          "price": "$107.00"
+        }, {
+          "date": "2019-11-05",
+          "available": "t",
+          "price": "$107.00"
+        }
+      ]
+    }
+  ]
+}

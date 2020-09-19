@@ -1,0 +1,20 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl article?ee(__id: Rel, value: StrAttr)
+.input article?ee
+.decl article?pages(__id: Rel, value: StrAttr)
+.input article?pages
+.decl article?title(__id: Rel, value: StrAttr)
+.input article?title
+.decl article(author: Rel, ee: Rel, journal: Rel, key: StrAttr, mdate: StrAttr, number: Rel, pages: Rel, title: Rel, url: Rel, volume: Rel, year: Rel)
+.input article
+.decl Paper(id: StrAttr, title: StrAttr, jid: StrAttr, pages: StrAttr)
+.output Paper(delimiter="\t")
+
+Paper(v_Paper?id, v_Paper?title, v_Paper?jid, v_Paper?pages) :-
+    article(_, v_1, _, v_Paper?id, _, _, v_2, v_0, _, _, _),
+    article?pages(v_2, v_Paper?pages),
+    article?ee(v_1, v_Paper?jid),
+    article?title(v_0, v_Paper?title).
+

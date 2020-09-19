@@ -1,0 +1,3 @@
+Politics(country_code: String, independence_date: String, dependent: String, government_type: String)
+"AL","1912-11-28","Ottoman Empire","parliamentary democracy"
+"IR","1976-3-18","Pahlavi","theocratic republic"

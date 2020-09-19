@@ -1,0 +1,51 @@
+{
+    "caseDocs": [
+        {
+            "case_row_id": 427,
+            "assigned_to": "A1",
+            "referred_to": "R1",
+            "date_filed": "2000-01-04",
+            "date_closed": "2000-03-09",
+            "date_last_filed": "2000-03-02",
+            "documents": [
+                {
+                    "doc_count": 1,
+                    "attachment": "0",
+                    "date_filed": "2000-01-04",
+                    "long_description": "COMPLAINT - Summons issued. Assigned to Judge Ann D. Montgomery per patent list and referred to Magistrate Judge Arthur J. Boylan. Receipt 232554. (28 pgs) (cc: Patent office) (MKC)",
+                    "doc_number": 1,
+                    "short_description": "Complaint",
+                    "upload_date": null
+                },
+                {
+                    "doc_count": 2,
+                    "attachment": "0",
+                    "date_filed": "2000-01-13",
+                    "long_description": "SUMONS - RETURN OF SERVICE executed upon defendant Harris Instrument on 1/6/00. (3 pgs) (MKC)",
+                    "doc_number": 2,
+                    "short_description": "Summons Returned Executed",
+                    "upload_date": null
+                }
+            ]
+        },
+        {
+            "case_row_id": 54973,
+            "assigned_to": "Judge Joel A. Pisano",
+            "referred_to": "Magistrate Judge Tonianne J. Bongiovanni",
+            "date_filed": "2009-01-14",
+            "date_closed": "2011-06-02",
+            "date_last_filed": "DD3",
+            "documents": [
+                {
+                    "doc_count": 1,
+                    "attachment": "0",
+                    "date_filed": "2009-01-14",
+                    "long_description": "COMPLAINT against SANDOZ, INC. ( Filing fee $ 350 receipt number 2349082.), filed by ASTRAZENECA AB, AKTIEBOLAGET HASSLE, ASTRAZENECA LP, KBI INC,, KBI-E INC..(kak) (Entered: 01/15/2009)",
+                    "doc_number": 1,
+                    "short_description": null,
+                    "upload_date": "DD4"
+                }
+            ]
+        }
+    ]
+}

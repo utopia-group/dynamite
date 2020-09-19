@@ -1,0 +1,1 @@
+Religion(country_code: String, name: String, percentage: Float)

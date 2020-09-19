@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Club(_id: StrAttr, id: StrAttr, name: StrAttr)
+.input Club
+.decl club(name: StrAttr, id: StrAttr)
+.output club(delimiter="\t")
+
+club(v_club?name, v_club?id) :-
+    Club(_, v_club?id, v_club?name).
+

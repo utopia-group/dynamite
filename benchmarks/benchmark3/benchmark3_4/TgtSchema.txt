@@ -1,0 +1,1 @@
+Book(id: String, title: String, year: Int, pages: String, publisher: String, isbn: String)

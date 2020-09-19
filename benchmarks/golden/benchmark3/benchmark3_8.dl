@@ -1,0 +1,29 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl proceedings?isbn(__id: Rel, value: StrAttr)
+.input proceedings?isbn
+.decl proceedings?publisher(__id: Rel, value: StrAttr)
+.input proceedings?publisher
+.decl proceedings?series(__id: Rel, href: StrAttr, nestedContent: StrAttr)
+.input proceedings?series
+.decl proceedings?title(__id: Rel, value: StrAttr)
+.input proceedings?title
+.decl proceedings?volume(__id: Rel, value: StrAttr)
+.input proceedings?volume
+.decl proceedings?year(__id: Rel, value: IntAttr)
+.input proceedings?year
+.decl proceedings(booktitle: Rel, editor: Rel, ee: Rel, isbn: Rel, key: StrAttr, mdate: StrAttr, publisher: Rel, series: Rel, title: Rel, url: Rel, volume: Rel, year: Rel)
+.input proceedings
+.decl Proceeding(id: StrAttr, title: StrAttr, volume: StrAttr, year: IntAttr, publisher: StrAttr, isbn: StrAttr, series: StrAttr)
+.output Proceeding(delimiter="\t")
+
+Proceeding(v_Proceeding?id, v_Proceeding?title, v_Proceeding?volume, v_Proceeding?year, v_Proceeding?publisher, v_Proceeding?isbn, v_Proceeding?series) :-
+    proceedings(_, _, _, v_4, v_Proceeding?id, _, v_3, v_5, v_0, _, v_1, v_2),
+    proceedings?series(v_5, _, v_Proceeding?series),
+    proceedings?isbn(v_4, v_Proceeding?isbn),
+    proceedings?publisher(v_3, v_Proceeding?publisher),
+    proceedings?year(v_2, v_Proceeding?year),
+    proceedings?volume(v_1, v_Proceeding?volume),
+    proceedings?title(v_0, v_Proceeding?title).
+

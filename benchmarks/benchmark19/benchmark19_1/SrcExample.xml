@@ -1,0 +1,89 @@
+<dblp>
+	<book key="books/daglib/0011409" mdate="2011-04-07">
+		<author>Paul Mutton</author>
+		<title>IRC hacks - 100 industrial-strength tips and tools.</title>
+		<pages>I-XIX; 1-409</pages>
+		<publisher>O'Reilly</publisher>
+		<year>2004</year>
+		<isbn>978-0-596-00687-7</isbn>
+		<ee>http://www.oreilly.de/catalog/irchks/index.html</ee>
+	</book>
+	<book key="books/daglib/0068988" mdate="2017-01-09">
+		<author>Michael Gloger</author>
+		<author>Andrew Woody</author>
+		<title>Implementierung funktionaler Programmiersprachen - Codegenerierung; Speicherverwaltung und Testsysteme fr Sprachen mit verzgerter Auswertung.</title>
+		<pages>I-XV; 1-252</pages>
+		<publisher>Deutscher Universit;tsverlag</publisher>
+		<school>Darmstadt University of Technology; Germany</school>
+		<year>1993</year>
+		<isbn>978-3-8244-2037-7</isbn>
+		<ee>http://d-nb.info/921546149</ee>
+	</book>
+	<article key="journals/acta/Saxena96" mdate="2017-05-28">
+		<author>Sanjeev Saxena</author>
+		<title>Parallel Integer Sorting and Simulation Amongst CRCW Models.</title>
+		<pages>607-619</pages>
+		<year>1996</year>
+		<volume>33</volume>
+		<journal>Acta Inf.</journal>
+		<number>7</number>
+		<ee>https://doi.org/10.1007/BF03036466</ee>
+		<url>db/journals/acta/acta33.html#Saxena96</url>
+		<crossref>journals/wias/0002YWG013</crossref>
+	</article>
+	<article key="journals/wias/0002YWG013" mdate="2017-05-20">
+		<author>Yingjie Li 0002</author>
+		<author>Xueli Yu</author>
+		<author>Rui Wang</author>
+		<author>Lili Geng</author>
+		<title>A study on dynamic Semantic Web service composition.</title>
+		<pages>125-135</pages>
+		<year>2013</year>
+		<volume>11</volume>
+		<journal>Web Intelligence and Agent Systems</journal>
+		<number>2</number>
+		<ee>https://doi.org/10.3233/WIA-130266</ee>
+		<url>db/journals/wias/wias11.html#0002YWG013</url>
+		<crossref>journals/wias/0002YWG013</crossref>
+	</article>
+	<phdthesis key="books/daglib/0071011" mdate="2011-03-23">
+		<author>Jie-Ming J. Wang</author>
+		<title>Visual logic - a visual source code animation system for teaching computer science at school.</title>
+		<pages>I-XI; 1-169</pages>
+		<school>TH Darmstadt</school>
+		<year>1993</year>
+	</phdthesis>
+	<phdthesis key="books/daglib/0083729" mdate="2017-01-12">
+		<author>Rainer Kress 0002</author>
+		<title>A fast reconfigurable ALU for Xputers.</title>
+		<pages>I-XIV; 1-241</pages>
+		<school>Kaiserslautern University of Technology; Germany</school>
+		<year>1996</year>
+		<ee>http://d-nb.info/947946594</ee>
+	</phdthesis>
+	<proceedings key="journals/topnoc/2009-2" mdate="2017-05-18">
+		<editor>Kurt Jensen</editor>
+		<editor>Wil M. P. van der Aalst</editor>
+		<title>Transactions on Petri Nets and Other Models of Concurrency II; Special Issue on Concurrency in Process-Aware Information Systems</title>
+		<volume>5460</volume>
+		<year>2009</year>
+		<ee>https://doi.org/10.1007/978-3-642-00899-3</ee>
+		<isbn>978-3-642-00898-6</isbn>
+		<booktitle>Trans. Petri Nets and Other Models of Concurrency</booktitle>
+		<series href="db/journals/lncs.html">Lecture Notes in Computer Science</series>
+		<publisher>Springer</publisher>
+		<url>db/journals/topnoc/topnoc2.html</url>
+	</proceedings>
+	<proceedings key="journals/thipeac/2009-2" mdate="2017-05-26">
+		<editor>Per Stenstrm</editor>
+		<title>Transactions on High-Performance Embedded Architectures and Compilers II</title>
+		<volume>5470</volume>
+		<year>2010</year>
+		<ee>https://doi.org/10.1007/978-3-642-00904-4</ee>
+		<isbn>978-3-642-00903-7</isbn>
+		<booktitle>Trans. HiPEAC</booktitle>
+		<series href="db/journals/lncs.html">Lectures Notes in Computer Science</series>
+		<publisher>Springers</publisher>
+		<url>db/journals/thipeac/thipeac2.html</url>
+	</proceedings>
+</dblp>

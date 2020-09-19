@@ -1,0 +1,10 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Calendar(c_id: StrAttr, listing_id: IntAttr, date: StrAttr, available: StrAttr, price: StrAttr)
+.input Calendar
+.decl calendar(c_id: StrAttr, listing_id: IntAttr, date: StrAttr, available: StrAttr, price: StrAttr)
+.output calendar(delimiter="\t")
+
+calendar(v_calendar?c_id, v_calendar?listing_id, v_calendar?date, v_calendar?available, v_calendar?price) :-
+    Calendar(v_calendar?c_id, v_calendar?listing_id, v_calendar?date, v_calendar?available, v_calendar?price).

@@ -1,0 +1,147 @@
+[
+  {
+    "type": "node",
+    "labels": [
+      "Religion"
+    ],
+    "id": "Roman Catholic",
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Religion"
+    ],
+    "id": "Christian Orthodox",
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Religion"
+    ],
+    "id": "Muslim",
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Country"
+    ],
+    "id": "AL",
+    "properties": {
+      "name": "Albania",
+      "population_growth": "0.3",
+      "infant_mortality": "13.19",
+      "gdp_total": 12800,
+      "gdp_agri": "19.5",
+      "gdp_ind": "12",
+      "gdp_serv": "68.5",
+      "inflation": "1.7",
+      "unemployment": "16.9",
+      "area": "28750",
+      "capital": "cty-Albania-Tirane",
+      "memberships": "org-BSEC org-CEI"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Country"
+    ],
+    "id": "IR",
+    "properties": {
+      "name": "Iran",
+      "population_growth": "1.22",
+      "infant_mortality": "39",
+      "gdp_total": 411900,
+      "gdp_agri": "10.6",
+      "gdp_ind": "44.9",
+      "gdp_serv": "44.5",
+      "inflation": "42.3",
+      "unemployment": "16",
+      "area": "1648000",
+      "capital": "cty-Iran-Tehran",
+      "memberships": "org-UNAMID org-CP"
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "POPULATION_BELIEVES",
+    "id": "500",
+    "properties": {
+      "percentage": "10"
+    },
+    "start": {
+      "id": "AL",
+      "labels": [
+        "Country"
+      ]
+    },
+    "end": {
+      "id": "Roman Catholic",
+      "labels": [
+        "Religion"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "POPULATION_BELIEVES",
+    "id": "500",
+    "properties": {
+      "percentage": "20"
+    },
+    "start": {
+      "id": "AL",
+      "labels": [
+        "Country"
+      ]
+    },
+    "end": {
+      "id": "Christian Orthodox",
+      "labels": [
+        "Religion"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "POPULATION_BELIEVES",
+    "id": "500",
+    "properties": {
+      "percentage": "99"
+    },
+    "start": {
+      "id": "IR",
+      "labels": [
+        "Country"
+      ]
+    },
+    "end": {
+      "id": "Muslim",
+      "labels": [
+        "Religion"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "BORDERS",
+    "id": "501",
+    "properties": {
+    },
+    "start": {
+      "id": "IR",
+      "labels": [
+        "Country"
+      ]
+    },
+    "end": {
+      "id": "AL",
+      "labels": [
+        "Country"
+      ]
+    }
+  }
+]

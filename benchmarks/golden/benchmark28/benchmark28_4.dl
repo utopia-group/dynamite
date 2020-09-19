@@ -1,0 +1,13 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Stations(id: StrAttr, name: StrAttr, lat: StrAttr, long: StrAttr, dock_count: IntAttr, city: StrAttr, installation_date: StrAttr)
+.input Stations
+.decl Status(s_id: StrAttr, station_id: StrAttr, bikes_available: IntAttr, docks_available: IntAttr, time: StrAttr)
+.input Status
+.decl stationStatus(s_id: StrAttr, station_id: StrAttr, station_name: StrAttr, bikes_available: IntAttr, docks_available: IntAttr, time: StrAttr)
+.output stationStatus(delimiter="\t")
+
+stationStatus(v_stationStatus?s_id, v_stationStatus?station_id, v_stationStatus?station_name, v_stationStatus?bikes_available, v_stationStatus?docks_available, v_stationStatus?time) :-
+    Stations(v_stationStatus?station_id, v_stationStatus?station_name, _, _, _, _, _),
+    Status(v_stationStatus?s_id, v_stationStatus?station_id, v_stationStatus?bikes_available, v_stationStatus?docks_available, v_stationStatus?time).

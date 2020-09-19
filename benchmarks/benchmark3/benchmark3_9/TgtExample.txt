@@ -1,0 +1,3 @@
+Thesis(id: String, year: Int, title: String, school: String, pages: String)
+"books/daglib/0071011", 1993, "Visual logic - a visual source code animation system for teaching computer science at school.", "TH Darmstadt", "I-XI; 1-169"
+"books/daglib/0083729", 1996, "A fast reconfigurable ALU for Xputers.", "Kaiserslautern University of Technology; Germany", "I-XIV; 1-241"

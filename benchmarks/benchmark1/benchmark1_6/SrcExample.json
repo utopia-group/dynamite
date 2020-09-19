@@ -1,0 +1,72 @@
+{
+  "business": [
+    {
+      "business_id": "iaunX_af5M5lfT2eEm9FMQ",
+      "name": "Encore Books and Records",
+      "neighborhood": "Notre-Dame-de-Gr^ace",
+      "address": "5670 Sherbrooke Rue W",
+      "city": "Montr'eal",
+      "state": "QC",
+      "postal_code": "H4A 1W7",
+      "latitude": 45.4707675,
+      "longitude": -73.6150299,
+      "stars": 5.0,
+      "review_count": 4,
+      "is_open": 1,
+      "attributes": [
+        "BikeParking: True",
+        "BusinessParking: {'garage': False, 'street': True, 'validated': False, 'lot': False, 'valet': False}",
+        "RestaurantsPriceRange2: 1"
+      ],
+      "categories": [
+        "Shopping",
+        "Bookstores",
+        "Books",
+        "Mags",
+        "Music & Video"
+      ],
+      "hours": [
+        "Monday 11:0-19:0",
+        "Tuesday 11:0-19:0",
+        "Wednesday 11:0-19:0",
+        "Thursday 11:0-21:0",
+        "Friday 11:0-21:0",
+        "Saturday 11:0-19:0",
+        "Sunday 11:0-19:0"
+      ],
+      "type": "business"
+    },
+    {
+      "business_id": "lHYMeXf8JH1Q8Dazn9s3Gg",
+      "name": "Discount Tire Store - Charlotte",
+      "neighborhood": "University City",
+      "address": "7850 N Tryon St",
+      "city": "Charlotte",
+      "state": "NC",
+      "postal_code": "28262",
+      "latitude": 35.295623,
+      "longitude": -80.754429,
+      "stars": 4.5,
+      "review_count": 18,
+      "is_open": 1,
+      "attributes": [
+        "BusinessAcceptsCreditCards: True"
+      ],
+      "categories": [
+        "Tires",
+        "Automotive",
+        "Auto Parts & Supplies",
+        "Wheel & Rim Repair"
+      ],
+      "hours": [
+        "Monday 8:0-18:0",
+        "Tuesday 8:0-18:0",
+        "Wednesday 8:0-18:0",
+        "Thursday 8:0-18:0",
+        "Friday 8:0-18:0",
+        "Saturday 8:0-17:0"
+      ],
+      "type": "business"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Ejections(e_id: StrAttr, ab_id: IntAttr, des: StrAttr, event_num: IntAttr, g_id: IntAttr, player_id: IntAttr, date: StrAttr, BS: StrAttr, CORRECT: StrAttr, team: StrAttr, is_home_team: StrAttr)
+.input Ejections
+.decl PlayerNames(id: IntAttr, first_name: StrAttr, last_name: StrAttr)
+.input PlayerNames
+.decl ejections(e_id: StrAttr, ab_id: IntAttr, des: StrAttr, event_num: IntAttr, g_id: IntAttr, player_first: StrAttr, player_last: StrAttr, date: StrAttr, BS: StrAttr, CORRECT: StrAttr, team: StrAttr, is_home_team: StrAttr)
+.output ejections(delimiter="\t")
+
+ejections(v_ejections?e_id, v_ejections?ab_id, v_ejections?des, v_ejections?event_num, v_ejections?g_id, v_ejections?player_first, v_ejections?player_last, v_ejections?date, v_ejections?BS, v_ejections?CORRECT, v_ejections?team, v_ejections?is_home_team) :-
+    PlayerNames(v_Ejections?player_id_0, v_ejections?player_first, v_ejections?player_last),
+    Ejections(v_ejections?e_id, v_ejections?ab_id, v_ejections?des, v_ejections?event_num, v_ejections?g_id, v_Ejections?player_id_0, v_ejections?date, v_ejections?BS, v_ejections?CORRECT, v_ejections?team, v_ejections?is_home_team).
+

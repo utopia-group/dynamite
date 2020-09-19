@@ -1,0 +1,11 @@
+countryclubs(countryId: String, clubId: String)
+"97861", "98076"
+"97861", "98083"
+
+country(country_id:String, country_name: String)
+"97861", "Brazil"
+"97862", "France"
+
+club(club_id: String, club_name: String, club_url: String)
+"98076", "GrAmio", "/gremio-foot-ball-porto-alegrense/startseite/verein/210"
+"98083", "AtlActico-MG", "/atletico-mineiro/startseite/verein/330"

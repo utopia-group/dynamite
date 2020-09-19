@@ -1,0 +1,4 @@
+Attorneys(case_row_id: String, case_number: String, party_row_count: String, party_type: String, attorney_row_count: String, name: String, contactinfo: String, position: String)
+14,0:92-cv-00398-MJP,40,Plaintiff,1,"Joel Wyman Collins , Jr","Collins and Lacy; PO Box 12487; Columbia, SC 29211; 803-256-2660; Fax: 803-771-4484; Email: jcollins@collinsandlacy.com",LEAD ATTORNEY; ATTORNEY TO BE NOTICED
+14,0:92-cv-00398-MJP,41,Plaintiff,2,"Joel Wyman Collins , Jr",(See above for address),LEAD ATTORNEY; ATTORNEY TO BE NOTICED
+38,0:89-cv-06934-NCR,118,Plaintiff,26,David Berten,"Bartlit Beck Herman Palenchar & Scott; 54 W Hubbard Street; Suite 300; Chicago, IL 60610; 312-494-4444",LEAD ATTORNEY; ATTORNEY TO BE NOTICED

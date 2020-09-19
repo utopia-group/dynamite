@@ -1,0 +1,2 @@
+related_area(designation_left: String, designation_right: String, area: Float)
+"gc10-40", "ac11-68", 0.0043852

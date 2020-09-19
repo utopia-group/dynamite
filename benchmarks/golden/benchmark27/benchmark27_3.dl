@@ -1,0 +1,18 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Attorneys(case_row_id: StrAttr, case_number: StrAttr, party_row_count: StrAttr, party_type: StrAttr, attorney_row_count: StrAttr, name: StrAttr, contactinfo: StrAttr, position: StrAttr)
+.input Attorneys
+.decl attorneys(attorney_row_id: StrAttr, party_row_id: StrAttr, name: StrAttr, contactinfo: StrAttr, position: StrAttr)
+.output attorneys(delimiter="\t")
+.decl attorneyCases(case_row_id: StrAttr, attorney_row_id: StrAttr)
+.output attorneyCases(delimiter="\t")
+.decl parties(party_row_id: StrAttr, party_type: StrAttr)
+.output parties(delimiter="\t")
+
+attorneys(v_attorneys?attorney_row_id, v_attorneys?party_row_id, v_attorneys?name, v_attorneys?contactinfo, v_attorneys?position) :-
+    Attorneys(_, _, v_attorneys?party_row_id, _, v_attorneys?attorney_row_id, v_attorneys?name, v_attorneys?contactinfo, v_attorneys?position).
+attorneyCases(v_attorneyCases?case_row_id, v_attorneyCases?attorney_row_id) :-
+    Attorneys(v_attorneyCases?case_row_id, _, _, _, v_attorneyCases?attorney_row_id, _, _, _).
+parties(v_parties?party_row_id, v_parties?party_type) :-
+    Attorneys(_, _, v_parties?party_row_id, v_parties?party_type, _, _, _, _).

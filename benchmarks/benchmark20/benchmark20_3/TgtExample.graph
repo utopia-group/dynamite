@@ -1,0 +1,192 @@
+[
+    {
+        "type": "node",
+        "labels": ["Lake"],
+        "id": "lake-Bodensee",
+        "properties": {
+            "country": "A D CH",
+            "area": "538.5",
+            "latitude": "47.6",
+            "longitude": "9.4",
+            "elevation": "395",
+            "depth": "254"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["LakeName"],
+        "id": "Bodensee",
+        "properties": { }
+    },
+    {
+        "type": "relationship",
+        "label": "LAKE_NAME",
+        "id": "ID5",
+        "start": { "id": "lake-Bodensee", "labels": ["Lake"] },
+        "end": { "id": "Bodensee", "labels": ["LakeName"] }
+    },
+    {
+        "type": "node",
+        "labels": ["LakeLocation"],
+        "id": "prov-Austria-4",
+        "properties": {
+            "country": "A"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "LAKE_LOCATION",
+        "id": "ID6",
+        "start": { "id": "lake-Bodensee", "labels": ["Lake"] },
+        "end": { "id": "prov-Austria-4", "labels": ["LakeLocation"] }
+    },
+    {
+        "type": "node",
+        "labels": ["LakeLocation"],
+        "id": "prov-Germany-2 prov-Germany-3",
+        "properties": {
+            "country": "D"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "LAKE_LOCATION",
+        "id": "ID7",
+        "start": { "id": "lake-Bodensee", "labels": ["Lake"] },
+        "end": { "id": "prov-Germany-2 prov-Germany-3", "labels": ["LakeLocation"] }
+    },
+    {
+        "type": "node",
+        "labels": ["Lake"],
+        "id": "lake-Chiemsee",
+        "properties": {
+            "country": "D",
+            "area": "80",
+            "latitude": "47.9",
+            "longitude": "12.4",
+            "elevation": "518",
+            "depth": "73"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["LakeName"],
+        "id": "Chiemsee",
+        "properties": { }
+    },
+    {
+        "type": "relationship",
+        "label": "LAKE_NAME",
+        "id": "ID8",
+        "start": { "id": "lake-Chiemsee", "labels": ["Lake"] },
+        "end": { "id": "Chiemsee", "labels": ["LakeName"] }
+    },
+    {
+        "type": "node",
+        "labels": ["LakeLocation"],
+        "id": "prov-Germany-3",
+        "properties": {
+            "country": "C"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "LAKE_LOCATION",
+        "id": "ID9",
+        "start": { "id": "lake-Chiemsee", "labels": ["Lake"] },
+        "end": { "id": "prov-Germany-3", "labels": ["LakeLocation"] }
+    },
+    {
+        "type": "node",
+        "labels": ["Sea"],
+        "id": "sea-Atlantic",
+        "properties": {
+            "bordering": "sea-Mittelmeer sea-Channel",
+            "country": "F E",
+            "area": "436000",
+            "depth": "9219"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["SeaName"],
+        "id": "Atlantic Ocean",
+        "properties": { }
+    },
+    {
+        "type": "relationship",
+        "label": "SEA_NAME",
+        "id": "ID10",
+        "start": { "id": "sea-Atlantic", "labels": ["Sea"] },
+        "end": { "id": "Atlantic Ocean", "labels": ["SeaName"] }
+    },
+    {
+        "type": "node",
+        "labels": ["SeaLocation"],
+        "id": "prov-France-5 prov-France-20",
+        "properties": {
+            "country": "F"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "SEA_LOCATION",
+        "id": "ID11",
+        "start": { "id": "sea-Atlantic", "labels": ["Sea"] },
+        "end": { "id": "prov-France-5 prov-France-20", "labels": ["SeaLocation"] }
+    },
+    {
+        "type": "node",
+        "labels": ["SeaLocation"],
+        "id": "prov-Spain-2 prov-Spain-13",
+        "properties": {
+            "country": "E"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "SEA_LOCATION",
+        "id": "ID12",
+        "start": { "id": "sea-Atlantic", "labels": ["Sea"] },
+        "end": { "id": "prov-Spain-2 prov-Spain-13", "labels": ["SeaLocation"] }
+    },
+    {
+        "type": "node",
+        "labels": ["Sea"],
+        "id": "sea-Mittelmeer",
+        "properties": {
+            "bordering": "sea-Marmarameer",
+            "country": "AL",
+            "area": "2500000",
+            "depth": "5267"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["SeaName"],
+        "id": "Mediterranean Sea",
+        "properties": { }
+    },
+    {
+        "type": "relationship",
+        "label": "SEA_NAME",
+        "id": "ID13",
+        "start": { "id": "sea-Mittelmeer", "labels": ["Sea"] },
+        "end": { "id": "Mediterranean Sea", "labels": ["SeaName"] }
+    },
+    {
+        "type": "node",
+        "labels": ["SeaLocation"],
+        "id": "prov-BIH-1",
+        "properties": {
+            "country": "BIH"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "SEA_LOCATION",
+        "id": "ID14",
+        "start": { "id": "sea-Mittelmeer", "labels": ["Sea"] },
+        "end": { "id": "prov-BIH-1", "labels": ["SeaLocation"] }
+    }
+]

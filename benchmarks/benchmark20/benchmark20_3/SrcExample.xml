@@ -1,0 +1,76 @@
+<mondial>
+	<airport iatacode="PPG" city="city-Pago-Pago-AMSA-AMSA" country="AMSA">
+      <name>Pago Pago Intl</name>
+      <latitude>-14.2794</latitude>
+      <longitude>-170.7006</longitude>
+      <elevation>10</elevation>
+      <gmtOffset>-11</gmtOffset>
+      <located_on island="island-Tutuila"/>
+   </airport>
+   <airport iatacode="VPE" city="cty-Angola-Ngiva" country="ANG">
+      <name>Ondjiva Pereira Airport</name>
+      <latitude>-17.043464</latitude>
+      <longitude>15.683822</longitude>
+      <elevation>1087</elevation>
+      <gmtOffset>1</gmtOffset>
+   </airport>
+   <desert id="desert-Talak" country="RMM RN" type="sand">
+      <name>Talak</name>
+      <located country="RMM" province="prov-RMM-2 prov-RMM-4"/>
+      <located country="RN" province="prov-RN-1 prov-RN-6"/>
+      <area>100000</area>
+      <latitude>17</latitude>
+      <longitude>6</longitude>
+   </desert>
+   <lake country="A D CH" id="lake-Bodensee">
+      <name>Bodensee</name>
+      <located country="A" province="prov-Austria-4"/>
+      <located country="D" province="prov-Germany-2 prov-Germany-3"/>
+      <to water="river-Rhein" watertype="river"/>
+      <area>538.5</area>
+      <latitude>47.6</latitude>
+      <longitude>9.4</longitude>
+      <elevation>395</elevation>
+      <depth>254</depth>
+   </lake>
+   <lake country="D" id="lake-Chiemsee">
+      <name>Chiemsee</name>
+      <located country="C" province="prov-Germany-3"/>
+      <to water="river-Alz" watertype="river"/>
+      <area>80</area>
+      <latitude>47.9</latitude>
+      <longitude>12.4</longitude>
+      <elevation>518</elevation>
+      <depth>73</depth>
+   </lake>
+   <sea bordering="sea-Mittelmeer sea-Channel" country="F E" id="sea-Atlantic">
+      <name>Atlantic Ocean</name>
+      <located country="F" province="prov-France-5 prov-France-20"/>
+      <located country="E" province="prov-Spain-2 prov-Spain-13"/>
+      <area>436000</area>
+      <depth>9219</depth>
+   </sea>
+   <sea bordering="sea-Marmarameer" country="AL" id="sea-Mittelmeer">
+      <name>Mediterranean Sea</name>
+      <located country="BIH" province="prov-BIH-1"/>
+      <area>2500000</area>
+      <depth>5267</depth>
+   </sea>
+   <mountain country="PE" id="mount-Yerupaja">
+      <name>Yerupaja</name>
+      <mountains>Cordillera Blanca</mountains>
+      <located country="PE" province="prov-Peru-3"/>
+      <latitude>-10.3</latitude>
+      <longitude>-76.9</longitude>
+      <elevation>6635</elevation>
+   </mountain>
+   <mountain country="BOL RCH" id="mount-Licancabur" type="volcano">
+      <name>Licancabur</name>
+      <mountains>Andes</mountains>
+      <located country="BOL" province="prov-BOL-3"/>
+      <located country="RCH" province="prov-Chile-2"/>
+      <latitude>-22.8</latitude>
+      <longitude>-67.9</longitude>
+      <elevation>5920</elevation>
+   </mountain>
+</mondial>

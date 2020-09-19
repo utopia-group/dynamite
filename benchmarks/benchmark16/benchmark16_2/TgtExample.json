@@ -1,0 +1,47 @@
+{
+	"countries": [
+		{
+			"country": "97862",
+			"country_name": "France",
+			"clubs": [
+				{
+					"id": "98189",
+					"name": "Strasbourg U19",
+					"url": "/racing-strassburg-u19/startseite/verein/11199"
+				}
+			],
+			"players": [
+				{
+					"id": "39657",
+					"name": "Ahmed Benhemine",
+					"position": "Defender",
+					"url": "/ahmed-benhemine/profil/spieler/308009"
+				}
+			]
+		},
+		{
+			"country": "97861",
+			"country_name": "Brazil",
+			"clubs": [
+				{
+					"id": "98076",
+					"name": "GrAmio",
+	      			"url": "/gremio-foot-ball-porto-alegrense/startseite/verein/210"
+				},
+				{
+					"id": "98083",
+					"name": "AtlActico-MG",
+	      			"url": "/atletico-mineiro/startseite/verein/330"
+				}
+			],
+			"players": [
+				{
+					"id": "39259",
+					"name": "Michel ElA3i",
+					"url": "/michel-eloi/profil/spieler/215874",
+					"position": "Defensive Midfield"
+				}
+			]
+		}
+	]
+}

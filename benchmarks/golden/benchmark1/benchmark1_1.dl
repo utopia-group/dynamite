@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl review(business_id: StrAttr, cool: IntAttr, date: StrAttr, funny: IntAttr, review_id: StrAttr, stars: IntAttr, text: StrAttr, type: StrAttr, useful: IntAttr, user_id: StrAttr)
+.input review
+.decl Review(rid: StrAttr, uid: StrAttr, bid: StrAttr, text: StrAttr, stars: IntAttr, date: StrAttr)
+.output Review(delimiter="\t")
+
+Review(v_Review?rid, v_Review?uid, v_Review?bid, v_Review?text, v_Review?stars, v_Review?date) :-
+    review(v_Review?bid, _, v_Review?date, _, v_Review?rid, v_Review?stars, v_Review?text, _, _, v_Review?uid).
+

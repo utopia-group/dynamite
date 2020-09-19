@@ -1,0 +1,285 @@
+[
+    {
+        "type": "node",
+        "labels": ["atBat"],
+        "id": "2015000768",
+        "properties": {
+            "event": "Hit By Pitch",
+            "inning": 1,
+            "o": 0,
+            "p_score": 0,
+            "p_throws": "L",
+            "stand": "R",
+            "top": "True"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["atBat"],
+        "id": "2015003219",
+        "properties": {
+            "event": "Groundout",
+            "inning": 12,
+            "o": 3,
+            "p_score": 1,
+            "p_throws": "R",
+            "stand": "RR",
+            "top": "False"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["ejection"],
+        "id": "E1",
+        "properties": {
+            "des": "San Diego Padres center fielder Will Venable ejected by HP umpire Tripp Gibson III.",
+            "event_num": 732,
+            "player_id": "461416",
+            "date": "4/9/15",
+            "BS": null,
+            "CORRECT": "C1",
+            "team": "sdn",
+            "is_home_team": "TRUE"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["ejection"],
+        "id": "E2",
+        "properties": {
+            "des": "San Diego Padres Manager Bud Black ejected by HP umpire Tripp Gibson III.",
+            "event_num": 734,
+            "player_id": "111034",
+            "date": "4/9/15",
+            "BS": null,
+            "CORRECT": "C2",
+            "team": "T2",
+            "is_home_team": "TRUE"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["game"],
+        "id": "201500012",
+        "properties": {
+            "attendance": 53518,
+            "away_final_score": 3,
+            "away_team": "sdn",
+            "date": "2015-04-06",
+            "elapsed_time": 184,
+            "home_final_score": 6,
+            "home_team": "lan",
+            "start_time": "1:12 PM",
+            "umpire_1B": "Mark Carlson",
+            "umpire_2B": "Mike DiMuro",
+            "umpire_3B": "Tripp Gibson III",
+            "umpire_HP": "Brian Gorman",
+            "venue_name": "Dodger Stadium",
+            "weather": "65 degrees, partly cloudy",
+            "wind": "1 mph, Varies",
+            "delay": 0
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["game"],
+        "id": "201500044",
+        "properties": {
+            "attendance": 45149,
+            "away_final_score": 1,
+            "away_team": "sfn",
+            "date": "2015-04-09",
+            "elapsed_time": 245,
+            "home_final_score": 0,
+            "home_team": "sdn",
+            "start_time": "3:41 PM",
+            "umpire_1B": "Brian Gorman",
+            "umpire_2B": "Mark Carlson",
+            "umpire_3B": "Mike DiMuro",
+            "umpire_HP": "Tripp Gibson III",
+            "venue_name": "Petco Park",
+            "weather": "67 degrees, sunny",
+            "wind": "12 mph, L to R",
+            "delay": 10
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["pitch"],
+        "id": "P1",
+        "properties": {
+            "px": -1.195,
+            "pz": 2.937,
+            "start_speed": 93.5,
+            "end_speed": 85.4,
+            "spin_rate": 1879.384,
+            "spin_dir": 214.244,
+            "break_angle": 26.9,
+            "break_length": 4.5,
+            "break_y": 23.7,
+            "ax": -9.995,
+            "ay": 33.071,
+            "az": -17.492,
+            "sz_bot": 1.61,
+            "sz_top": 3.7,
+            "type_confidence": 2.000,
+            "vx0": 2.599,
+            "vy0": -137.107,
+            "vz0": -4.287,
+            "x": 162.55,
+            "x0": -1.472,
+            "y": 159.48,
+            "y0": 50,
+            "z0": 5.731,
+            "pfx_x": -5.3,
+            "pfx_z": 7.75,
+            "nasty": 47,
+            "zone": 11,
+            "code": "X",
+            "type": "X",
+            "pitch_type": "FF",
+            "event_num": 739,
+            "b_score": 0.0,
+            "ab_id": 2015003219,
+            "b_count": 2.0,
+            "s_count": 1.0,
+            "outs": 2.0,
+            "pitch_num": 4.0,
+            "on_1b": 0.0,
+            "on_2b": 0.0,
+            "on_3b": 0.0
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["playerName"],
+        "id": "433586",
+        "properties": {
+            "first_name": "Santiago",
+            "last_name": "Casilla"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["playerName"],
+        "id": "461416",
+        "properties": {
+            "first_name": "Will",
+            "last_name": "Venable"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["playerName"],
+        "id": "477132",
+        "properties": {
+            "first_name": "Clayton",
+            "last_name": "Kershaw"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["playerName"],
+        "id": "571976",
+        "properties": {
+            "first_name": "Wil",
+            "last_name": "Myers"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "BATTER_OF",
+        "id": "ID1",
+        "properties": { },
+        "start": { "id": "571976", "labels": ["playerName"] },
+        "end": { "id": "2015000768", "labels": ["atBat"] }
+    },
+    {
+        "type": "relationship",
+        "label": "PITCHER_OF",
+        "id": "ID2",
+        "properties": { },
+        "start": { "id": "477132", "labels": ["playerName"] },
+        "end": { "id": "2015000768", "labels": ["atBat"] }
+    },
+    {
+        "type": "relationship",
+        "label": "BATTER_OF",
+        "id": "ID3",
+        "properties": { },
+        "start": { "id": "571976", "labels": ["playerName"] },
+        "end": { "id": "2015003219", "labels": ["atBat"] }
+    },
+    {
+        "type": "relationship",
+        "label": "PITCHER_OF",
+        "id": "ID4",
+        "properties": { },
+        "start": { "id": "433586", "labels": ["playerName"] },
+        "end": { "id": "2015003219", "labels": ["atBat"] }
+    },
+    {
+        "type": "relationship",
+        "label": "EJECTION_ATBAT",
+        "id": "ID5",
+        "properties": { },
+        "start": { "id": "E1", "labels": ["ejection"] },
+        "end": { "id": "2015003219", "labels": ["atBat"] }
+    },
+    {
+        "type": "relationship",
+        "label": "EJECTION_ATBAT",
+        "id": "ID6",
+        "properties": { },
+        "start": { "id": "E2", "labels": ["ejection"] },
+        "end": { "id": "2015003219", "labels": ["atBat"] }
+    },
+    {
+        "type": "relationship",
+        "label": "EJECTED_IN",
+        "id": "ID7",
+        "properties": { },
+        "start": { "id": "461416", "labels": ["playerName"] },
+        "end": { "id": "E1", "labels": ["ejection"] }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_ATBAT",
+        "id": "ID8",
+        "properties": { },
+        "start": { "id": "201500012", "labels": ["game"] },
+        "end": { "id": "2015000768", "labels": ["atBat"] }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_ATBAT",
+        "id": "ID9",
+        "properties": { },
+        "start": { "id": "201500044", "labels": ["game"] },
+        "end": { "id": "2015003219", "labels": ["atBat"] }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_EJECTION",
+        "id": "ID10",
+        "properties": { },
+        "start": { "id": "201500044", "labels": ["game"] },
+        "end": { "id": "E1", "labels": ["ejection"] }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_EJECTION",
+        "id": "ID11",
+        "properties": { },
+        "start": { "id": "201500044", "labels": ["game"] },
+        "end": { "id": "E2", "labels": ["ejection"] }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_PITCH",
+        "id": "ID12",
+        "properties": { },
+        "start": { "id": "2015003219", "labels": ["atBat"] },
+        "end": { "id": "P1", "labels": ["pitch"] }
+    }
+]

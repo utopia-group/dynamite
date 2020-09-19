@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl business?categories(__id: Rel, value: StrAttr)
+.input business?categories
+.decl business(address: StrAttr, attributes: Rel, business_id: StrAttr, categories: Rel, city: StrAttr, hours: Rel, is_open: IntAttr, latitude: StrAttr, longitude: StrAttr, name: StrAttr, neighborhood: StrAttr, postal_code: StrAttr, review_count: IntAttr, stars: StrAttr, state: StrAttr, type: StrAttr)
+.input business
+.decl Category(bid: StrAttr, category: StrAttr)
+.output Category(delimiter="\t")
+
+Category(v_Category?bid, v_Category?category) :-
+    business(_, _, v_Category?bid, v_0, _, _, _, _, _, _, _, _, _, _, _, _),
+    business?categories(v_0, v_Category?category).
+

@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl PacerCases(p_id: StrAttr, case_name: StrAttr, court_code: StrAttr, court_name: StrAttr, date_closed: StrAttr, case_number: StrAttr, pacer_id: StrAttr, date_filed: StrAttr)
+.input PacerCases
+.decl pacerCases(case_name: StrAttr, case_number: StrAttr, court_code: StrAttr, court_name: StrAttr, date_closed: StrAttr, date_filed: StrAttr, pacer_id: StrAttr)
+.output pacerCases(delimiter="\t")
+
+pacerCases(v_pacerCases?case_name, v_pacerCases?case_number, v_pacerCases?court_code, v_pacerCases?court_name, v_pacerCases?date_closed, v_pacerCases?date_filed, v_pacerCases?pacer_id) :-
+    PacerCases(_, v_pacerCases?case_name, v_pacerCases?court_code, v_pacerCases?court_name, v_pacerCases?date_closed, v_pacerCases?case_number, v_pacerCases?pacer_id, v_pacerCases?date_filed).
+

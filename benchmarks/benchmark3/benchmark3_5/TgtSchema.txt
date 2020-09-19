@@ -1,0 +1,1 @@
+EditorProceeding(name: String, pid: String)

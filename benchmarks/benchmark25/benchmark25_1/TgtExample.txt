@@ -1,0 +1,3 @@
+atBatPlayers(id: Int, batter_first: String, batter_last: String, pitcher_first: String, pitcher_last: String)
+2015000001,Matt,Carpenter,Jon,Lester
+2015000002,Jason,Heyward,Jon,Lester

@@ -1,0 +1,3 @@
+club(name: String, id: String)
+"Neft. Baku U19", "/neftchi-baku-u19/startseite/verein/19701"
+"G.Osmanpasa Yth", "/gaziosmanpasa-jugend/startseite/verein/45379"

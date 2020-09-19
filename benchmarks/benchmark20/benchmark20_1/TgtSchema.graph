@@ -1,0 +1,41 @@
+[
+  {
+    "type": "node",
+    "labels": [
+      "Religion"
+    ],
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Country"
+    ],
+    "properties": {
+      "name": "String",
+      "population_growth": "Float",
+      "infant_mortality": "Float",
+      "gdp_total": "Int",
+      "gdp_agri": "Float",
+      "gdp_ind": "Float",
+      "gdp_serv": "Float",
+      "inflation": "Float",
+      "unemployment": "Float",
+      "area": "Float",
+      "capital": "String",
+      "memberships": "String"
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "BORDERS",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "POPULATION_BELIEVES",
+    "properties": {
+      "percentage": "String"
+    }
+  }
+]

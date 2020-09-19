@@ -1,0 +1,1 @@
+Thesis(id: String, year: Int, title: String, school: String, pages: String)

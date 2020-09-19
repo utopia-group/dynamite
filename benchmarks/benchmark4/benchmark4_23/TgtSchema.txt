@@ -1,0 +1,1 @@
+River(rid: String, name: String, area: Float, length: Int, to: String)

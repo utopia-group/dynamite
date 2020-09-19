@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl lake?to(__id: Rel, water: StrAttr, watertype: StrAttr)
+.input lake?to
+.decl lake(area: StrAttr, country: StrAttr, depth: IntAttr, elevation: StrAttr, id: StrAttr, latitude: StrAttr, located: Rel, longitude: StrAttr, name: StrAttr, to: Rel)
+.input lake
+.decl Lake(lid: StrAttr, name: StrAttr, to: StrAttr, area: StrAttr, elevation: StrAttr, depth: IntAttr, latitude: StrAttr, longitude: StrAttr, countries: StrAttr)
+.output Lake(delimiter="\t")
+
+Lake(v_Lake?lid, v_Lake?name, v_Lake?to, v_Lake?area, v_Lake?elevation, v_Lake?depth, v_Lake?latitude, v_Lake?longitude, v_Lake?countries) :-
+    lake(v_Lake?area, v_Lake?countries, v_Lake?depth, v_Lake?elevation, v_Lake?lid, v_Lake?latitude, _, v_Lake?longitude, v_Lake?name, v_0),
+    lake?to(v_0, v_Lake?to, _).
+

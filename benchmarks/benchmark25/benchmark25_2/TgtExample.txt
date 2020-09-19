@@ -1,0 +1,2 @@
+ejections(e_id: String, ab_id: Int, des: String, event_num: Int, g_id: Int, player_first: String, player_last: String, date: String, BS: String, CORRECT: String, team: String, is_home_team: String)
+E1,2015003219,San Diego Padres center fielder Will Venable ejected by HP umpire Tripp Gibson III.,732,201500044,Will,Venable,4/9/15,,C1,sdn,TRUE

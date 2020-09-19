@@ -1,0 +1,17 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Trips(id: StrAttr, duration: IntAttr, start_date: StrAttr, start_station_name: StrAttr, start_station_id: StrAttr, end_date: StrAttr, end_station_name: StrAttr, end_station_id: StrAttr, bike_id: IntAttr, subscription_type: StrAttr, zip_code: StrAttr)
+.input Trips
+.decl trips?end_station(__id: Rel, id: StrAttr, name: StrAttr)
+.decl trips?start_station(__id: Rel, id: StrAttr, name: StrAttr)
+.decl trips(bike_id: IntAttr, duration: IntAttr, end_date: StrAttr, end_station: Rel, id: StrAttr, start_date: StrAttr, start_station: Rel, subscription_type: StrAttr, zip_code: StrAttr)
+.output trips?end_station(delimiter="\t")
+.output trips?start_station(delimiter="\t")
+.output trips(delimiter="\t")
+
+trips?end_station(_v_0, v_trips?end_station?id, v_trips?end_station?name), trips?start_station(_v_1, v_trips?start_station?id, v_trips?start_station?name), trips(v_trips?bike_id, v_trips?duration, v_trips?end_date, _v_0, v_trips?id, v_trips?start_date, _v_1, v_trips?subscription_type, v_trips?zip_code) :-
+    Trips(v_trips?id, v_trips?duration, v_trips?start_date, v_trips?start_station?name, v_trips?start_station?id, v_trips?end_date, v_trips?end_station?name, v_trips?end_station?id, v_trips?bike_id, v_trips?subscription_type, v_trips?zip_code),
+    _v_0 = cat("#", cat(v_trips?bike_id, cat("#", cat(v_trips?duration, cat("#", cat(v_trips?end_date, cat("#", cat(v_trips?id, cat("#", cat(v_trips?start_date, cat("#", cat(v_trips?subscription_type, cat("#", cat(v_trips?zip_code, "#")))))))))))))),
+    _v_1 = cat("#", cat(v_trips?bike_id, cat("#", cat(v_trips?duration, cat("#", cat(v_trips?end_date, cat("#", cat(v_trips?id, cat("#", cat(v_trips?start_date, cat("#", cat(v_trips?subscription_type, cat("#", cat(v_trips?zip_code, "#")))))))))))))).
+

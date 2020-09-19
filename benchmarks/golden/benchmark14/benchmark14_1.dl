@@ -1,0 +1,15 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Retina(_id: StrAttr, certainty: StrAttr, coarse: StrAttr, designation: StrAttr, id: StrAttr, macneil_type: StrAttr, name: StrAttr, volgyi_type: StrAttr, x: StrAttr, y: StrAttr, z: StrAttr)
+.input Retina
+.decl RELATED(_start: StrAttr, _end: StrAttr, area: StrAttr, x: StrAttr, y: StrAttr, z: StrAttr)
+.input RELATED
+.decl related(area: StrAttr, designation_left: StrAttr, designation_right: StrAttr, x: StrAttr, y: StrAttr)
+.output related(delimiter="\t")
+
+related(v_related?area, v_related?designation_left, v_related?designation_right, v_related?x, v_related?y) :-
+    RELATED(v_RELATED?_start_1, v_RELATED?_end_1, v_related?area, v_related?x, v_related?y, _),
+    Retina(v_RELATED?_start_1, _, _, v_related?designation_left, _, _, _, _, _, _, _),
+    Retina(v_RELATED?_end_1, _, _, v_related?designation_right, _, _, _, _, _, _, _).
+

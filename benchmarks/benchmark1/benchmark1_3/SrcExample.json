@@ -1,0 +1,22 @@
+{
+  "checkin": [
+    {
+      "time": [
+        "Mon-0:1",
+        "Fri-21:1",
+        "Thu-22:1",
+        "Mon-23:1"
+      ],
+      "business_id": "QqFxaqBOaEMhfU-_L9K9-w",
+      "type": "checkin"
+    },
+    {
+      "time": [
+        "Fri-17:1",
+        "Wed-22:1"
+      ],
+      "business_id": "mH0ORatxOdgPPs4ZOmikHQ",
+      "type": "checkin"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+<mondial>
+   <country capital="capital1">
+      <province capital="capital2" id="prov-Albania-2">
+         <city country="AL" id="cty-Albania-Tirane">
+            <name>Tirana</name>
+            <latitude>41.33</latitude>
+            <longitude>19.82</longitude>
+            <elevation>110</elevation>
+            <population measured="estimate" year="1990">244153</population>
+         </city>
+         <city country="AL" id="stadt-Shkoder-AL-AL">
+            <name>Shkodr</name>
+            <latitude>42.07</latitude>
+            <longitude>19.5</longitude>
+            <elevation>13</elevation>
+            <population measured="est" year="2011">77075</population>
+            <population year="1987">62000</population>
+            <located_at lake="lake-Skutarisee" watertype="lake"/>
+         </city>
+         <population measured="measured1" year="1">2</population>
+         <country>country1</country>
+      </province>
+      <name>Albania</name>
+      <population measured="est." year="1970">2138966</population>
+      <population measured="census" year="2011">2800138</population>
+      <population_growth>0.3</population_growth>
+      <infant_mortality>13.19</infant_mortality>
+      <gdp_total>12800</gdp_total>
+      <gdp_agri>19.5</gdp_agri>
+      <gdp_ind>12</gdp_ind>
+      <gdp_serv>68.5</gdp_serv>
+      <inflation>1.7</inflation>
+      <unemployment>16.9</unemployment>
+      <indep_date from="Ottoman Empire">1912-11-28</indep_date>
+      <government>parliamentary democracy</government>
+      <encompassed continent="europe" percentage="100"/>
+      <ethnicgroup percentage="95">Albanian</ethnicgroup>
+      <ethnicgroup percentage="3">Greek</ethnicgroup>
+      <religion percentage="10">Roman Catholic</religion>
+      <religion percentage="20">Christian Orthodox</religion>
+      <language percentage="98.8">Albanian</language>
+      <language percentage="0.5">Greek</language>
+      <border country="MNE" length="172"/>
+      <border country="KOS" length="112"/>
+   </country>
+   <country capital="capital3">
+      <province capital="capital4" id="prov-Iran-2">
+         <city country="IR" id="cty-Iran-14" province="prov-Iran-2">
+            <name>Orumiyeh</name>
+            <latitude>37.56</latitude>
+            <longitude>45.07</longitude>
+            <elevation>1332</elevation>
+            <population measured="est." year="2010">667499</population>
+         </city>
+         <country>u</country>
+         <population measured="i" year="4">5</population>
+      </province>
+      <province capital="capital5" id="prov-Iran-3">
+         <city country="IR" id="cty-Iran-5" province="prov-Iran-3">
+            <name>Tabriz</name>
+            <latitude>38.07</latitude>
+            <longitude>46.3</longitude>
+            <elevation>1351.4</elevation>
+            <population measured="census" year="2001">1494998</population>
+         </city>
+         <population measured="measured2" year="6">7</population>
+         <country>country2</country>
+      </province>
+      <name>Iran</name>
+      <population measured="est." year="2011">75149669</population>
+      <population measured="count" year="2013">76055488</population>
+      <population_growth>1.22</population_growth>
+      <infant_mortality>39</infant_mortality>
+      <gdp_total>411900</gdp_total>
+      <gdp_agri>10.6</gdp_agri>
+      <gdp_ind>44.9</gdp_ind>
+      <gdp_serv>44.5</gdp_serv>
+      <inflation>42.3</inflation>
+      <unemployment>16</unemployment>
+      <indep_date from="Pahlavi">1976-3-18</indep_date>
+      <government>theocratic republic</government>
+      <ethnicgroup percentage="51">Persian</ethnicgroup>
+      <religion percentage="99">Muslim</religion>
+      <language percentage="1">Turkish</language>
+      <border country="TR" length="499"/>
+      <border country="AFG" length="936"/>
+   </country>
+</mondial>

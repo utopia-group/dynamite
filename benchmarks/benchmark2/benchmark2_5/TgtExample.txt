@@ -1,0 +1,4 @@
+Genre(genre: String, mid: String)
+"Documentary", "Claude Jutra - An Unfinished Story aka: Claude Jutra portrait sur film (2002)"
+"Documentary", "!Next? (1994)"
+"Reality", "!Next? (1994)"

@@ -1,0 +1,5 @@
+rating(movieid: String, moviename: String, rating: String, time: String, userid: String)
+"3200","Last Detail, The (1973)","5.0","955944250","217"
+"5618","Spirited Away (Sen to Chihiro no kamikakushi) (2001)","5.0","1054037190","20"
+"5618","Spirited Away (Sen to Chihiro no kamikakushi) (2001)","4.0","1443200445","63"
+

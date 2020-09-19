@@ -1,0 +1,8 @@
+{
+    "tripEnds": [{
+        "id": "String",
+        "start_id": "String",
+        "end_lat": "Float",
+        "end_long": "Float"
+    }]
+}

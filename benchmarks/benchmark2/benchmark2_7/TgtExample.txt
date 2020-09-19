@@ -1,0 +1,5 @@
+Movie(id: String, title: String, release_year: Int, rating: Float, running_time: Int, country: String, type: String)
+"Claude Jutra - An Unfinished Story aka: Claude Jutra portrait sur film (2002)", "Claude Jutra - An Unfinished Story aka: Claude Jutra portrait sur film", 2002, 7.7, 4920, "Canada", "movie"
+"Claude Jutra - An Unfinished Story aka: Claude Jutra portrait sur film (2002)", "Claude Jutra - An Unfinished Story aka: Claude Jutra portrait sur film", 2002, 7.7, 4920, "UK", "movie"
+"!Next? (1994)", "!Next?", 1994, 4.1, 920, "Italy", "series"
+"!Next? (1994)", "!Next?", 1995, 4.1, 920, "Italy", "series"

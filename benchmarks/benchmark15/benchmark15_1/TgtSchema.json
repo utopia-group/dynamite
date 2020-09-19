@@ -1,0 +1,17 @@
+{
+  "movies": [
+    {
+      "movieid": "String",
+      "genres": "String",
+      "title": "String",
+      "ratings": [
+        {
+          "id": "String",
+          "rating": "String",
+          "time": "String",
+          "userid": "String"
+        }
+      ]
+    }
+  ]
+}

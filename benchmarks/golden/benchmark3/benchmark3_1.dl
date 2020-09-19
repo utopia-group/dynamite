@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl book?author(__id: Rel, value: StrAttr)
+.input book?author
+.decl book(author: Rel, ee: Rel, isbn: Rel, key: StrAttr, mdate: StrAttr, pages: Rel, publisher: Rel, school: Rel, title: Rel, year: Rel)
+.input book
+.decl AuthorBook(name: StrAttr, bid: StrAttr)
+.output AuthorBook(delimiter="\t")
+
+AuthorBook(v_AuthorBook?name, v_AuthorBook?bid) :-
+    book(v_0, _, _, v_AuthorBook?bid, _, _, _, _, _, _),
+    book?author(v_0, v_AuthorBook?name).
+

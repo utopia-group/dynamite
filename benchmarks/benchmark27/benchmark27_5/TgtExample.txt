@@ -1,0 +1,3 @@
+pacerCases(p_id: String, case_name: String, court_code: String, court_name: String, date_closed: String, case_number: String, pacer_id: String, date_filed: String)
+P1,"Davis v. Favelle Favco Cranes, et al",txsd,Texas Southern District Court,08/13/2001,1:2000-cv-00003,3,2000-01-03
+P2,Monsanto v. Sierks et al,ned,Nebraska District Court,07/10/2002,4:2002-cv-00105,4,2002-03-04

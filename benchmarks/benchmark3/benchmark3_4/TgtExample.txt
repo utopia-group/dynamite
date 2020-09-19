@@ -1,0 +1,3 @@
+Book(id: String, title: String, year: Int, pages: String, publisher: String, isbn: String)
+"books/daglib/0011409", "IRC hacks - 100 industrial-strength tips and tools.", 2004, "I-XIX; 1-409", "O'Reilly", "978-0-596-00687-7"
+"books/daglib/0068988", "Implementierung funktionaler Programmiersprachen - Codegenerierung; Speicherverwaltung und Testsysteme fr Sprachen mit verzgerter Auswertung.", 1993, "I-XV; 1-252", "Deutscher Universit;tsverlag", "978-3-8244-2037-7"

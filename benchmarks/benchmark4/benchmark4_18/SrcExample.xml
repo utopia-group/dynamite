@@ -1,0 +1,46 @@
+<mondial>
+      <country area="28750" capital="cty-Albania-Tirane" car_code="AL" memberships="org-BSEC org-CEI">
+            <name>Albania</name>
+            <population measured="est." year="1970">2138966</population>
+            <population measured="census" year="2011">2800138</population>
+            <population_growth>0.3</population_growth>
+            <infant_mortality>13.19</infant_mortality>
+            <gdp_total>12800</gdp_total>
+            <gdp_agri>19.5</gdp_agri>
+            <gdp_ind>12</gdp_ind>
+            <gdp_serv>68.5</gdp_serv>
+            <inflation>1.7</inflation>
+            <unemployment>16.9</unemployment>
+            <indep_date from="Ottoman Empire">1912-11-28</indep_date>
+            <government>parliamentary democracy</government>
+            <encompassed continent="europe" percentage="100"/>
+            <ethnicgroup percentage="95">Albanian</ethnicgroup>
+            <ethnicgroup percentage="3">Greek</ethnicgroup>
+            <religion percentage="10">Roman Catholic</religion>
+            <religion percentage="20">Christian Orthodox</religion>
+            <language percentage="98.8">Albanian</language>
+            <language percentage="0.5">Greek</language>
+            <border country="MNE" length="172"/>
+            <border country="KOS" length="112"/>
+      </country>
+      <country area="1648000" capital="cty-Iran-Tehran" car_code="IR" memberships="org-UNAMID org-CP">
+            <name>Iran</name>
+            <population measured="est" year="2011">75149669</population>
+            <population measured="count" year="2013">76055488</population>
+            <population_growth>1.22</population_growth>
+            <infant_mortality>39</infant_mortality>
+            <gdp_total>411900</gdp_total>
+            <gdp_agri>10.6</gdp_agri>
+            <gdp_ind>44.9</gdp_ind>
+            <gdp_serv>44.5</gdp_serv>
+            <inflation>42.3</inflation>
+            <unemployment>16</unemployment>
+            <indep_date from="Pahlavi">1976-3-18</indep_date>
+            <government>theocratic republic</government>
+            <ethnicgroup percentage="51">Persian</ethnicgroup>
+            <religion percentage="99">Muslim</religion>
+            <language percentage="1">Turkish</language>
+            <border country="TR" length="499"/>
+            <border country="AFG" length="936"/>
+      </country>
+</mondial>

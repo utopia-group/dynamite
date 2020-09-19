@@ -1,0 +1,3 @@
+Review(rid: String, uid: String, bid: String, text: String, stars: Int, date: String)
+"Uf1Ki1yyH_JDKhLvn2e4FQ", "bgl3j8yJcRO-00NkUYsXGQ", "2LfIuF3_sX6uwe-IR-P0jQ", "What a great place! Modern on Melrose has amazing furniture at great prices. I highly recommend and will be back when I am looking for new pieces.", 5, "2013-04-28"
+"GXQnlRo41C4WykC_IP2Lbw", "rWL8bGLRPtYAhX97JnRVXg", "KYasaF1nov1bn7phfSgWeg", "Tui was awesome she made me an amazing jackfruit smoothie. I couldn't find jackfruit anywhere except here", 4, "2015-08-15"

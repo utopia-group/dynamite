@@ -1,0 +1,78 @@
+[
+  {
+    "type": "node",
+    "id": "97861",
+    "labels": [
+      "Country"
+    ],
+    "properties": {
+      "name": "Brazil"
+    }
+  },
+  {
+    "type": "node",
+    "id": "97862",
+    "labels": [
+      "Country"
+    ],
+    "properties": {
+      "name": "France"
+    }
+  },
+  {
+    "type": "node",
+    "id": "98076",
+    "labels": [
+      "Club"
+    ],
+    "properties": {
+      "name": "GrAmio",
+      "id": "/gremio-foot-ball-porto-alegrense/startseite/verein/210"
+    }
+  },
+  {
+    "type": "node",
+    "id": "98083",
+    "labels": [
+      "Club"
+    ],
+    "properties": {
+      "name": "AtlActico-MG",
+      "id": "/atletico-mineiro/startseite/verein/330"
+    }
+  },
+  {
+    "id": "97827",
+    "type": "relationship",
+    "label": "PART_OF",
+    "start": {
+      "id": "98076",
+      "labels": [
+        "Club"
+      ]
+    },
+    "end": {
+      "id": "97861",
+      "labels": [
+        "Country"
+      ]
+    }
+  },
+  {
+    "id": "97834",
+    "type": "relationship",
+    "label": "PART_OF",
+    "start": {
+      "id": "98083",
+      "labels": [
+        "Club"
+      ]
+    },
+    "end": {
+      "id": "97861",
+      "labels": [
+        "Country"
+      ]
+    }
+  }
+]

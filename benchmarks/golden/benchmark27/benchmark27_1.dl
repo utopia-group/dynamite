@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Cases(case_row_id: StrAttr, case_number: StrAttr, pacer_id: StrAttr, case_name: StrAttr, court_name: StrAttr, assigned_to: StrAttr, referred_to: StrAttr, case_cause: StrAttr, jurisdictional_basis: StrAttr, demand: StrAttr, jury_demand: StrAttr, lead_case: StrAttr, related_case: StrAttr, settlement: StrAttr, date_filed: StrAttr, date_closed: StrAttr, date_last_filed: StrAttr)
+.input Cases
+.decl cases(case_row_id: StrAttr, case_number: StrAttr, case_name: StrAttr, court_name: StrAttr)
+.output cases(delimiter="\t")
+.decl caseDetails(case_row_id: StrAttr, case_number: StrAttr, assigned_to: StrAttr, referred_to: StrAttr, case_cause: StrAttr, jurisdictional_basis: StrAttr, demand: StrAttr, jury_demand: StrAttr, lead_case: StrAttr, related_case: StrAttr, settlement: StrAttr, date_filed: StrAttr, date_closed: StrAttr, date_last_filed: StrAttr)
+.output caseDetails(delimiter="\t")
+
+cases(v_cases?case_row_id, v_cases?case_number, v_cases?case_name, v_cases?court_name) :-
+    Cases(v_cases?case_row_id, v_cases?case_number, _, v_cases?case_name, v_cases?court_name, _, _, _, _, _, _, _, _, _, _, _, _).
+caseDetails(v_caseDetails?case_row_id, v_caseDetails?case_number, v_caseDetails?assigned_to, v_caseDetails?referred_to, v_caseDetails?case_cause, v_caseDetails?jurisdictional_basis, v_caseDetails?demand, v_caseDetails?jury_demand, v_caseDetails?lead_case, v_caseDetails?related_case, v_caseDetails?settlement, v_caseDetails?date_filed, v_caseDetails?date_closed, v_caseDetails?date_last_filed) :-
+    Cases(v_caseDetails?case_row_id, v_caseDetails?case_number, _, _, _, v_caseDetails?assigned_to, v_caseDetails?referred_to, v_caseDetails?case_cause, v_caseDetails?jurisdictional_basis, v_caseDetails?demand, v_caseDetails?jury_demand, v_caseDetails?lead_case, v_caseDetails?related_case, v_caseDetails?settlement, v_caseDetails?date_filed, v_caseDetails?date_closed, v_caseDetails?date_last_filed).

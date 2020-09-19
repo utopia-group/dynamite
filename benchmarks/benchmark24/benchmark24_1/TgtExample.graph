@@ -1,0 +1,206 @@
+[
+    {
+        "type": "node",
+        "labels": ["station"],
+        "id": "66",
+        "properties": {
+            "name": "South Van Ness at Market",
+            "lat": 37.774814,
+            "long": -122.418954,
+            "dock_count": 19,
+            "city": "San Francisco",
+            "installation_date": "8/23/2013"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["station"],
+        "id": "67",
+        "properties": {
+            "name": "Market at 10th",
+            "lat": 37.776619000000004,
+            "long": -122.41738500000001,
+            "dock_count": 27,
+            "city": "San Francisco",
+            "installation_date": "8/23/2013"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["station"],
+        "id": "68",
+        "properties": {
+            "name": "Yerba",
+            "lat": 37.784878000000006,
+            "long": -122.40101399999999,
+            "dock_count": 19,
+            "city": "San Francisco",
+            "installation_date": "8/23/2013"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["status"],
+        "id": "S1",
+        "properties": {
+            "bikes_available": 10,
+            "docks_available": 9,
+            "time": "2013/08/29 12:06:01"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["trip"],
+        "id": "4576",
+        "properties": {
+            "duration": 63,
+            "bike_id": 520,
+            "subscription_type": "Subscriber",
+            "zip_code": "94127"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["trip"],
+        "id": "4299",
+        "properties": {
+            "duration": 83,
+            "bike_id": 319,
+            "subscription_type": "Subscriber",
+            "zip_code": "94103"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["trip"],
+        "id": "T1",
+        "properties": {
+            "duration": 100,
+            "bike_id": 319,
+            "subscription_type": "Subscriber",
+            "zip_code": "94103"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["weather"],
+        "id": "W1",
+        "properties": {
+            "date": "8/29/2013",
+            "max_temperature_f": 74.0,
+            "mean_temperature_f": 68.0,
+            "min_temperature_f": 61.0,
+            "max_dew_point_f": 61.0,
+            "mean_dew_point_f": 58.0,
+            "min_dew_point_f": 56.0,
+            "max_humidity": 93.0,
+            "mean_humidity": 75.0,
+            "min_humidity": 57.0,
+            "max_sea_level_pressure_inches": 30.07,
+            "mean_sea_level_pressure_inches": 30.02,
+            "min_sea_level_pressure_inches": 29.97,
+            "max_visibility_miles": 10.0,
+            "mean_visibility_miles": 10.0,
+            "min_visibility_miles": 10.0,
+            "max_wind_Speed_mph": 23.0,
+            "mean_wind_speed_mph": 11.0,
+            "max_gust_speed_mph": 28.0,
+            "precipitation_inches": "0",
+            "cloud_cover": 4.0,
+            "events": null,
+            "wind_dir_degrees": 286.0,
+            "zip_code": "94107"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["weather"],
+        "id": "W2",
+        "properties": {
+            "date": "8/30/2013",
+            "max_temperature_f": 78.0,
+            "mean_temperature_f": 69.0,
+            "min_temperature_f": 60.0,
+            "max_dew_point_f": 61.0,
+            "mean_dew_point_f": 58.0,
+            "min_dew_point_f": 56.0,
+            "max_humidity": 90.0,
+            "mean_humidity": 70.0,
+            "min_humidity": 50.0,
+            "max_sea_level_pressure_inches": 30.05,
+            "mean_sea_level_pressure_inches": 30.0,
+            "min_sea_level_pressure_inches": 29.93,
+            "max_visibility_miles": 10.0,
+            "mean_visibility_miles": 11.0,
+            "min_visibility_miles": 7.0,
+            "max_wind_Speed_mph": 29.0,
+            "mean_wind_speed_mph": 13.0,
+            "max_gust_speed_mph": 35.0,
+            "precipitation_inches": "0",
+            "cloud_cover": 2.0,
+            "events": null,
+            "wind_dir_degrees": 291.0,
+            "zip_code": "94107"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "STARTS_AT",
+        "id": "ID1",
+        "properties": {
+            "start_date": "8/29/2013 14:13"
+        },
+        "start": { "id": "4576", "labels": ["trip"] },
+        "end": { "id": "66", "labels": ["station"] }
+    },
+    {
+        "type": "relationship",
+        "label": "STARTS_AT",
+        "id": "ID2",
+        "properties": {
+            "start_date": "8/29/2013 12:02"
+        },
+        "start": { "id": "4299", "labels": ["trip"] },
+        "end": { "id": "68", "labels": ["station"] }
+    },
+    {
+        "type": "relationship",
+        "label": "STARTS_AT",
+        "id": "ID3",
+        "properties": {
+            "start_date": "D1"
+        },
+        "start": { "id": "T1", "labels": ["trip"] },
+        "end": { "id": "66", "labels": ["station"] }
+    },
+    {
+        "type": "relationship",
+        "label": "ENDS_AT",
+        "id": "ID4",
+        "properties": {
+            "end_date": "8/29/2013 14:14"
+        },
+        "start": { "id": "4576", "labels": ["trip"] },
+        "end": { "id": "66", "labels": ["station"] }
+    },
+    {
+        "type": "relationship",
+        "label": "ENDS_AT",
+        "id": "ID5",
+        "properties": {
+            "end_date": "8/29/2013 12:04"
+        },
+        "start": { "id": "4299", "labels": ["trip"] },
+        "end": { "id": "67", "labels": ["station"] }
+    },
+    {
+        "type": "relationship",
+        "label": "ENDS_AT",
+        "id": "ID6",
+        "properties": {
+            "end_date": "D2"
+        },
+        "start": { "id": "T1", "labels": ["trip"] },
+        "end": { "id": "67", "labels": ["station"] }
+    }
+]

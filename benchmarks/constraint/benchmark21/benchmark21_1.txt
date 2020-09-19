@@ -1,0 +1,3 @@
+AtBats?batter_id -> PlayerNames?id
+AtBats?pitcher_id -> PlayerNames?id
+PlayerNames?id -> Ejections?player_id

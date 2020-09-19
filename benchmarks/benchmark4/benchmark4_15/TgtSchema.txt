@@ -1,0 +1,1 @@
+Lake(lid: String, name: String, to: String, area: Float, elevation: Float, depth: Int, latitude: Float, longitude: Float, countries: String)

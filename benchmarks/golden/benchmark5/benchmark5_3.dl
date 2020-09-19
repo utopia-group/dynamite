@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Games(attendance: IntAttr, away_final_score: IntAttr, away_team: StrAttr, date: StrAttr, elapsed_time: IntAttr, g_id: IntAttr, home_final_score: IntAttr, home_team: StrAttr, start_time: StrAttr, umpire_1B: StrAttr, umpire_2B: StrAttr, umpire_3B: StrAttr, umpire_HP: StrAttr, venue_name: StrAttr, weather: StrAttr, wind: StrAttr, delay: IntAttr)
+.input Games
+.decl games(attendance: IntAttr, away_final_score: IntAttr, away_team: StrAttr, date: StrAttr, delay: IntAttr, elapsed_time: IntAttr, g_id: IntAttr, home_final_score: IntAttr, home_team: StrAttr, start_time: StrAttr, umpire_1B: StrAttr, umpire_2B: StrAttr, umpire_3B: StrAttr, umpire_HP: StrAttr, venue_name: StrAttr, weather: StrAttr, wind: StrAttr)
+.output games(delimiter="\t")
+
+games(v_games?attendance, v_games?away_final_score, v_games?away_team, v_games?date, v_games?delay, v_games?elapsed_time, v_games?g_id, v_games?home_final_score, v_games?home_team, v_games?start_time, v_games?umpire_1B, v_games?umpire_2B, v_games?umpire_3B, v_games?umpire_HP, v_games?venue_name, v_games?weather, v_games?wind) :-
+    Games(v_games?attendance, v_games?away_final_score, v_games?away_team, v_games?date, v_games?elapsed_time, v_games?g_id, v_games?delay, v_games?home_team, v_games?start_time, v_games?umpire_1B, v_games?umpire_2B, v_games?umpire_3B, v_games?umpire_HP, v_games?venue_name, v_games?weather, v_games?wind, v_games?home_final_score).
+

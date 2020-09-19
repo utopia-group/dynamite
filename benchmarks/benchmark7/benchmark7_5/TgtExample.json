@@ -1,0 +1,42 @@
+{
+    "cases": [
+        {
+            "case_row_id": 427,
+            "case_number": "0:00-cv-00019",
+            "pacer_id": 1338,
+            "case_name": "Banner Engineering v. Harris Instrument",
+            "court_name": "UNITED STATES DISTRICT COURT DISTRICT OF MINNESOTA",
+            "assigned_to": "A1",
+            "referred_to": "R1",
+            "case_cause": "C1",
+            "jurisdictional_basis": "J1",
+            "demand": "DD1",
+            "jury_demand": "J2",
+            "lead_case": "L1",
+            "related_case": "R2",
+            "settlement": "S1",
+            "date_filed": "2000-01-04",
+            "date_closed": "2000-03-09",
+            "date_last_filed": "2000-03-02"
+        },
+        {
+            "case_row_id": 54973,
+            "case_number": "01-Jan-1970",
+            "pacer_id": 223949,
+            "case_name": "ASTRAZENECA AB et al v. SANDOZ, INC.",
+            "court_name": "UNITED STATES DISTRICT COURT DISTRICT OF NEW JERSEY",
+            "assigned_to": "Judge Joel A. Pisano",
+            "referred_to": "Magistrate Judge Tonianne J. Bongiovanni",
+            "case_cause": "35:271 Patent Infringement",
+            "jurisdictional_basis": "Federal Question",
+            "demand": "DD2",
+            "jury_demand": "J3",
+            "lead_case": "L2",
+            "related_case": "R3",
+            "settlement": "S2",
+            "date_filed": "2009-01-14",
+            "date_closed": "2011-06-02",
+            "date_last_filed": "DD3"
+        }
+    ]
+}

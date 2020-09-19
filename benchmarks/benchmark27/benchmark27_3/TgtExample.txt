@@ -1,0 +1,14 @@
+attorneys(attorney_row_id: String, party_row_id: String, name: String, contactinfo: String, position: String)
+1,40,"Joel Wyman Collins , Jr","Collins and Lacy; PO Box 12487; Columbia, SC 29211; 803-256-2660; Fax: 803-771-4484; Email: jcollins@collinsandlacy.com",LEAD ATTORNEY; ATTORNEY TO BE NOTICED
+2,41,"Joel Wyman Collins , Jr",(See above for address),LEAD ATTORNEY; ATTORNEY TO BE NOTICED
+26,118,David Berten,"Bartlit Beck Herman Palenchar & Scott; 54 W Hubbard Street; Suite 300; Chicago, IL 60610; 312-494-4444",LEAD ATTORNEY; ATTORNEY TO BE NOTICED
+
+attorneyCases(case_row_id: String, attorney_row_id: String)
+14, 1
+14, 2
+38, 26
+
+parties(party_row_id: String, party_type: String)
+40, Plaintiff
+41, Plaintiff
+118, Plaintiff

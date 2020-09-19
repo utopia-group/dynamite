@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl user(average_stars: StrAttr, compliment_cool: IntAttr, compliment_cute: IntAttr, compliment_funny: IntAttr, compliment_hot: IntAttr, compliment_list: IntAttr, compliment_more: IntAttr, compliment_note: IntAttr, compliment_photos: IntAttr, compliment_plain: IntAttr, compliment_profile: IntAttr, compliment_writer: IntAttr, cool: IntAttr, elite: Rel, fans: IntAttr, friends: Rel, funny: IntAttr, name: StrAttr, review_count: IntAttr, type: StrAttr, useful: IntAttr, user_id: StrAttr, yelping_since: StrAttr)
+.input user
+.decl User(id: StrAttr, name: StrAttr, review_count: IntAttr, avg_stars: StrAttr)
+.output User(delimiter="\t")
+
+User(v_User?id, v_User?name, v_User?review_count, v_User?avg_stars) :-
+    user(v_User?avg_stars, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, v_User?name, v_User?review_count, _, _, v_User?id, _).
+

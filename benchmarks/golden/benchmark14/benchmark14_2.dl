@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Retina(_id: StrAttr, certainty: StrAttr, coarse: StrAttr, designation: StrAttr, id: StrAttr, macneil_type: StrAttr, name: StrAttr, volgyi_type: StrAttr, x: StrAttr, y: StrAttr, z: StrAttr)
+.input Retina
+.decl retina(certainty: StrAttr, coarse: StrAttr, designation: StrAttr, id: StrAttr, macneil_type: StrAttr, name: StrAttr, volgyi_type: StrAttr, x: StrAttr, y: StrAttr, z: StrAttr)
+.output retina(delimiter="\t")
+
+retina(v_retina?certainty, v_retina?coarse, v_retina?designation, v_retina?id, v_retina?macneil_type, v_retina?name, v_retina?volgyi_type, v_retina?x, v_retina?y, v_retina?z) :-
+    Retina(_, v_retina?certainty, v_retina?coarse, v_retina?designation, v_retina?id, v_retina?macneil_type, v_retina?name, v_retina?volgyi_type, v_retina?x, v_retina?y, v_retina?z).
+

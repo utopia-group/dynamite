@@ -1,0 +1,1 @@
+Desert(did: String, name: String, area: Float, latitude: Float, longitude: Float, countries: String)

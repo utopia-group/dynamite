@@ -1,0 +1,106 @@
+{
+  "movie": [
+    {
+      "id": "Claude Jutra - An Unfinished Story aka: Claude Jutra portrait sur film (2002)",
+      "title": "Claude Jutra - An Unfinished Story aka: Claude Jutra portrait sur film",
+      "kind": "movie",
+      "countries": [
+        {"value": "Canada"}
+      ],
+      "genres": [
+        {"value": "Documentary"}
+      ],
+      "keywords": [
+        {"value": "compilation"},
+        {"value": "long"}
+      ],
+      "languages": [
+        {
+          "name": "French"
+        },
+        {
+          "name": "English"
+        }
+      ],
+      "year": [
+        {"value": "2002"}
+      ],
+      "companies": [
+        {
+          "name": "Fox-Fire Films [ca]",
+          "type": "production1"
+        },
+        {
+          "name": "National Film Board of Canada (NFB) [ca]",
+          "type": "production2"
+        }
+      ],
+      "rating": {
+        "rank": 7.7,
+        "votes": 51,
+        "distribution": "0...002311"
+      },
+      "release_dates": [
+        {
+          "country": "Canada",
+          "date": "23 August 2002"
+        },
+        {
+          "country": "UK",
+          "date": "10 June 2003"
+        }
+      ],
+      "running_times": [
+        {
+          "secs": 4920
+        }
+      ]
+    },
+    {
+      "id": "!Next? (1994)",
+      "title": "!Next?",
+      "kind": "series",
+      "countries": [
+        {"value": "Italy"}
+      ],
+      "genres": [
+        {"value": "Documentary"},
+        {"value": "Reality"}
+      ],
+      "keywords": [
+        {"value": "short"}
+      ],
+      "languages": [
+        {
+          "name": "Italian"
+        }
+      ],
+      "year": [
+        {"value": "1994"},
+        {"value": "1995"}
+      ],
+      "companies": [
+        {
+          "name": "RAI Radiotelevisione Italiana [it]",
+          "type": "production"
+        }
+      ],
+      "rating": {
+        "rank": 4.1,
+        "votes": 9,
+        "distribution": "31.2.1..2."
+      },
+      "release_dates": [
+        {
+          "country": "Italy",
+          "date": "1 January 1994"
+        }
+      ],
+      "running_times": [
+        {
+          "secs": 920
+        }
+      ]
+    }
+  ]
+}

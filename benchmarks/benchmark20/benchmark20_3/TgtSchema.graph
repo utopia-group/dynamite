@@ -1,0 +1,68 @@
+[
+    {
+        "type": "node",
+        "labels": ["Lake"],
+        "properties": {
+            "country": "String",
+            "area": "Float",
+            "latitude": "Float",
+            "longitude": "Float",
+            "elevation": "Float",
+            "depth": "Float"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["LakeName"],
+        "properties": { }
+    },
+    {
+        "type": "relationship",
+        "label": "LAKE_NAME",
+        "properties": { }
+    },
+    {
+        "type": "node",
+        "labels": ["LakeLocation"],
+        "properties": {
+            "country": "String"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "LAKE_LOCATION",
+        "properties": { }
+    },
+    {
+        "type": "node",
+        "labels": ["Sea"],
+        "properties": {
+            "bordering": "String",
+            "country": "String",
+            "area": "Float",
+            "depth": "Float"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["SeaName"],
+        "properties": { }
+    },
+    {
+        "type": "relationship",
+        "label": "SEA_NAME",
+        "properties": { }
+    },
+    {
+        "type": "node",
+        "labels": ["SeaLocation"],
+        "properties": {
+            "country": "String"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "SEA_LOCATION",
+        "properties": { }
+    }
+]

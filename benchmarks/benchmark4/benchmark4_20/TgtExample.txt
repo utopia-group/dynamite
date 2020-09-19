@@ -1,0 +1,6 @@
+Province_Population(province_code: String, year: Int, population: Int)
+"prov-Albania-2",2011,2873459
+"prov-Albania-2",2002,2680576
+"prov-Iran-2",2010,3080576
+"prov-Iran-2",2006,4873459
+"prov-Iran-3",1996,3325540

@@ -1,0 +1,55 @@
+[
+  {
+    "type": "node",
+    "labels": [
+      "User"
+    ],
+    "properties": {
+      "name": "String",
+      "review_count": "Int",
+      "yelping_since": "String",
+      "useful": "Int",
+      "funny": "Int",
+      "cool": "Int",
+      "fans": "Int"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Business"
+    ],
+    "properties": {
+      "name": "String",
+      "address": "String",
+      "city": "String",
+      "state": "String",
+      "postal_code": "String",
+      "latitude": "Float",
+      "longitude": "Float",
+      "stars": "Float",
+      "review_count": "Int",
+      "is_open": "Int"
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "REVIEWED_BY",
+    "properties": {
+    	"review_id": "String",
+      	"text": "String",
+      	"date": "String",
+      	"stars": "Int"
+    }
+  },
+  {
+  	"type": "relationship",
+  	"label": "TIPPED_BY",
+  	"properties": {
+  		"text":"String",
+      	"date":"String", 
+      	"likes":"Int",
+      	"type":"String"
+  	}
+  }
+]

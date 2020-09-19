@@ -1,0 +1,13 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Cases(case_row_id: StrAttr, case_number: StrAttr, pacer_id: StrAttr, case_name: StrAttr, court_name: StrAttr, assigned_to: StrAttr, referred_to: StrAttr, case_cause: StrAttr, jurisdictional_basis: StrAttr, demand: StrAttr, jury_demand: StrAttr, lead_case: StrAttr, related_case: StrAttr, settlement: StrAttr, date_filed: StrAttr, date_closed: StrAttr, date_last_filed: StrAttr)
+.input Cases
+.decl Documents(d_id: StrAttr, case_row_id: StrAttr, case_number: StrAttr, doc_count: IntAttr, attachment: StrAttr, date_filed: StrAttr, long_description: StrAttr, doc_number: IntAttr, short_description: StrAttr, upload_date: StrAttr)
+.input Documents
+.decl documents(d_id: StrAttr, case_row_id: StrAttr, case_name: StrAttr, doc_count: IntAttr, attachment: StrAttr, date_filed: StrAttr, long_description: StrAttr, doc_number: IntAttr, short_description: StrAttr, upload_date: StrAttr)
+.output documents(delimiter="\t")
+
+documents(v_documents?d_id, v_documents?case_row_id, v_documents?case_name, v_documents?doc_count, v_documents?attachment, v_documents?date_filed, v_documents?long_description, v_documents?doc_number, v_documents?short_description, v_documents?upload_date) :-
+    Documents(v_documents?d_id, v_documents?case_row_id, _, v_documents?doc_count, v_documents?attachment, v_documents?date_filed, v_documents?long_description, v_documents?doc_number, v_documents?short_description, v_documents?upload_date),
+    Cases(v_documents?case_row_id, _, _, v_documents?case_name, _, _, _, _, _, _, _, _, _, _, _, _, _).

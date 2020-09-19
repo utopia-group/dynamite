@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl crew?roles(__id: Rel, character: StrAttr, note: StrAttr, role: StrAttr, title: StrAttr)
+.input crew?roles
+.decl crew(id: StrAttr, roles: Rel)
+.input crew
+.decl Writer(name: StrAttr, mid: StrAttr)
+.output Writer(delimiter="\t")
+
+Writer(v_Writer?name, v_Writer?mid) :-
+    crew(v_Writer?name, v_0),
+    crew?roles(v_0, _, _, "writer", v_Writer?mid).
+

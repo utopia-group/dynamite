@@ -1,0 +1,37 @@
+[
+  {
+    "type": "node",
+    "labels": ["Rating"],
+    "properties": {
+      "rating": "String", 
+      "movieid": "String", 
+      "time": "String",
+      "userid": "String"
+    }
+  }, {
+    "type": "node",
+    "labels": ["Tag"],
+    "properties": {
+      "movieid": "String", 
+      "time": "String", 
+      "tag": "String", 
+      "userid": "String"
+    }
+  }, {
+    "type": "node",
+    "labels": ["Movie"],
+    "properties": {
+      "genres": "String", 
+      "movieid": "String", 
+      "title": "String"
+    }
+  }, {
+    "type": "relationship",
+    "label": "RELabout",
+    "properties": {}
+  }, {
+    "type": "relationship",
+    "label": "alsosaid",
+    "properties": {}
+  }
+]

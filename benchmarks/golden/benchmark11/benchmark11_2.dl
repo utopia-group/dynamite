@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Tag(_id: StrAttr, movieid: StrAttr, tag: StrAttr, time: StrAttr, userid: StrAttr)
+.input Tag
+.decl tag(movieid: StrAttr, time: StrAttr, tag: StrAttr, userid: StrAttr)
+.output tag(delimiter="\t")
+
+tag(v_tag?movieid, v_tag?time, v_tag?tag, v_tag?userid) :-
+    Tag(_, v_tag?movieid, v_tag?tag, v_tag?time, v_tag?userid).
+

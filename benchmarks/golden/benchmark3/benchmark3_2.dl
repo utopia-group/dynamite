@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl article?author(__id: Rel, value: StrAttr)
+.input article?author
+.decl article(author: Rel, ee: Rel, journal: Rel, key: StrAttr, mdate: StrAttr, number: Rel, pages: Rel, title: Rel, url: Rel, volume: Rel, year: Rel)
+.input article
+.decl AuthorPaper(name: StrAttr, pid: StrAttr)
+.output AuthorPaper(delimiter="\t")
+
+AuthorPaper(v_AuthorPaper?name, v_AuthorPaper?pid) :-
+    article(v_0, _, _, v_AuthorPaper?pid, _, _, _, _, _, _, _),
+    article?author(v_0, v_AuthorPaper?name).
+

@@ -1,0 +1,4 @@
+AuthorBook(name: String, bid: String)
+"Paul Mutton", "books/daglib/0011409"
+"Michael Gloger", "books/daglib/0068988"
+"Andrew Woody", "books/daglib/0068988"

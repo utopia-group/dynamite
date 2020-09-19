@@ -1,0 +1,1 @@
+AuthorPaper(name: String, pid: String)

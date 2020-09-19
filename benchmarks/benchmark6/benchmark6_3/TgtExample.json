@@ -1,0 +1,26 @@
+{
+    "neighbourhoods": [
+        {
+            "group": "Charlottenburg-Wilm.",
+            "neighbourhood": [
+                {
+                    "id": "N1",
+                    "name": "Barstrabe"
+                },
+                {
+                    "id": "N2",
+                    "name": "Charlottenburg Nord"
+                }
+            ]
+        },
+        {
+            "group": "Friedrichshain-Kreuzberg",
+            "neighbourhood": [
+                {
+                    "id": "N3",
+                    "name": "Frankfurter Allee Nord"
+                }
+            ]
+        }
+    ]
+}

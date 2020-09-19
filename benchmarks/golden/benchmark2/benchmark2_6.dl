@@ -1,0 +1,13 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl movie?keywords(__id: Rel, value: StrAttr)
+.input movie?keywords
+.decl movie(companies: Rel, countries: Rel, genres: Rel, id: StrAttr, keywords: Rel, kind: StrAttr, languages: Rel, rating: Rel, release_dates: Rel, running_times: Rel, title: StrAttr, year: Rel)
+.input movie
+.decl Keyword(mid: StrAttr, tag: StrAttr)
+.output Keyword(delimiter="\t")
+
+Keyword(v_Keyword?mid, v_Keyword?tag) :-
+    movie(_, _, _, v_Keyword?mid, v_0, _, _, _, _, _, _, _),
+    movie?keywords(v_0, v_Keyword?tag).

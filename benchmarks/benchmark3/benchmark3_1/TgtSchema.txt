@@ -1,0 +1,1 @@
+AuthorBook(name: String, bid: String)

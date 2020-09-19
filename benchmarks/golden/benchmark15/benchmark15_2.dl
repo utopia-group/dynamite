@@ -1,0 +1,20 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Tag(_id: StrAttr, tag: StrAttr, time: StrAttr, userid: StrAttr)
+.input Tag
+.decl Movie(_id: StrAttr, genres: StrAttr, movieid: StrAttr, title: StrAttr)
+.input Movie
+.decl RELabout(_start: StrAttr, _end: StrAttr)
+.input RELabout
+.decl movies?tags(__id: Rel, id: StrAttr, tag: StrAttr, time: StrAttr, userid: StrAttr)
+.decl movies(genres: StrAttr, movieid: StrAttr, tags: Rel, title: StrAttr)
+.output movies?tags(delimiter="\t")
+.output movies(delimiter="\t")
+
+movies?tags(_v_0, v_movies?tags?id, v_movies?tags?tag, v_movies?tags?time, v_movies?tags?userid), movies(v_movies?genres, v_movies?movieid, _v_0, v_movies?title) :-
+    Movie(_, v_movies?genres, v_movies?movieid, v_movies?title),
+    Tag(v_movies?tags?id, v_movies?tags?tag, v_movies?tags?time, v_movies?tags?userid),
+    RELabout(v_movies?tags?id, v_movies?movieid),
+    _v_0 = cat("#", cat(v_movies?genres, cat("#", cat(v_movies?movieid, cat("#", cat(v_movies?title, "#")))))).
+

@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Movie(_id: StrAttr, genres: StrAttr, movieid: StrAttr, title: StrAttr)
+.input Movie
+.decl movie(genres: StrAttr, movieid: StrAttr, title: StrAttr)
+.output movie(delimiter="\t")
+
+movie(v_movie?genres, v_movie?movieid, v_movie?title) :-
+    Movie(_, v_movie?genres, v_movie?movieid, v_movie?title).
+

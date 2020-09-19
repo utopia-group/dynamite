@@ -1,0 +1,2 @@
+Games(attendance: Int, away_final_score: Int, away_team: String, date: String, elapsed_time: Int, g_id: Int, home_final_score: Int, home_team: String, start_time: String, umpire_1B: String, umpire_2B: String, umpire_3B: String, umpire_HP: String, venue_name: String, weather: String, wind: String, delay: Int)
+35055,3,sln,2015-04-05,184,201500001,0,chn,7:17 PM,Mark Wegner,Marty Foster,Mike Muchlinski,Mike Winters,Wrigley Field,"44 degrees, clear","7 mph, In from CF",0

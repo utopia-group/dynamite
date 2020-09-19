@@ -1,0 +1,16 @@
+Stations(id: String, name: String, lat: Float, long: Float, dock_count: Int, city: String, installation_date: String)
+66,South Van Ness at Market,37.774814,-122.418954,19,San Francisco,8/23/2013
+67,Market at 10th,37.776619000000004,-122.41738500000001,27,San Francisco,8/23/2013
+68,Yerba,37.784878000000006,-122.40101399999999,19,San Francisco,8/23/2013
+
+Status(id: String, station_id: String, bikes_available: Int, docks_available: Int, time: String)
+S1,66,10,9,2013/08/29 12:06:01
+
+Trips(id: String, duration: Int, start_date: String, start_station_name: String, start_station_id: String, end_date: String, end_station_name: String, end_station_id: String, bike_id: Int, subscription_type: String, zip_code: String)
+4576,63,8/29/2013 14:13,South Van Ness at Market,66,8/29/2013 14:14,South Van Ness at Market,66,520,Subscriber,94127
+4299,83,8/29/2013 12:02,Yerba,68,8/29/2013 12:04,Market at 10th,67,319,Subscriber,94103
+T1,100,D1,South Van Ness at Market,66,D2,Market at 10th,67,319,Subscriber,94103
+
+Weather(w_id: String, date: String, max_temperature_f: Float, mean_temperature_f: Float, min_temperature_f: Float, max_dew_point_f: Float, mean_dew_point_f: Float, min_dew_point_f: Float, max_humidity: Float, mean_humidity: Float, min_humidity: Float, max_sea_level_pressure_inches: Float, mean_sea_level_pressure_inches: Float, min_sea_level_pressure_inches: Float, max_visibility_miles: Float, mean_visibility_miles: Float, min_visibility_miles: Float, max_wind_Speed_mph: Float, mean_wind_speed_mph: Float, max_gust_speed_mph: Float, precipitation_inches: String, cloud_cover: Float, events: String, wind_dir_degrees: Float, zip_code: String)
+W1,8/29/2013,74.0,68.0,61.0,61.0,58.0,56.0,93.0,75.0,57.0,30.07,30.02,29.97,10.0,10.0,10.0,23.0,11.0,28.0,0,4.0,,286.0,94107
+W2,8/30/2013,78.0,69.0,60.0,61.0,58.0,56.0,90.0,70.0,50.0,30.05,30.0,29.93,10.0,11.0,7.0,29.0,13.0,35.0,0,2.0,,291.0,94107

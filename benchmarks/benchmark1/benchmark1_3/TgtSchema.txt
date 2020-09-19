@@ -1,0 +1,1 @@
+Checkin(bid: String, time: String)

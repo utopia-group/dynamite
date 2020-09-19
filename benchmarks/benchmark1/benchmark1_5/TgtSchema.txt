@@ -1,0 +1,1 @@
+User(id: String, name: String, review_count: Int, avg_stars: String)

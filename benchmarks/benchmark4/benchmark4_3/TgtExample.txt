@@ -1,0 +1,6 @@
+City_Population(city_code: String, year: Int, population: Int)
+"cty-Albania-Tirane",1990,244153
+"stadt-Shkoder-AL-AL",2011,77075
+"stadt-Shkoder-AL-AL",1987,62000
+"cty-Iran-14",2010,667499
+"cty-Iran-5",2001,1494998

@@ -1,0 +1,1 @@
+Airport(iata_code: String, country_code: String, city_code: String, name: String, latitude: Float, longitude: Float, elevation: Float, gmt_offset: Int)

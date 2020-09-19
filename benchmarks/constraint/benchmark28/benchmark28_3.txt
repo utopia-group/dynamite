@@ -1,0 +1,4 @@
+Trips?start_station_id -> Stations?id
+Trips?end_station_id -> Stations?id
+[Trips?start_station_id, Trips?start_station_name] --> [Stations?id, Stations?name]
+[Trips?end_station_id, Trips?end_station_name] --> [Stations?id, Stations?name]

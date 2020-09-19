@@ -1,0 +1,407 @@
+[
+  {
+    "type": "node",
+    "labels": [
+      "Crew"
+    ],
+    "id": "Actor A",
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Crew"
+    ],
+    "id": "Actor B",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "PARTICIPATES_IN",
+    "id": "500",
+    "properties": {
+      "role": "director",
+      "character": "executive director"
+    },
+    "start": {
+      "id": "Actor A",
+      "labels": [
+        "Crew"
+      ]
+    },
+    "end": {
+      "id": "Movie X",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "PARTICIPATES_IN",
+    "id": "501",
+    "properties": {
+      "role": "actor",
+      "character": "villain"
+    },
+    "start": {
+      "id": "Actor A",
+      "labels": [
+        "Crew"
+      ]
+    },
+    "end": {
+      "id": "Movie Y",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "PARTICIPATES_IN",
+    "id": "502",
+    "properties": {
+      "role": "actress",
+      "character": "hero"
+    },
+    "start": {
+      "id": "Actor B",
+      "labels": [
+        "Crew"
+      ]
+    },
+    "end": {
+      "id": "Movie X",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Movie"
+    ],
+    "id": "Movie X",
+    "properties": {
+      "name": "Movie X (2019)",
+      "kind": "movie"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Movie"
+    ],
+    "id": "Movie Y",
+    "properties": {
+      "name": "Movie Y (2020)",
+      "kind": "series"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Language"
+    ],
+    "id": "English",
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Language"
+    ],
+    "id": "French",
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Language"
+    ],
+    "id": "Italian",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_LANGUAGE",
+    "id": "500",
+    "properties": { },
+    "start": {
+      "id": "English",
+      "labels": [
+        "Keyword"
+      ]
+    },
+    "end": {
+      "id": "Movie X",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_LANGUAGE",
+    "id": "500",
+    "properties": { },
+    "start": {
+      "id": "French",
+      "labels": [
+        "Lanugage"
+      ]
+    },
+    "end": {
+      "id": "Movie X",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_LANGUAGE",
+    "id": "500",
+    "properties": { },
+    "start": {
+      "id": "Italian",
+      "labels": [
+        "Language"
+      ]
+    },
+    "end": {
+      "id": "Movie Y",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Keyword"
+    ],
+    "id": "long",
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Keyword"
+    ],
+    "id": "compilation",
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Keyword"
+    ],
+    "id": "short",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_KEYWORD",
+    "id": "500",
+    "properties": { },
+    "start": {
+      "id": "compilation",
+      "labels": [
+        "Keyword"
+      ]
+    },
+    "end": {
+      "id": "Movie X",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_KEYWORD",
+    "id": "500",
+    "properties": { },
+    "start": {
+      "id": "long",
+      "labels": [
+        "Keyword"
+      ]
+    },
+    "end": {
+      "id": "Movie X",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_KEYWORD",
+    "id": "500",
+    "properties": { },
+    "start": {
+      "id": "short",
+      "labels": [
+        "Keyword"
+      ]
+    },
+    "end": {
+      "id": "Movie Y",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Genre"
+    ],
+    "id": "Documentary",
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Genre"
+    ],
+    "id": "Reality",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_GENRE",
+    "id": "500",
+    "properties": { },
+    "start": {
+      "id": "Documentary",
+      "labels": [
+        "Genre"
+      ]
+    },
+    "end": {
+      "id": "Movie X",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_GENRE",
+    "id": "500",
+    "properties": { },
+    "start": {
+      "id": "Documentary",
+      "labels": [
+        "Genre"
+      ]
+    },
+    "end": {
+      "id": "Movie Y",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_GENRE",
+    "id": "500",
+    "properties": { },
+    "start": {
+      "id": "Reality",
+      "labels": [
+        "Genre"
+      ]
+    },
+    "end": {
+      "id": "Movie Y",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Country"
+    ],
+    "id": "Italy",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_COUNTRY",
+    "id": "500",
+    "properties": { },
+    "start": {
+      "id": "Italy",
+      "labels": [
+        "Country"
+      ]
+    },
+    "end": {
+      "id": "Movie Y",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Country"
+    ],
+    "id": "Canada",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_COUNTRY",
+    "id": "500",
+    "properties": { },
+    "start": {
+      "id": "Canada",
+      "labels": [
+        "Country"
+      ]
+    },
+    "end": {
+      "id": "Movie X",
+      "labels": [
+        "Movie"
+      ]
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Country"
+    ],
+    "id": "Italy",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_COUNTRY",
+    "id": "500",
+    "properties": { },
+    "start": {
+      "id": "Italy",
+      "labels": [
+        "Country"
+      ]
+    },
+    "end": {
+      "id": "Movie Y",
+      "labels": [
+        "Movie"
+      ]
+    }
+  }
+]

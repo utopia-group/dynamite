@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Rating(_id: StrAttr, movieid: StrAttr, rating: StrAttr, time: StrAttr, userid: StrAttr)
+.input Rating
+.decl rating(rating: StrAttr, movieid: StrAttr, time: StrAttr, userid: StrAttr)
+.output rating(delimiter="\t")
+
+rating(v_rating?rating, v_rating?movieid, v_rating?time, v_rating?userid) :-
+    Rating(_, v_rating?movieid, v_rating?rating, v_rating?time, v_rating?userid).
+

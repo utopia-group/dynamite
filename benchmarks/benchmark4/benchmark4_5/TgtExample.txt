@@ -1,0 +1,5 @@
+Country_Population(country_code: String, year: Int, population: Int)
+"AL",1970,2138966
+"AL",2011,2800138
+"IR",2011,75149669
+"IR",2013,76055488

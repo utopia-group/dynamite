@@ -1,0 +1,31 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl country?border(__id: Rel, country: StrAttr, length: IntAttr)
+.input country?border
+.decl country?religion(__id: Rel, nestedContent: StrAttr, percentage: StrAttr)
+.input country?religion
+.decl country(area: StrAttr, border: Rel, capital: StrAttr, car_code: StrAttr, ethnicgroup: Rel, gdp_agri: StrAttr, gdp_ind: StrAttr, gdp_serv: StrAttr, gdp_total: IntAttr, government: StrAttr, indep_date: Rel, infant_mortality: StrAttr, inflation: StrAttr, language: Rel, memberships: StrAttr, name: StrAttr, population: Rel, population_growth: StrAttr, province: Rel, religion: Rel, unemployment: StrAttr)
+.input country
+.decl Religion(_id: StrAttr)
+.output Religion(delimiter="\t")
+.decl Country(_id: StrAttr, area: StrAttr, capital: StrAttr, gdp_agri: StrAttr, gdp_ind: StrAttr, gdp_serv: StrAttr, gdp_total: IntAttr, infant_mortality: StrAttr, inflation: StrAttr, memberships: StrAttr, name: StrAttr, population_growth: StrAttr, unemployment: StrAttr)
+.output Country(delimiter="\t")
+.decl BORDERS(_start: StrAttr, _end: StrAttr)
+.output BORDERS(delimiter="\t")
+.decl POPULATION_BELIEVES(_start: StrAttr, _end: StrAttr, percentage: StrAttr)
+.output POPULATION_BELIEVES(delimiter="\t")
+
+Religion(v_Religion?_id) :-
+    country(_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, v_0, _),
+    country?religion(v_0, v_Religion?_id, _).
+Country(v_Country?_id, v_Country?area, v_Country?capital, v_Country?gdp_agri, v_Country?gdp_ind, v_Country?gdp_serv, v_Country?gdp_total, v_Country?infant_mortality, v_Country?inflation, v_Country?memberships, v_Country?name, v_Country?population_growth, v_Country?unemployment) :-
+    country(v_Country?area, _, v_Country?capital, v_Country?_id, _, v_Country?gdp_agri, v_Country?gdp_ind, v_Country?gdp_serv, v_Country?gdp_total, _, _, v_Country?infant_mortality, v_Country?inflation, _, v_Country?memberships, v_Country?name, _, v_Country?population_growth, _, _, v_Country?unemployment).
+BORDERS(v_BORDERS?_start, v_BORDERS?_end) :-
+    country(_, _, _, v_BORDERS?_end, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _),
+    country(_, v_0, _, v_BORDERS?_start, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _),
+    country?border(v_0, v_BORDERS?_end, _).
+POPULATION_BELIEVES(v_POPULATION_BELIEVES?_start, v_POPULATION_BELIEVES?_end, v_POPULATION_BELIEVES?percentage) :-
+    country(_, _, _, v_POPULATION_BELIEVES?_start, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, v_1, _),
+    country?religion(v_1, v_POPULATION_BELIEVES?_end, v_POPULATION_BELIEVES?percentage).
+

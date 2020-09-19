@@ -1,0 +1,135 @@
+[
+  {
+    "type": "node",
+    "labels": [
+      "Business"
+    ],
+    "id": "2LfIuF3_sX6uwe-IR-P0jQ",
+    "properties": {
+      "name": "Modern On Melrose",
+      "neighborhood": "FAKE",
+      "address": "4610 N 7th Ave",
+      "city": "Phoenix",
+      "state": "AZ",
+      "postal_code": "85013",
+      "latitude": 33.5040543,
+      "longitude": -112.082813,
+      "stars": 4.0,
+      "review_count": 15,
+      "is_open": 0
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Business"
+    ],
+    "id": "KYasaF1nov1bn7phfSgWeg",
+    "properties": {
+      "name": "BAMBU",
+      "neighborhood": "Chinatown",
+      "address": "4810 Spring Mountain Rd, Ste B",
+      "city": "Las Vegas",
+      "state": "NV",
+      "postal_code": "89102",
+      "latitude": 36.1266029,
+      "longitude": -115.2062431,
+      "stars": 4.0,
+      "review_count": 204,
+      "is_open": 1
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "User"
+    ],
+    "id": "bgl3j8yJcRO-00NkUYsXGQ",
+    "properties": {
+      "name": "Amy",
+      "review_count": 77,
+      "yelping_since": "2009-01-21",
+      "useful": 25,
+      "funny": 9,
+      "cool": 5,
+      "fans": 7
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "User"
+    ],
+    "id": "rWL8bGLRPtYAhX97JnRVXg",
+    "properties": {
+      "name": "Axle",
+      "review_count": 15,
+      "yelping_since": "2011-06-01",
+      "useful": 2,
+      "funny": 14,
+      "cool": 16,
+      "fans": 1
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "REVIEWED_BY",
+    "id": "500",
+    "properties": {
+    	"review_id": "Uf1Ki1yyH_JDKhLvn2e4FQ",
+      	"stars": 5,
+      	"text": "What a great place! Modern on Melrose has amazing furniture at great prices. I highly recommend and will be back when I am looking for new pieces.",
+      	"date": "2013-04-28"
+    },
+    "start": {
+      "id": "2LfIuF3_sX6uwe-IR-P0jQ",
+      "labels": [
+        "Business"
+      ]
+    },
+    "end": {
+      "id": "bgl3j8yJcRO-00NkUYsXGQ",
+      "labels": [
+        "User"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "REVIEWED_BY",
+    "id": "501",
+    "properties": {
+      "stars": 4,
+      "review_id": "GXQnlRo41C4WykC_IP2Lbw",
+      "text": "Tui was awesome she made me an amazing jackfruit smoothie. I couldn't find jackfruit anywhere except here",
+      "date": "2015-08-15"
+    },
+    "start": {
+      "id": "KYasaF1nov1bn7phfSgWeg",
+      "labels": ["Business"]
+    },
+    "end": {
+      "id": "rWL8bGLRPtYAhX97JnRVXg",
+      "labels": ["User"]
+    }
+  },
+  {
+  	"type": "relationship",
+  	"label": "TIPPED_BY",
+  	"id": "502",
+  	"properties": {
+  		"text":"Make sure you mix your Bambu dessert well before sipping from it! And the wifi password is: 7026297726",
+  		"date":"2016-06-15",
+      	"likes":69,
+      	"type":"tip"
+  	},
+  	"start": {
+  		"id": "KYasaF1nov1bn7phfSgWeg",
+  		"labels": ["Business"] 
+  	},
+  	"end": {
+      	"id":"rWL8bGLRPtYAhX97JnRVXg",
+  		"labels": ["User"]
+  	}
+  }
+]

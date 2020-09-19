@@ -1,0 +1,88 @@
+[
+    {
+        "type": "node",
+        "labels": ["attorney"],
+        "properties": {
+            "party_row_count": "String",
+            "party_type": "String",
+            "name": "String",
+            "contactinfo": "String",
+            "position": "String"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["case"],
+        "properties": {
+            "case_number": "String",
+            "pacer_id": "String",
+            "case_name": "String",
+            "court_name": "String",
+            "assigned_to": "String",
+            "referred_to": "String",
+            "case_cause": "String",
+            "jurisdictional_basis": "String",
+            "demand": "String",
+            "jury_demand": "String",
+            "lead_case": "String",
+            "related_case": "String",
+            "settlement": "String",
+            "date_filed": "String",
+            "date_closed": "String",
+            "date_last_filed": "String"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["document"],
+        "properties": {
+            "doc_count": "Int",
+            "attachment": "String",
+            "date_filed": "String",
+            "long_description": "String",
+            "doc_number": "Int",
+            "short_description": "String",
+            "upload_date": "String"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["name"],
+        "properties": {
+            "party_row_count": "String",
+            "party_type": "String",
+            "name": "String"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["pacerCases"],
+        "properties": {
+            "case_name": "String",
+            "court_code": "String",
+            "court_name": "String",
+            "date_closed": "String",
+            "case_number": "String",
+            "pacer_id": "String",
+            "date_filed": "String"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_DOCUMENT",
+        "properties": {
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_ATTORNEY",
+        "properties": {
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_NAME",
+        "properties": {
+        }
+    }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "type": "node",
+    "labels": [
+      "Author"
+    ],
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ArticleTitle"
+    ],
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ArticlePages"
+    ],
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ArticleVolume"
+    ],
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ArticleJournal"
+    ],
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ArticleNumber"
+    ],
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Article"
+    ],
+    "properties": {
+      "date": "String"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Book"
+    ],
+    "properties": {
+      "date": "String"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Proceedings"
+    ],
+    "properties": {
+      "date": "String"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "PhdThesis"
+    ],
+    "properties": {
+      "date": "String"
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "CROSSREF",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "WROTE",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_TITLE",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_PAGES",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_VOLUME",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_JOURNAL",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_NUMBER",
+    "properties": {}
+  }
+]

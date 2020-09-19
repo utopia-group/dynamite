@@ -1,0 +1,4 @@
+Language(country_code: String, name: String, percentage: Float)
+"AL","Albanian",98.8
+"AL","Greek",0.5
+"IR","Turkish",1

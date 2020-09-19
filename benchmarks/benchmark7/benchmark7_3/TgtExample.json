@@ -1,0 +1,20 @@
+{
+    "names": [
+        {
+            "case_row_id": "1",
+            "case_number": "0:79-cv-06704-JCP",
+            "party_row_count": 1,
+            "party_type": "Plaintiff",
+            "name_row_count": "1",
+            "name": "Burroghs Wellcome Co."
+        },
+        {
+            "case_row_id": "1",
+            "case_number": "0:79-cv-06704-JCP",
+            "party_row_count": 2,
+            "party_type": "Defendant",
+            "name_row_count": "2",
+            "name": "Generix Drug Corp."
+        }
+    ]
+}

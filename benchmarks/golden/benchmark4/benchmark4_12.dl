@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl lake?located(__id: Rel, country: StrAttr, province: StrAttr)
+.input lake?located
+.decl lake(area: StrAttr, country: StrAttr, depth: IntAttr, elevation: StrAttr, id: StrAttr, latitude: StrAttr, located: Rel, longitude: StrAttr, name: StrAttr, to: Rel)
+.input lake
+.decl Geo_Lake(lid: StrAttr, country_code: StrAttr, provinces: StrAttr)
+.output Geo_Lake(delimiter="\t")
+
+Geo_Lake(v_Geo_Lake?lid, v_Geo_Lake?country_code, v_Geo_Lake?provinces) :-
+    lake(_, _, _, _, v_Geo_Lake?lid, _, v_1, _, _, _),
+    lake?located(v_1, v_Geo_Lake?country_code, v_Geo_Lake?provinces).
+

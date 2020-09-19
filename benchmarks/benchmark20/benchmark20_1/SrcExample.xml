@@ -1,0 +1,28 @@
+<mondial>
+      <country area="28750" capital="cty-Albania-Tirane" car_code="AL" memberships="org-BSEC org-CEI">
+            <name>Albania</name>
+            <religion percentage="10">Roman Catholic</religion>
+            <religion percentage="20">Christian Orthodox</religion>
+            <population_growth>0.3</population_growth>
+            <infant_mortality>13.19</infant_mortality>
+            <gdp_total>12800</gdp_total>
+            <gdp_agri>19.5</gdp_agri>
+            <gdp_ind>12</gdp_ind>
+            <gdp_serv>68.5</gdp_serv>
+            <inflation>1.7</inflation>
+            <unemployment>16.9</unemployment>
+      </country>
+      <country area="1648000" capital="cty-Iran-Tehran" car_code="IR" memberships="org-UNAMID org-CP">
+            <name>Iran</name>
+            <religion percentage="99">Muslim</religion>
+            <population_growth>1.22</population_growth>
+            <infant_mortality>39</infant_mortality>
+            <gdp_total>411900</gdp_total>
+            <gdp_agri>10.6</gdp_agri>
+            <gdp_ind>44.9</gdp_ind>
+            <gdp_serv>44.5</gdp_serv>
+            <inflation>42.3</inflation>
+            <unemployment>16</unemployment>
+            <border country="AL" length="69"/>
+      </country>
+</mondial>

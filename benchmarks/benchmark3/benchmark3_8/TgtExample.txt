@@ -1,0 +1,3 @@
+Proceeding(id: String, title: String, volume: String, year: Int, publisher: String, isbn: String, series: String)
+"journals/topnoc/2009-2", "Transactions on Petri Nets and Other Models of Concurrency II; Special Issue on Concurrency in Process-Aware Information Systems", "5460", 2009, "Springer", "978-3-642-00898-6", "Lecture Notes in Computer Science"
+"journals/thipeac/2009-2", "Transactions on High-Performance Embedded Architectures and Compilers II", "5470", 2010, "Springers", "978-3-642-00903-7", "Lectures Notes in Computer Science"

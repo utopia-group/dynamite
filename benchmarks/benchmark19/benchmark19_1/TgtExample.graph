@@ -1,0 +1,466 @@
+[
+  {
+    "type": "node",
+    "labels": [
+      "ArticleTitle"
+    ],
+    "id": "Parallel Integer Sorting and Simulation Amongst CRCW Models.",
+    "properties": {
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ArticleTitle"
+    ],
+    "id": "A study on dynamic Semantic Web service composition.",
+    "properties": {
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_TITLE",
+    "id": "503",
+    "properties": {},
+    "start": {
+      "id": "journals/acta/Saxena96",
+      "labels": [
+        "Article"
+      ]
+    },
+    "end": {
+      "id": "Parallel Integer Sorting and Simulation Amongst CRCW Models.",
+      "labels": [
+        "ArticleTitle"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_TITLE",
+    "id": "504",
+    "properties": {},
+    "start": {
+      "id": "journals/wias/0002YWG013",
+      "labels": [
+        "Article"
+      ]
+    },
+    "end": {
+      "id": "A study on dynamic Semantic Web service composition.",
+      "labels": [
+        "ArticleTitle"
+      ]
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ArticlePages"
+    ],
+    "id": "607-619",
+    "properties": {
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ArticlePages"
+    ],
+    "id": "125-135",
+    "properties": {
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_PAGES",
+    "id": "503",
+    "properties": {},
+    "start": {
+      "id": "journals/acta/Saxena96",
+      "labels": [
+        "Article"
+      ]
+    },
+    "end": {
+      "id": "607-619",
+      "labels": [
+        "ArticlePages"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_PAGES",
+    "id": "504",
+    "properties": {},
+    "start": {
+      "id": "journals/wias/0002YWG013",
+      "labels": [
+        "Article"
+      ]
+    },
+    "end": {
+      "id": "125-135",
+      "labels": [
+        "ArticlePages"
+      ]
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ArticleVolume"
+    ],
+    "id": "33",
+    "properties": {
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ArticleVolume"
+    ],
+    "id": "11",
+    "properties": {
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_VOLUME",
+    "id": "503",
+    "properties": {},
+    "start": {
+      "id": "journals/acta/Saxena96",
+      "labels": [
+        "Article"
+      ]
+    },
+    "end": {
+      "id": "33",
+      "labels": [
+        "ArticleVolume"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_VOLUME",
+    "id": "504",
+    "properties": {},
+    "start": {
+      "id": "journals/wias/0002YWG013",
+      "labels": [
+        "Article"
+      ]
+    },
+    "end": {
+      "id": "11",
+      "labels": [
+        "ArticleVolume"
+      ]
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ArticleJournal"
+    ],
+    "id": "Acta Inf.",
+    "properties": {
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ArticleJournal"
+    ],
+    "id": "Web Intelligence and Agent Systems",
+    "properties": {
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_JOURNAL",
+    "id": "503",
+    "properties": {},
+    "start": {
+      "id": "journals/acta/Saxena96",
+      "labels": [
+        "Article"
+      ]
+    },
+    "end": {
+      "id": "Acta Inf.",
+      "labels": [
+        "ArticleJournal"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_JOURNAL",
+    "id": "504",
+    "properties": {},
+    "start": {
+      "id": "journals/wias/0002YWG013",
+      "labels": [
+        "Article"
+      ]
+    },
+    "end": {
+      "id": "Web Intelligence and Agent Systems",
+      "labels": [
+        "ArticleJournal"
+      ]
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ArticleNumber"
+    ],
+    "id": "7",
+    "properties": {
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ArticleNumber"
+    ],
+    "id": "2",
+    "properties": {
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_NUMBER",
+    "id": "503",
+    "properties": {},
+    "start": {
+      "id": "journals/acta/Saxena96",
+      "labels": [
+        "Article"
+      ]
+    },
+    "end": {
+      "id": "7",
+      "labels": [
+        "ArticleNumber"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_NUMBER",
+    "id": "504",
+    "properties": {},
+    "start": {
+      "id": "journals/wias/0002YWG013",
+      "labels": [
+        "Article"
+      ]
+    },
+    "end": {
+      "id": "2",
+      "labels": [
+        "ArticleNumber"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "CROSSREF",
+    "id": "505",
+    "properties": {},
+    "start": {
+      "id": "journals/acta/Saxena96",
+      "labels": [
+        "Article"
+      ]
+    },
+    "end": {
+      "id": "journals/wias/0002YWG013",
+      "labels": [
+        "Article"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "CROSSREF",
+    "id": "505",
+    "properties": {},
+    "start": {
+      "id": "journals/wias/0002YWG013",
+      "labels": [
+        "Article"
+      ]
+    },
+    "end": {
+      "id": "journals/wias/0002YWG013",
+      "labels": [
+        "Article"
+      ]
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Book"
+    ],
+    "id": "books/daglib/0011409",
+    "properties": {
+        "date": "2011-04-07"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Book"
+    ],
+    "id": "books/daglib/0068988",
+    "properties": {
+        "date": "2017-01-09"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Article"
+    ],
+    "id": "journals/acta/Saxena96",
+    "properties": {
+        "date": "2017-05-28"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Article"
+    ],
+    "id": "journals/wias/0002YWG013",
+    "properties": {
+        "date": "2017-05-20"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "PhdThesis"
+    ],
+    "id": "books/daglib/0071011",
+    "properties": {
+        "date": "2011-03-23"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "PhdThesis"
+    ],
+    "id": "books/daglib/0083729",
+    "properties": {
+        "date": "2017-01-12"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Proceedings"
+    ],
+    "id": "journals/topnoc/2009-2",
+    "properties": {
+        "date": "2017-05-18"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Proceedings"
+    ],
+    "id": "journals/thipeac/2009-2",
+    "properties": {
+        "date": "2017-05-26"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Author"
+    ],
+    "id": "Paul Mutton",
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Author"
+    ],
+    "id": "Michael Gloger",
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Author"
+    ],
+    "id": "Andrew Woody",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "WROTE",
+    "id": "500",
+    "properties": {},
+    "start": {
+      "id": "Paul Mutton",
+      "labels": [
+        "Author"
+      ]
+    },
+    "end": {
+      "id": "books/daglib/0011409",
+      "labels": [
+        "Book"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "WROTE",
+    "id": "501",
+    "properties": {},
+    "start": {
+      "id": "Michael Gloger",
+      "labels": [
+        "Author"
+      ]
+    },
+    "end": {
+      "id": "books/daglib/0068988",
+      "labels": [
+        "Book"
+      ]
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "WROTE",
+    "id": "502",
+    "properties": {},
+    "start": {
+      "id": "Andrew Woody",
+      "labels": [
+        "Author"
+      ]
+    },
+    "end": {
+      "id": "books/daglib/0068988",
+      "labels": [
+        "Book"
+      ]
+    }
+  }
+]

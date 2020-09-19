@@ -1,0 +1,1 @@
+AuthorThesis(name: String, tid: String)

@@ -1,0 +1,47 @@
+{
+  "player": [
+    {
+      "name": "Rodrigo Moledo", 
+      "position": "Centre-Back", 
+      "id": "/rodrigo-moledo/profil/spieler/119434"
+    }, {
+      "name": "Aaron Meijers", 
+      "position": "Left-Back", 
+      "id": "/aaron-meijers/profil/spieler/56836"
+    }
+  ], "club": [
+    {
+      "name": "Neft. Baku U19",
+      "id": "/neftchi-baku-u19/startseite/verein/19701"
+    }, {
+      "name": "G.Osmanpasa Yth",
+      "id": "/gaziosmanpasa-jugend/startseite/verein/45379"
+    }
+  ], "transfer": [
+    {
+      "season": "2012/2013", 
+      "fee": "Free transfer",
+      "numericFee": 0,
+      "id": "/jumplist/transfers/spieler/27932/transfer_id/969874",
+      "timestamp": 1383004800
+    }, {
+      "season": "2013/2014", 
+      "fee": "Free transfer",
+      "numericFee": 0,
+      "id": "/jumplist/transfers/spieler/45006/transfer_id/917512",
+      "timestamp": 1383004800
+    }
+  ], "transferWithoutFee": [
+    {
+      "season": "2013/2014", 
+      "fee": "?",
+      "id": "/jumplist/transfers/spieler/264696/transfer_id/970389",
+      "timestamp": 1383091200
+    }, {
+      "season": "2014/2015", 
+      "fee": "-",
+      "id": "/jumplist/transfers/spieler/124774/transfer_id/1012099",
+      "timestamp": 1383091200
+    }
+  ]
+}

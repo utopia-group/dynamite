@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl country?indep_date(__id: Rel, from: StrAttr, nestedContent: StrAttr)
+.input country?indep_date
+.decl country(area: StrAttr, border: Rel, capital: StrAttr, car_code: StrAttr, ethnicgroup: Rel, gdp_agri: StrAttr, gdp_ind: StrAttr, gdp_serv: StrAttr, gdp_total: IntAttr, government: StrAttr, indep_date: Rel, infant_mortality: StrAttr, inflation: StrAttr, language: Rel, memberships: StrAttr, name: StrAttr, population: Rel, population_growth: StrAttr, province: Rel, religion: Rel, unemployment: StrAttr)
+.input country
+.decl Politics(country_code: StrAttr, independence_date: StrAttr, dependent: StrAttr, government_type: StrAttr)
+.output Politics(delimiter="\t")
+
+Politics(v_Politics?country_code, v_Politics?independence_date, v_Politics?dependent, v_Politics?government_type) :-
+    country(_, _, _, v_Politics?country_code, _, _, _, _, _, v_Politics?government_type, v_1, _, _, _, _, _, _, _, _, _, _),
+    country?indep_date(v_1, v_Politics?dependent, v_Politics?independence_date).
+

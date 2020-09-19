@@ -1,0 +1,10 @@
+PLAYS_FOR?_start -> Player?_id
+PLAYS_FOR?_end -> Country?_id
+PART_OF?_start -> Club?_id
+PART_OF?_end -> Country?_id
+OF_PLAYER?_start -> Transfer?_id
+OF_PLAYER?_end -> Player?_id
+FROM_CLUB?_start -> Transfer?_id
+FROM_CLUB?_end -> Club?_id
+TO_CLUB?_start -> Transfer?_id
+TO_CLUB?_end -> Club?_id

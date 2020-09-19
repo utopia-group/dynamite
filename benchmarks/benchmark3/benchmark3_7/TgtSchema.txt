@@ -1,0 +1,1 @@
+Paper(id: String, title: String, jid: String, pages: String)

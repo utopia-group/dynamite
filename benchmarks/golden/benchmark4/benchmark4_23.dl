@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl river?to(__id: Rel, water: StrAttr, watertype: StrAttr)
+.input river?to
+.decl river(area: StrAttr, country: StrAttr, estuary: Rel, id: StrAttr, island: StrAttr, length: IntAttr, name: StrAttr, source: Rel, to: Rel)
+.input river
+.decl River(rid: StrAttr, name: StrAttr, area: StrAttr, length: IntAttr, to: StrAttr)
+.output River(delimiter="\t")
+
+River(v_River?rid, v_River?name, v_River?area, v_River?length, v_River?to) :-
+    river(v_River?area, _, _, v_River?rid, _, v_River?length, v_River?name, _, v_0),
+    river?to(v_0, v_River?to, _).
+

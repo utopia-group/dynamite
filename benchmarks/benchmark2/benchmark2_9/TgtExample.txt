@@ -1,0 +1,3 @@
+Writer(name: String, mid: String)
+"Shotgun' Smith; Andrew", "From Heaven to Earth (2005)"
+"Barrymore; Drew", "Al salir de clase (1997) {Desesperados (#1.92)}"

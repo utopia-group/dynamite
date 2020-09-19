@@ -1,0 +1,3 @@
+User(id: String, name: String, review_count: Int, avg_stars: String)
+"MseG-7DaxZ2PYJOAkc_hkQ","Eli",1,"5.0"
+"8no1oFxVVYK1HHM3V1ciGQ","Jamie",14,"3.27"

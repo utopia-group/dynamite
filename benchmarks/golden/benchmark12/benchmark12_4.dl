@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl TransferWithoutFee(_id: StrAttr, fee: StrAttr, id: StrAttr, season: StrAttr, timestamp: IntAttr)
+.input TransferWithoutFee
+.decl transferWithoutFee(season: StrAttr, fee: StrAttr, id: StrAttr, timestamp: IntAttr)
+.output transferWithoutFee(delimiter="\t")
+
+transferWithoutFee(v_transferWithoutFee?season, v_transferWithoutFee?fee, v_transferWithoutFee?id, v_transferWithoutFee?timestamp) :-
+    TransferWithoutFee(_, v_transferWithoutFee?fee, v_transferWithoutFee?id, v_transferWithoutFee?season, v_transferWithoutFee?timestamp).
+

@@ -1,0 +1,23 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl phdthesis?pages(__id: Rel, value: StrAttr)
+.input phdthesis?pages
+.decl phdthesis?school(__id: Rel, value: StrAttr)
+.input phdthesis?school
+.decl phdthesis?title(__id: Rel, value: StrAttr)
+.input phdthesis?title
+.decl phdthesis?year(__id: Rel, value: IntAttr)
+.input phdthesis?year
+.decl phdthesis(author: Rel, ee: Rel, key: StrAttr, mdate: StrAttr, pages: Rel, school: Rel, title: Rel, year: Rel)
+.input phdthesis
+.decl Thesis(id: StrAttr, year: IntAttr, title: StrAttr, school: StrAttr, pages: StrAttr)
+.output Thesis(delimiter="\t")
+
+Thesis(v_Thesis?id, v_Thesis?year, v_Thesis?title, v_Thesis?school, v_Thesis?pages) :-
+    phdthesis(_, _, v_Thesis?id, _, v_3, v_2, v_1, v_0),
+    phdthesis?pages(v_3, v_Thesis?pages),
+    phdthesis?school(v_2, v_Thesis?school),
+    phdthesis?title(v_1, v_Thesis?title),
+    phdthesis?year(v_0, v_Thesis?year).
+

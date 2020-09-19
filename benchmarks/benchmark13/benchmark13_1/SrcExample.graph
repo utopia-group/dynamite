@@ -1,0 +1,45 @@
+[
+  {
+    "type": "node",
+    "id": "1706468",
+    "labels": [
+      "Node"
+    ],
+    "properties": {
+      "birthgendertweettags": "1942190",
+      "modification": "add"
+    }
+  },
+  {
+    "type": "node",
+    "id": "2790543",
+    "labels": [
+      "Node"
+    ],
+    "properties": {
+      "categorykeywords": "1.11.3.413682;560155;1162;15897;5614;11527;1162;15897;5614;7107;39110;1162;15897;5614;11527;1162;15897;5614;7107;39110",
+      "modification": "add"
+    }
+  },
+  {
+    "id": "576947",
+    "type": "relationship",
+    "label": "RELATED",
+    "properties": {
+      "modification": "add",
+      "d3": "-12011-10-11 15:59:56"
+    },
+    "start": {
+      "id": "1706468",
+      "labels": [
+        "Node"
+      ]
+    },
+    "end": {
+      "id": "2790543",
+      "labels": [
+        "Node"
+      ]
+    }
+  }
+]

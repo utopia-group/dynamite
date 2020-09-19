@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl proceedings?editor(__id: Rel, value: StrAttr)
+.input proceedings?editor
+.decl proceedings(booktitle: Rel, editor: Rel, ee: Rel, isbn: Rel, key: StrAttr, mdate: StrAttr, publisher: Rel, series: Rel, title: Rel, url: Rel, volume: Rel, year: Rel)
+.input proceedings
+.decl EditorProceeding(name: StrAttr, pid: StrAttr)
+.output EditorProceeding(delimiter="\t")
+
+EditorProceeding(v_EditorProceeding?name, v_EditorProceeding?pid) :-
+    proceedings(_, v_0, _, _, v_EditorProceeding?pid, _, _, _, _, _, _, _),
+    proceedings?editor(v_0, v_EditorProceeding?name).
+

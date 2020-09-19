@@ -1,0 +1,3 @@
+Trips(id: String, duration: Int, start_date: String, start_station_name: String, start_station_id: String, end_date: String, end_station_name: String, end_station_id: String, bike_id: Int, subscription_type: String, zip_code: String)
+4576,63,8/29/2013 14:13,South Van Ness at Market,66,8/29/2013 14:14,South Van Ness at Market,66,520,Subscriber,94127
+4299,83,8/29/2013 12:02,Yerba Buena Center of the Arts (3rd @ Howard),68,8/29/2013 12:04,Market at 10th,67,319,Subscriber,94103

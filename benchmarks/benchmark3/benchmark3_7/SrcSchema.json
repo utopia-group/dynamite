@@ -1,0 +1,53 @@
+{
+    "article": [
+        {
+            "key": String,
+            "mdate": String,
+            "author": [
+                {
+                    "value": String
+                }
+            ],
+            "title": [
+                {
+                    "value": String
+                }
+            ],
+            "pages": [
+                {
+                    "value": String
+                }
+            ],
+            "year": [
+                {
+                    "value": Int
+                }
+            ],
+            "volume": [
+                {
+                    "value": String
+                }
+            ],
+            "journal": [
+                {
+                    "value": String
+                }
+            ],
+            "number": [
+                {
+                    "value": String
+                }
+            ],
+            "ee": [
+                {
+                    "value": String
+                }
+            ],
+            "url": [
+                {
+                    "value": String
+                }
+            ]
+        }
+    ]
+}

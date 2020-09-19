@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl sea(area: StrAttr, bordering: StrAttr, country: StrAttr, depth: IntAttr, id: StrAttr, located: Rel, name: StrAttr)
+.input sea
+.decl Sea(sid: StrAttr, name: StrAttr, area: StrAttr, depth: IntAttr)
+.output Sea(delimiter="\t")
+
+Sea(v_Sea?sid, v_Sea?name, v_Sea?area, v_Sea?depth) :-
+    sea(v_Sea?area, _, _, v_Sea?depth, v_Sea?sid, _, v_Sea?name).
+

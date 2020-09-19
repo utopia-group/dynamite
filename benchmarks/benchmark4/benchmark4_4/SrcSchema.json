@@ -1,0 +1,90 @@
+{
+  "country": [
+    {
+      "province": [
+        {
+          "capital": String,
+          "country": String,
+          "id": String,
+          "name": String,
+          "area": Float,
+          "population": [
+            {
+              "measured": String,
+              "year": Int,
+              "nestedContent": Int
+            }
+          ],
+          "city": [
+            {
+              "country": String,
+              "id": String,
+              "name": String,
+              "latitude": Float,
+              "longitude": Float,
+              "elevation": Float,
+              "population": [
+                {
+                  "measured": String,
+                  "year": Int,
+                  "nestedContent": Int
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "area": Float,
+      "capital": String,
+      "car_code": String,
+      "memberships": String,
+      "name": String,
+      "population": [
+        {
+          "measured": String,
+          "year": Int,
+          "nestedContent": Int
+        }
+      ],
+      "population_growth": Float,
+      "infant_mortality": Float,
+      "gdp_total": Int,
+      "gdp_agri": Float,
+      "gdp_ind": Float,
+      "gdp_serv": Float,
+      "inflation": Float,
+      "unemployment": Float,
+      "indep_date": [
+        {
+          "from": String,
+          "nestedContent": String
+        }
+      ],
+      "government": String,
+      "ethnicgroup": [
+        {
+          "percentage": Float,
+          "nestedContent": String
+        }
+      ],
+      "religion": [
+        {
+          "percentage": Float,
+          "nestedContent": String
+        }
+      ],
+      "language": [
+        {
+          "percentage": Float,
+          "nestedContent": String
+        }
+      ],
+      "border": [
+        {
+          "country": String,
+          "length": Int
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+    "proceedings": [
+        {
+            "key": String,
+            "mdate": String,
+            "editor": [
+                {"value" : String}
+            ],
+            "title": [
+                {
+                    "value": String
+                }
+            ],
+            "volume": [
+                {
+                    "value": String
+                }
+            ],
+            "year": [
+                {
+                    "value": Int
+                }
+            ],
+            "ee": [
+                {
+                    "value": String
+                }
+            ],
+            "isbn": [
+                {
+                    "value": String
+                }
+            ],
+            "booktitle": [
+                {
+                    "value": String
+                }
+            ],
+            "series": [{
+                "href": String,
+                "nestedContent": String
+            }
+            ],
+            "publisher": [
+                {
+                    "value": String
+                }
+            ],
+            "url": [
+                {
+                    "value": String
+                }
+            ]
+        }
+    ]
+}

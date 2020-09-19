@@ -1,0 +1,204 @@
+[
+    {
+        "type": "node",
+        "labels": ["Airport"],
+        "id": "PPG",
+        "properties": {
+            "city": "city-Pago-Pago-AMSA-AMSA",
+            "country": "AMSA",
+            "latitude": "-14.2794",
+            "longitude": "-170.7006",
+            "elevation": "10",
+            "gmtOffset": "-11"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["AirportName"],
+        "id": "Pago Pago Intl",
+        "properties": { }
+    },
+    {
+        "type": "relationship",
+        "label": "AIRPORT_NAME",
+        "id": "ID1",
+        "start": { "id": "PPG", "labels": ["Airport"] },
+        "end": { "id": "Pago Pago Intl", "labels": ["AirportName"] }
+    },
+    {
+        "type": "node",
+        "labels": ["Airport"],
+        "id": "VPE",
+        "properties": {
+            "city": "cty-Angola-Ngiva",
+            "country": "ANG",
+            "latitude": "-17.043464",
+            "longitude": "15.683822",
+            "elevation": "1087",
+            "gmtOffset": "1"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["AirportName"],
+        "id": "Ondjiva Pereira Airport",
+        "properties": { }
+    },
+    {
+        "type": "relationship",
+        "label": "AIRPORT_NAME",
+        "id": "ID2",
+        "start": { "id": "VPE", "labels": ["Airport"] },
+        "end": { "id": "Ondjiva Pereira Airport", "labels": ["AirportName"] }
+    },
+    {
+        "type": "node",
+        "labels": ["Desert"],
+        "id": "desert-Talak",
+        "properties": {
+            "country": "RMM RN",
+            "type": "sand",
+            "area": "100000",
+            "latitude": "17",
+            "longitude": "6"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["DesertName"],
+        "id": "Talak",
+        "properties": { }
+    },
+    {
+        "type": "relationship",
+        "label": "DESERT_NAME",
+        "id": "ID3",
+        "start": { "id": "desert-Talak", "labels": ["Desert"] },
+        "end": { "id": "Talak", "labels": ["DesertName"] }
+    },
+    {
+        "type": "node",
+        "labels": ["DesertLocation"],
+        "id": "prov-RMM-2 prov-RMM-4",
+        "properties": {
+            "country": "RMM"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "DESERT_LOCATION",
+        "id": "ID4",
+        "start": { "id": "desert-Talak", "labels": ["Desert"] },
+        "end": { "id": "prov-RMM-2 prov-RMM-4", "labels": ["DesertLocation"] }
+    },
+    {
+        "type": "node",
+        "labels": ["DesertLocation"],
+        "id": "prov-RN-1 prov-RN-6",
+        "properties": {
+            "country": "RN"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "DESERT_LOCATION",
+        "id": "ID4",
+        "start": { "id": "desert-Talak", "labels": ["Desert"] },
+        "end": { "id": "prov-RN-1 prov-RN-6", "labels": ["DesertLocation"] }
+    },
+    {
+        "type": "node",
+        "labels": ["Mountain"],
+        "id": "mount-Yerupaja",
+        "properties": {
+            "country": "PE",
+            "mountains": "Cordillera Blanca",
+            "latitude": "-10.3",
+            "longitude": "-76.9",
+            "elevation": "6635"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["MountainName"],
+        "id": "Yerupaja",
+        "properties": { }
+    },
+    {
+        "type": "relationship",
+        "label": "MOUNTAIN_NAME",
+        "id": "ID15",
+        "start": { "id": "mount-Yerupaja", "labels": ["Mountain"] },
+        "end": { "id": "Yerupaja", "labels": ["MountainName"] }
+    },
+    {
+        "type": "node",
+        "labels": ["MountainLocation"],
+        "id": "prov-Peru-3",
+        "properties": {
+            "country": "PE"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "MOUNTAIN_LOCATION",
+        "id": "ID16",
+        "start": { "id": "mount-Yerupaja", "labels": ["Mountain"] },
+        "end": { "id": "prov-Peru-3", "labels": ["MountainLocation"] }
+    },
+    {
+        "type": "node",
+        "labels": ["Mountain"],
+        "id": "mount-Licancabur",
+        "properties": {
+            "country": "BOL RCH",
+            "mountains": "Andes",
+            "latitude": "-22.8",
+            "longitude": "-67.9",
+            "elevation": "5920"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["MountainName"],
+        "id": "Licancabur",
+        "properties": { }
+    },
+    {
+        "type": "relationship",
+        "label": "MOUNTAIN_NAME",
+        "id": "ID17",
+        "start": { "id": "mount-Licancabur", "labels": ["Mountain"] },
+        "end": { "id": "Licancabur", "labels": ["MountainName"] }
+    },
+    {
+        "type": "node",
+        "labels": ["MountainLocation"],
+        "id": "prov-BOL-3",
+        "properties": {
+            "country": "BOL"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "MOUNTAIN_LOCATION",
+        "id": "ID18",
+        "start": { "id": "mount-Licancabur", "labels": ["Mountain"] },
+        "end": { "id": "prov-BOL-3", "labels": ["MountainLocation"] }
+    },
+    {
+        "type": "node",
+        "labels": ["MountainLocation"],
+        "id": "prov-Chile-2",
+        "properties": {
+            "country": "RCH"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "MOUNTAIN_LOCATION",
+        "id": "ID19",
+        "start": { "id": "mount-Licancabur", "labels": ["Mountain"] },
+        "end": { "id": "prov-Chile-2", "labels": ["MountainLocation"] }
+    }
+]

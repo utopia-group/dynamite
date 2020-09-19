@@ -1,0 +1,3 @@
+Lake(lid: String, name: String, to: String, area: Float, elevation: Float, depth: Int, latitude: Float, longitude: Float, countries: String)
+"lake-Bodensee","Bodensee","river-Rhein",538.5,395,254,47.6,9.4,"A D CH"
+"lake-Chiemsee","Chiemsee","river-Alz",80,518,73,47.9,12.4,"D"

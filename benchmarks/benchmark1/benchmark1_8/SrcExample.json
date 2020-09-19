@@ -1,0 +1,122 @@
+{
+  "user": [
+    {
+      "user_id": "1",
+      "name": "Alice",
+      "review_count": 1,
+      "yelping_since": "2016-01-10",
+      "friends": [
+        "2",
+        "4"
+      ],
+      "useful": 0,
+      "funny": 0,
+      "cool": 0,
+      "fans": 0,
+      "elite": [
+        "None"
+      ],
+      "average_stars": 5.0,
+      "compliment_hot": 0,
+      "compliment_more": 0,
+      "compliment_profile": 0,
+      "compliment_cute": 0,
+      "compliment_list": 0,
+      "compliment_note": 0,
+      "compliment_plain": 0,
+      "compliment_cool": 0,
+      "compliment_funny": 0,
+      "compliment_writer": 0,
+      "compliment_photos": 0,
+      "type": "user"
+    },
+    {
+      "user_id": "2",
+      "name": "Bob",
+      "review_count": 12,
+      "yelping_since": "2012-03-23",
+      "friends": [
+        "3",
+        "1"
+      ],
+      "useful": 22,
+      "funny": 0,
+      "cool": 21,
+      "fans": 0,
+      "elite": [
+        "None"
+      ],
+      "average_stars": 23.27,
+      "compliment_hot": 0,
+      "compliment_more": 0,
+      "compliment_profile": 0,
+      "compliment_cute": 0,
+      "compliment_list": 0,
+      "compliment_note": 0,
+      "compliment_plain": 0,
+      "compliment_cool": 0,
+      "compliment_funny": 0,
+      "compliment_writer": 0,
+      "compliment_photos": 0,
+      "type": "user"
+    },
+    {
+      "user_id": "3",
+      "name": "Clair",
+      "review_count": 13,
+      "yelping_since": "2012-03-33",
+      "friends": [
+        "2"
+      ],
+      "useful": 32,
+      "funny": 0,
+      "cool": 31,
+      "fans": 0,
+      "elite": [
+        "None"
+      ],
+      "average_stars": 33.27,
+      "compliment_hot": 0,
+      "compliment_more": 0,
+      "compliment_profile": 0,
+      "compliment_cute": 0,
+      "compliment_list": 0,
+      "compliment_note": 0,
+      "compliment_plain": 0,
+      "compliment_cool": 0,
+      "compliment_funny": 0,
+      "compliment_writer": 0,
+      "compliment_photos": 0,
+      "type": "user"
+    },
+    {
+      "user_id": "4",
+      "name": "David",
+      "review_count": 14,
+      "yelping_since": "2012-03-43",
+      "friends": [
+        "1"
+      ],
+      "useful": 42,
+      "funny": 0,
+      "cool": 41,
+      "fans": 0,
+      "elite": [
+        "None"
+      ],
+      "average_stars": 43.27,
+      "compliment_hot": 0,
+      "compliment_more": 0,
+      "compliment_profile": 0,
+      "compliment_cute": 0,
+      "compliment_list": 0,
+      "compliment_note": 0,
+      "compliment_plain": 0,
+      "compliment_cool": 0,
+      "compliment_funny": 0,
+      "compliment_writer": 0,
+      "compliment_photos": 0,
+      "type": "user"
+    }
+  ]
+}

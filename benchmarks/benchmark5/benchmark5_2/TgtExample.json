@@ -1,0 +1,19 @@
+{
+    "ejections": [{
+        "e_id": "E1",
+        "ab_id": 2015003219,
+        "des": "San Diego Padres center fielder Will Venable ejected by HP umpire Tripp Gibson III.",
+        "event_num": 732,
+        "g_id": 201500044,
+        "player": [{
+            "id": 461416,
+            "first_name": "Will",
+            "last_name": "Venable"
+        }],
+        "date": "4/9/15",
+        "BS": null,
+        "CORRECT": "C1",
+        "team": "sdn",
+        "is_home_team": "TRUE"
+    }]
+}

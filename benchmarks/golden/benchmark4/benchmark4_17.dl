@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl mountain(country: StrAttr, elevation: StrAttr, id: StrAttr, latitude: StrAttr, located: Rel, longitude: StrAttr, mountains: StrAttr, name: StrAttr)
+.input mountain
+.decl Mountain(mid: StrAttr, name: StrAttr, mountains: StrAttr, elevation: StrAttr, latitude: StrAttr, longitude: StrAttr)
+.output Mountain(delimiter="\t")
+
+Mountain(v_Mountain?mid, v_Mountain?name, v_Mountain?mountains, v_Mountain?elevation, v_Mountain?latitude, v_Mountain?longitude) :-
+    mountain(_, v_Mountain?elevation, v_Mountain?mid, v_Mountain?latitude, _, v_Mountain?longitude, v_Mountain?mountains, v_Mountain?name).
+

@@ -1,0 +1,149 @@
+[
+  {
+    "type": "node",
+    "labels": [
+      "atBat"
+    ],
+    "properties": {
+      "event": "String",
+      "inning": "Int",
+      "o": "Int",
+      "p_score": "Int",
+      "p_throws": "String",
+      "stand": "String",
+      "top": "String"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "ejection"
+    ],
+    "properties": {
+      "des": "String",
+      "event_num": "Int",
+      "player_id": "String",
+      "date": "String",
+      "BS": "String",
+      "CORRECT": "String",
+      "team": "String",
+      "is_home_team": "String"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "game"
+    ],
+    "properties": {
+      "attendance": "Int",
+      "away_final_score": "Int",
+      "away_team": "String",
+      "date": "String",
+      "elapsed_time": "Int",
+      "home_final_score": "Int",
+      "home_team": "String",
+      "start_time": "String",
+      "umpire_1B": "String",
+      "umpire_2B": "String",
+      "umpire_3B": "String",
+      "umpire_HP": "String",
+      "venue_name": "String",
+      "weather": "String",
+      "wind": "String",
+      "delay": "Int"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "pitch"
+    ],
+    "properties": {
+      "px": "Float",
+      "pz": "Float",
+      "start_speed": "Float",
+      "end_speed": "Float",
+      "spin_rate": "Float",
+      "spin_dir": "Float",
+      "break_angle": "Float",
+      "break_length": "Float",
+      "break_y": "Float",
+      "ax": "Float",
+      "ay": "Float",
+      "az": "Float",
+      "sz_bot": "Float",
+      "sz_top": "Float",
+      "type_confidence": "Float",
+      "vx0": "Float",
+      "vy0": "Float",
+      "vz0": "Float",
+      "x": "Float",
+      "x0": "Float",
+      "y": "Float",
+      "y0": "Float",
+      "z0": "Float",
+      "pfx_x": "Float",
+      "pfx_z": "Float",
+      "nasty": "Float",
+      "zone": "Int",
+      "code": "String",
+      "type": "String",
+      "pitch_type": "String",
+      "event_num": "Int",
+      "b_score": "Float",
+      "b_count": "Float",
+      "s_count": "Float",
+      "outs": "Float",
+      "pitch_num": "Float",
+      "on_1b": "Float",
+      "on_2b": "Float",
+      "on_3b": "Float"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "playerName"
+    ],
+    "properties": {
+      "first_name": "String",
+      "last_name": "String"
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "BATTER_OF",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "PITCHER_OF",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "EJECTION_ATBAT",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "EJECTED_IN",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_ATBAT",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_EJECTION",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_PITCH",
+    "properties": {}
+  }
+]

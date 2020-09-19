@@ -1,0 +1,2 @@
+AtBats(ab_id: Int, batter_id: Int, event: String, g_id: Int, inning: Int, o: Int, p_score: Int, p_throws: String, pitcher_id: Int, stand: String, top: String)
+PlayerNames(id: Int, first_name: String, last_name: String)

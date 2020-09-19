@@ -1,0 +1,26 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl article?ee(__id: Rel, value: StrAttr)
+.input article?ee
+.decl article?journal(__id: Rel, value: StrAttr)
+.input article?journal
+.decl article?number(__id: Rel, value: StrAttr)
+.input article?number
+.decl article?volume(__id: Rel, value: StrAttr)
+.input article?volume
+.decl article?year(__id: Rel, value: IntAttr)
+.input article?year
+.decl article(author: Rel, ee: Rel, journal: Rel, key: StrAttr, mdate: StrAttr, number: Rel, pages: Rel, title: Rel, url: Rel, volume: Rel, year: Rel)
+.input article
+.decl Journal(id: StrAttr, name: StrAttr, number: StrAttr, volume: StrAttr, year: IntAttr)
+.output Journal(delimiter="\t")
+
+Journal(v_Journal?id, v_Journal?name, v_Journal?number, v_Journal?volume, v_Journal?year) :-
+    article(_, v_0, v_1, _, _, v_2, _, _, _, v_3, v_4),
+    article?year(v_4, v_Journal?year),
+    article?volume(v_3, v_Journal?volume),
+    article?number(v_2, v_Journal?number),
+    article?journal(v_1, v_Journal?name),
+    article?ee(v_0, v_Journal?id).
+

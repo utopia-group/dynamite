@@ -1,0 +1,22 @@
+{
+    "pacerCases": [
+        {
+            "case_name": "Davis v. Favelle Favco Cranes, et al",
+            "court_code": "txsd",
+            "court_name": "Texas Southern District Court",
+            "date_closed": "08/13/2001",
+            "case_number": "1:2000-cv-00003",
+            "pacer_id": "3",
+            "date_filed": "2000-01-03"
+        },
+        {
+            "case_name": "Monsanto v. Sierks et al",
+            "court_code": "ned",
+            "court_name": "Nebraska District Court",
+            "date_closed": "07/10/2002",
+            "case_number": "4:2002-cv-00105",
+            "pacer_id": "4",
+            "date_filed": "2002-03-04"
+        }
+    ]
+}

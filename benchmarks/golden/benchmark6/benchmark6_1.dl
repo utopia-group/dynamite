@@ -1,0 +1,17 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Listings(id: IntAttr, name: StrAttr, host_id: IntAttr, host_name: StrAttr, neighbourhood_group: StrAttr, neighbourhood: StrAttr, latitude: StrAttr, longitude: StrAttr, room_type: StrAttr, price: IntAttr, minimum_nights: IntAttr, number_of_reviews: IntAttr, last_review: StrAttr, reviews_per_month: StrAttr, calculated_host_listings_count: IntAttr, availability_365: IntAttr)
+.input Listings
+.decl Reviews(listing_id: IntAttr, id: IntAttr, date: StrAttr, reviewer_id: IntAttr, reviewer_name: StrAttr, comments: StrAttr)
+.input Reviews
+.decl listings?reviews(__id: Rel, comments: StrAttr, date: StrAttr, id: IntAttr, reviewer_id: IntAttr, reviewer_name: StrAttr)
+.decl listings(availability_365: IntAttr, host_id: IntAttr, host_name: StrAttr, id: IntAttr, latitude: StrAttr, longitude: StrAttr, minimum_nights: IntAttr, name: StrAttr, neighbourhood: StrAttr, neighbourhood_group: StrAttr, price: IntAttr, reviews: Rel, room_type: StrAttr)
+.output listings?reviews(delimiter="\t")
+.output listings(delimiter="\t")
+
+listings?reviews(_v_0, v_listings?reviews?comments, v_listings?reviews?date, v_listings?reviews?id, v_listings?reviews?reviewer_id, v_listings?reviews?reviewer_name), listings(v_listings?availability_365, v_listings?host_id, v_listings?host_name, v_listings?id, v_listings?latitude, v_listings?longitude, v_listings?minimum_nights, v_listings?name, v_listings?neighbourhood, v_listings?neighbourhood_group, v_listings?price, _v_0, v_listings?room_type) :-
+    Reviews(v_listings?id, v_listings?reviews?id, v_listings?reviews?date, v_listings?reviews?reviewer_id, v_listings?reviews?reviewer_name, v_listings?reviews?comments),
+    Listings(v_listings?id, v_listings?name, v_listings?host_id, v_listings?host_name, v_listings?neighbourhood_group, v_listings?neighbourhood, v_listings?latitude, v_listings?longitude, v_listings?room_type, v_listings?price, v_listings?minimum_nights, _, _, _, _, v_listings?availability_365),
+    _v_0 = cat("#", cat(v_listings?availability_365, cat("#", cat(v_listings?host_id, cat("#", cat(v_listings?host_name, cat("#", cat(v_listings?id, cat("#", cat(v_listings?latitude, cat("#", cat(v_listings?longitude, cat("#", cat(v_listings?minimum_nights, cat("#", cat(v_listings?name, cat("#", cat(v_listings?neighbourhood, cat("#", cat(v_listings?neighbourhood_group, cat("#", cat(v_listings?price, cat("#", cat(v_listings?room_type, "#")))))))))))))))))))))))).
+

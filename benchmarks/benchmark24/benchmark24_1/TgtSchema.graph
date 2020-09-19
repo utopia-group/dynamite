@@ -1,0 +1,77 @@
+[
+    {
+        "type": "node",
+        "labels": ["station"],
+        "properties": {
+            "name": "String",
+            "lat": "Float",
+            "long": "Float",
+            "dock_count": "Int",
+            "city": "String",
+            "installation_date": "String"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["status"],
+        "properties": {
+            "bikes_available": "Int",
+            "docks_available": "Int",
+            "time": "String"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["trip"],
+        "properties": {
+            "duration": "Int",
+            "bike_id": "Int",
+            "subscription_type": "String",
+            "zip_code": "String"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["weather"],
+        "properties": {
+            "date": "String",
+            "max_temperature_f": "Float",
+            "mean_temperature_f": "Float",
+            "min_temperature_f": "Float",
+            "max_dew_point_f": "Float",
+            "mean_dew_point_f": "Float",
+            "min_dew_point_f": "Float",
+            "max_humidity": "Float",
+            "mean_humidity": "Float",
+            "min_humidity": "Float",
+            "max_sea_level_pressure_inches": "Float",
+            "mean_sea_level_pressure_inches": "Float",
+            "min_sea_level_pressure_inches": "Float",
+            "max_visibility_miles": "Float",
+            "mean_visibility_miles": "Float",
+            "min_visibility_miles": "Float",
+            "max_wind_Speed_mph": "Float",
+            "mean_wind_speed_mph": "Float",
+            "max_gust_speed_mph": "Float",
+            "precipitation_inches": "String",
+            "cloud_cover": "Float",
+            "events": "String",
+            "wind_dir_degrees": "Float",
+            "zip_code": "String"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "STARTS_AT",
+        "properties": {
+            "start_date": "String"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "ENDS_AT",
+        "properties": {
+            "end_date": "String"
+        }
+    }
+]

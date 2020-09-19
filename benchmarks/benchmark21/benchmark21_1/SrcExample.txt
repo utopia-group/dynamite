@@ -1,0 +1,20 @@
+AtBats(ab_id: String, batter_id: String, event: String, g_id: String, inning: Int, o: Int, p_score: Int, p_throws: String, pitcher_id: String, stand: String, top: String)
+2015000768,571976,Hit By Pitch,201500012,1,0,0,L,477132,R,True
+2015003219,571976,Groundout,201500044,12,3,1,R,433586,RR,False
+
+Ejections(e_id: String, ab_id: String, des: String, event_num: Int, g_id: String, player_id: String, date: String, BS: String, CORRECT: String, team: String, is_home_team: String)
+E1,2015003219,San Diego Padres center fielder Will Venable ejected by HP umpire Tripp Gibson III.,732,201500044,461416,4/9/15,,C1,sdn,TRUE
+E2,2015003219,San Diego Padres Manager Bud Black ejected by HP umpire Tripp Gibson III.,734,201500044,111034,4/9/15,,C2,T2,TRUE
+
+Games(attendance: Int, away_final_score: Int, away_team: String, date: String, elapsed_time: Int, g_id: String, home_final_score: Int, home_team: String, start_time: String, umpire_1B: String, umpire_2B: String, umpire_3B: String, umpire_HP: String, venue_name: String, weather: String, wind: String, delay: Int)
+53518,3,sdn,2015-04-06,184,201500012,6,lan,1:12 PM,Mark Carlson,Mike DiMuro,Tripp Gibson III,Brian Gorman,Dodger Stadium,"65 degrees, partly cloudy","1 mph, Varies",0
+45149,1,sfn,2015-04-09,245,201500044,0,sdn,3:41 PM,Brian Gorman,Mark Carlson,Mike DiMuro,Tripp Gibson III,Petco Park,"67 degrees, sunny","12 mph, L to R",10
+
+Pitches(p_id: String, px: Float, pz: Float, start_speed: Float, end_speed: Float, spin_rate: Float, spin_dir: Float, break_angle: Float, break_length: Float, break_y: Float, ax: Float, ay: Float, az: Float, sz_bot: Float, sz_top: Float, type_confidence: Float, vx0: Float, vy0: Float, vz0: Float, x: Float, x0: Float, y: Float, y0: Float, z0: Float, pfx_x: Float, pfx_z: Float, nasty: Float, zone: Int, code: String, type: String, pitch_type: String, event_num: Int, b_score: Float, ab_id: String, b_count: Float, s_count: Float, outs: Float, pitch_num: Float, on_1b: Float, on_2b: Float, on_3b: Float)
+P1,-1.195,2.937,93.5,85.4,1879.384,214.244,26.9,4.5,23.7,-9.995,33.071,-17.492,1.61,3.7,2.000,2.599,-137.107,-4.287,162.55,-1.472,159.48,50,5.731,-5.3,7.75,47,11,X,X,FF,739,0.0,2015003219,2.0,1.0,2.0,4.0,0.0,0.0,0.0
+
+PlayerNames(id: String, first_name: String, last_name: String)
+433586,Santiago,Casilla
+461416,Will,Venable
+477132,Clayton,Kershaw
+571976,Wil,Myers

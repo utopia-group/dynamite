@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl country(area: StrAttr, border: Rel, capital: StrAttr, car_code: StrAttr, ethnicgroup: Rel, gdp_agri: StrAttr, gdp_ind: StrAttr, gdp_serv: StrAttr, gdp_total: IntAttr, government: StrAttr, indep_date: Rel, infant_mortality: StrAttr, inflation: StrAttr, language: Rel, memberships: StrAttr, name: StrAttr, population: Rel, population_growth: StrAttr, province: Rel, religion: Rel, unemployment: StrAttr)
+.input country
+.decl Country(name: StrAttr, code: StrAttr, capital: StrAttr, area: StrAttr)
+.output Country(delimiter="\t")
+
+Country(v_Country?name, v_Country?code, v_Country?capital, v_Country?area) :-
+    country(v_Country?area, _, v_Country?capital, v_Country?code, _, _, _, _, _, _, _, _, _, _, _, v_Country?name, _, _, _, _, _).
+

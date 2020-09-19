@@ -1,0 +1,204 @@
+[
+    {
+        "type": "node",
+        "labels": ["attorney"],
+        "id": "845125",
+        "properties": {
+            "party_row_count": "306263",
+            "party_type": "Plaintiff",
+            "name": "ANDREW T. BERRY",
+            "contactinfo": "MCCARTER & ENGLISH, LLP; FOUR GATEWAY CENTER; 100 MULBERRY STREET; PO BOX 652; NEWARK, NJ 07101-0652; (973) 622-4444",
+            "position": "TERMINATED: 08/11/2009; LEAD ATTORNEY; ATTORNEY TO BE NOTICED"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["attorney"],
+        "id": "845164",
+        "properties": {
+            "party_row_count": "306268",
+            "party_type": "Defendant",
+            "name": "ERIC I. ABRAHAM",
+            "contactinfo": "HILL WALLACK, LLP; 21 Roszel Road; PRINCETON, NJ 08543; (609) 734-6358; Email: eia@hillwallack.com",
+            "position": "LEAD ATTORNEY; ATTORNEY TO BE NOTICED"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["case"],
+        "id": "427",
+        "properties": {
+            "case_number": "0:00-cv-00019",
+            "pacer_id": "1338",
+            "case_name": "Banner Engineering v. Harris Instrument",
+            "court_name": "UNITED STATES DISTRICT COURT DISTRICT OF MINNESOTA",
+            "assigned_to": "A1",
+            "referred_to": "R1",
+            "case_cause": "C1",
+            "jurisdictional_basis": "J1",
+            "demand": "DD1",
+            "jury_demand": "J2",
+            "lead_case": "L1",
+            "related_case": "R2",
+            "settlement": "S1",
+            "date_filed": "2000-01-04",
+            "date_closed": "2000-03-09",
+            "date_last_filed": "2000-03-02"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["case"],
+        "id": "54973",
+        "properties": {
+            "case_number": "01-Jan-1970",
+            "pacer_id": "223949",
+            "case_name": "ASTRAZENECA AB et al v. SANDOZ, INC.",
+            "court_name": "UNITED STATES DISTRICT COURT DISTRICT OF NEW JERSEY",
+            "assigned_to": "Judge Joel A. Pisano",
+            "referred_to": "Magistrate Judge Tonianne J. Bongiovanni",
+            "case_cause": "35:271 Patent Infringement",
+            "jurisdictional_basis": "Federal Question",
+            "demand": "DD2",
+            "jury_demand": "J3",
+            "lead_case": "L2",
+            "related_case": "R3",
+            "settlement": "S2",
+            "date_filed": "2009-01-14",
+            "date_closed": "2011-06-02",
+            "date_last_filed": "DD3"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["document"],
+        "id": "D1",
+        "properties": {
+            "doc_count": 1,
+            "attachment": "0",
+            "date_filed": "2000-01-04",
+            "long_description": "COMPLAINT - Summons issued. Assigned to Judge Ann D. Montgomery per patent list and referred to Magistrate Judge Arthur J. Boylan. Receipt 232554. (28 pgs) (cc: Patent office) (MKC)",
+            "doc_number": 1,
+            "short_description": "Complaint",
+            "upload_date": null
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["document"],
+        "id": "D2",
+        "properties": {
+            "doc_count": 2,
+            "attachment": "0",
+            "date_filed": "2000-01-13",
+            "long_description": "SUMONS - RETURN OF SERVICE executed upon defendant Harris Instrument on 1/6/00. (3 pgs) (MKC)",
+            "doc_number": 2,
+            "short_description": "Summons Returned Executed",
+            "upload_date": null
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["document"],
+        "id": "D3",
+        "properties": {
+            "doc_count": 1,
+            "attachment": "0",
+            "date_filed": "2009-01-14",
+            "long_description": "COMPLAINT against SANDOZ, INC. ( Filing fee $ 350 receipt number 2349082.), filed by ASTRAZENECA AB, AKTIEBOLAGET HASSLE, ASTRAZENECA LP, KBI INC,, KBI-E INC..(kak) (Entered: 01/15/2009)",
+            "doc_number": 1,
+            "short_description": null,
+            "upload_date": "DD4"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["name"],
+        "id": "399948",
+        "properties": {
+            "party_row_count": "306270",
+            "party_type": "Counter Claimant",
+            "name": "SANDOZ, INC."
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["name"],
+        "id": "399949",
+        "properties": {
+            "party_row_count": "306271",
+            "party_type": "Counter Defendant",
+            "name": "ASTRAZENECA AB"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["pacerCases"],
+        "id": "P1",
+        "properties": {
+            "case_name": "Davis v. Favelle Favco Cranes, et al",
+            "court_code": "txsd",
+            "court_name": "Texas Southern District Court",
+            "date_closed": "08/13/2001",
+            "case_number": "1:2000-cv-00003",
+            "pacer_id": "3",
+            "date_filed": "2000-01-03"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_DOCUMENT",
+        "id": "ID1",
+        "properties": { },
+        "start": { "id": "427", "labels": ["case"] },
+        "end": { "id": "D1", "labels": ["document"] }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_DOCUMENT",
+        "id": "ID2",
+        "properties": { },
+        "start": { "id": "427", "labels": ["case"] },
+        "end": { "id": "D2", "labels": ["document"] }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_DOCUMENT",
+        "id": "ID3",
+        "properties": { },
+        "start": { "id": "54973", "labels": ["case"] },
+        "end": { "id": "D3", "labels": ["document"] }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_ATTORNEY",
+        "id": "ID4",
+        "properties": { },
+        "start": { "id": "54973", "labels": ["case"] },
+        "end": { "id": "845125", "labels": ["attorney"] }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_ATTORNEY",
+        "id": "ID5",
+        "properties": { },
+        "start": { "id": "54973", "labels": ["case"] },
+        "end": { "id": "845164", "labels": ["attorney"] }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_NAME",
+        "id": "ID6",
+        "properties": { },
+        "start": { "id": "54973", "labels": ["case"] },
+        "end": { "id": "399948", "labels": ["name"] }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_NAME",
+        "id": "ID7",
+        "properties": { },
+        "start": { "id": "54973", "labels": ["case"] },
+        "end": { "id": "399949", "labels": ["name"] }
+    }
+]

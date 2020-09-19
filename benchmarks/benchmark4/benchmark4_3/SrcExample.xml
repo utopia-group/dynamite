@@ -1,0 +1,42 @@
+<mondial>
+   <country>
+      <province id="prov-Albania-2">
+         <city country="AL" id="cty-Albania-Tirane">
+            <name>Tirana</name>
+            <latitude>41.33</latitude>
+            <longitude>19.82</longitude>
+            <elevation>110</elevation>
+            <population measured="estimate" year="1990">244153</population>
+         </city>
+         <city country="AL" id="stadt-Shkoder-AL-AL">
+            <name>Shkodr</name>
+            <latitude>42.07</latitude>
+            <longitude>19.5</longitude>
+            <elevation>13</elevation>
+            <population measured="est" year="2011">77075</population>
+            <population year="1987">62000</population>
+            <located_at lake="lake-Skutarisee" watertype="lake"/>
+         </city>
+      </province>
+   </country>
+   <country>
+      <province id="prov-Iran-2">
+         <city country="IR" id="cty-Iran-14" province="prov-Iran-2">
+            <name>Orumiyeh</name>
+            <latitude>37.56</latitude>
+            <longitude>45.07</longitude>
+            <elevation>1332</elevation>
+            <population measured="est." year="2010">667499</population>
+         </city>
+      </province>
+      <province id="prov-Iran-3">
+         <city country="IR" id="cty-Iran-5" province="prov-Iran-3">
+            <name>Tabriz</name>
+            <latitude>38.07</latitude>
+            <longitude>46.3</longitude>
+            <elevation>1351.4</elevation>
+            <population measured="census" year="2001">1494998</population>
+         </city>
+      </province>
+   </country>
+</mondial>

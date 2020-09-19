@@ -1,0 +1,13 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Cases(case_row_id: StrAttr, case_number: StrAttr, pacer_id: StrAttr, case_name: StrAttr, court_name: StrAttr, assigned_to: StrAttr, referred_to: StrAttr, case_cause: StrAttr, jurisdictional_basis: StrAttr, demand: StrAttr, jury_demand: StrAttr, lead_case: StrAttr, related_case: StrAttr, settlement: StrAttr, date_filed: StrAttr, date_closed: StrAttr, date_last_filed: StrAttr)
+.input Cases
+.decl Names(case_row_id: StrAttr, case_number: StrAttr, party_row_count: StrAttr, party_type: StrAttr, name_row_count: StrAttr, name: StrAttr)
+.input Names
+.decl names(case_row_id: StrAttr, case_number: StrAttr, case_name: StrAttr, party_row_count: StrAttr, party_type: StrAttr, name_row_count: StrAttr, name: StrAttr)
+.output names(delimiter="\t")
+
+names(v_names?case_row_id, v_names?case_number, v_names?case_name, v_names?party_row_count, v_names?party_type, v_names?name_row_count, v_names?name) :-
+    Cases(v_names?case_row_id, v_names?case_number, _, v_names?case_name, _, _, _, _, _, _, _, _, _, _, _, _, _),
+    Names(v_names?case_row_id, _, v_names?party_row_count, v_names?party_type, v_names?name_row_count, v_names?name).

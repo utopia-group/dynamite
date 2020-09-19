@@ -1,0 +1,1 @@
+Economy(country_code: String, gdp: Int, agriculture: Float, service: Float, industry: Float, inflation: Float, unemployment: Float)

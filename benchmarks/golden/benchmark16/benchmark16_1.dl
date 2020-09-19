@@ -1,0 +1,29 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Player(_id: StrAttr, id: StrAttr, name: StrAttr, position: StrAttr)
+.input Player
+.decl Club(_id: StrAttr, id: StrAttr, name: StrAttr)
+.input Club
+.decl Transfer(_id: StrAttr, fee: StrAttr, id: StrAttr, numericFee: IntAttr, season: StrAttr, timestamp: IntAttr)
+.input Transfer
+.decl TransferWithoutFee(_id: StrAttr, fee: StrAttr, id: StrAttr, season: StrAttr, timestamp: IntAttr)
+.input TransferWithoutFee
+.decl player(id: StrAttr, name: StrAttr, position: StrAttr)
+.output player(delimiter="\t")
+.decl club(id: StrAttr, name: StrAttr)
+.output club(delimiter="\t")
+.decl transfer(fee: StrAttr, id: StrAttr, numericFee: IntAttr, season: StrAttr, timestamp: IntAttr)
+.output transfer(delimiter="\t")
+.decl transferWithoutFee(fee: StrAttr, id: StrAttr, season: StrAttr, timestamp: IntAttr)
+.output transferWithoutFee(delimiter="\t")
+
+player(v_player?id, v_player?name, v_player?position) :-
+    Player(_, v_player?id, v_player?name, v_player?position).
+club(v_club?id, v_club?name) :-
+    Club(_, v_club?id, v_club?name).
+transfer(v_transfer?fee, v_transfer?id, v_transfer?numericFee, v_transfer?season, v_transfer?timestamp) :-
+    Transfer(_, v_transfer?fee, v_transfer?id, v_transfer?numericFee, v_transfer?season, v_transfer?timestamp).
+transferWithoutFee(v_transferWithoutFee?fee, v_transferWithoutFee?id, v_transferWithoutFee?season, v_transferWithoutFee?timestamp) :-
+    TransferWithoutFee(_, v_transferWithoutFee?fee, v_transferWithoutFee?id, v_transferWithoutFee?season, v_transferWithoutFee?timestamp).
+

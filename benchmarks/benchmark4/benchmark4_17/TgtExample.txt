@@ -1,0 +1,3 @@
+Mountain(mid: String, name: String, mountains: String, elevation: Float, latitude: Float, longitude: Float)
+"mount-Yerupaja","Yerupaja","Cordillera Blanca",6635,-10.3,-76.9
+"mount-Licancabur","Licancabur","Andes",5920,-22.8,-67.9

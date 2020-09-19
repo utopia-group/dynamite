@@ -1,0 +1,136 @@
+{
+  "crew": [
+    {
+      "id": "Actor A",
+      "roles": [
+        {
+          "_id": "500",
+          "title": "Movie X",
+          "role": "director",
+          "character": "executive director"
+        },
+        {
+          "_id": "501",
+          "title": "Movie Y",
+          "role": "actor",
+          "character": "villain"
+        }
+      ]
+    },
+    {
+      "id": "Actor B",
+      "roles": [
+        {
+          "_id": "502",
+          "title": "Movie X",
+          "role": "actress",
+          "character": "hero"
+        }
+      ]
+    }
+  ],
+  "movie": [
+    {
+      "id": "Movie X (2019)",
+      "title": "Movie X",
+      "kind": "movie",
+      "countries": [
+        "Canada"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "keywords": [
+        "compilation",
+        "long"
+      ],
+      "languages": [
+        {
+          "name": "French"
+        },
+        {
+          "name": "English"
+        }
+      ],
+      "year": [
+        "2002"
+      ],
+      "companies": [
+        {
+          "name": "Fox-Fire Films [ca]",
+          "type": "production1"
+        },
+        {
+          "name": "National Film Board of Canada (NFB) [ca]",
+          "type": "production2"
+        }
+      ],
+      "rating": {
+        "rank": 7.7,
+        "votes": 51,
+        "distribution": "0...002311"
+      },
+      "release_dates": [
+        {
+          "country": "Canada",
+          "date": "23 August 2002"
+        },
+        {
+          "country": "UK",
+          "date": "10 June 2003"
+        }
+      ],
+      "running_times": [
+        {
+          "secs": 4920
+        }
+      ]
+    },
+    {
+      "id": "Movie Y (2020)",
+      "title": "Movie Y",
+      "kind": "series",
+      "countries": [
+        "Italy"
+      ],
+      "genres": [
+        "Documentary",
+        "Reality"
+      ],
+      "keywords": [
+        "short"
+      ],
+      "languages": [
+        {
+          "name": "Italian"
+        }
+      ],
+      "year": [
+        "1994",
+        "1995"
+      ],
+      "companies": [
+        {
+          "name": "RAI Radiotelevisione Italiana [it]",
+          "type": "production"
+        }
+      ],
+      "rating": {
+        "rank": 4.1,
+        "votes": 9,
+        "distribution": "31.2.1..2."
+      },
+      "release_dates": [
+        {
+          "country": "Italy",
+          "date": "1 January 1994"
+        }
+      ],
+      "running_times": [
+        {
+          "secs": 920
+        }
+      ]
+    }
+  ]
+}

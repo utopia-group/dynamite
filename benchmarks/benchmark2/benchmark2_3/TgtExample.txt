@@ -1,0 +1,4 @@
+Company( mid: String, name: String, type: String)
+"Claude Jutra - An Unfinished Story aka: Claude Jutra portrait sur film (2002)", "Fox-Fire Films [ca]", "production1"
+"Claude Jutra - An Unfinished Story aka: Claude Jutra portrait sur film (2002)", "National Film Board of Canada (NFB) [ca]", "production2"
+"!Next? (1994)", "RAI Radiotelevisione Italiana [it]", "production"

@@ -1,0 +1,24 @@
+listings(id: Int, name: String, host_id: Int, neighbourhood_group: String, neighbourhood: String, latitude: Float, longitude: Float, room_type: String, price: Int, minimum_nights: Int, number_of_reviews: Int, last_review: String, reviews_per_month: Float, calculated_host_listings_count: Int, availability_365: Int)
+2015, L1, 2217, Mitte, "Brunnenstr. Sud", 52.53453732241747, 13.402556926822387, "Entire home/apt", 60, 4, 118, "2018-10-28", 3.76, 4, 141
+2695, L2, 2986, Pankow, "Prenzlauer Berg Nordwest", 52.54851279221664, 13.404552826587466, "Private room", 17, 2, 6, "2018-10-01", 1.42, 1, 0
+10001, L3, 2217, Mitte, "Brunnenstr. Sud", 52.53453732241747, 13.402556926822387, "Entire home/apt", 60, 4, 118, "2018-10-28", 3.76, 4, 141
+
+hosts(host_id: Int, host_name: String)
+2217, Ian
+2986, Michael
+
+reviews(listing_id: Int, id: Int, date: String, reviewer_id: Int, comments: String)
+2015, 69544350, 2016-04-11, 7178145, C1
+2015, 69990732, 2016-04-15, 41944715, C2
+2695, 285580354, 2018-07-04, 30733089, C3
+
+reviewers(reviewer_id: Int, reviewer_name: String)
+7178145, Rahel
+41944715, Hannah
+30733089, Jason
+
+listingReviewers(listing_name: String, reviewer_name: String)
+L1, Rahel
+L1, Hannah
+L2, Jason
+

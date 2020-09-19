@@ -1,0 +1,3 @@
+Producer(name: String, mid: String, note: String)
+"Shotgun' Smith; Andrew", "Reina de Corazones (2016)", "(assistant producer)"
+"Barrymore; Drew", "Animal (2014/I)", "(executive producer)"

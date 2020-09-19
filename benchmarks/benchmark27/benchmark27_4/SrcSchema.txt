@@ -1,0 +1,2 @@
+Cases(case_row_id: String, case_number: String, pacer_id: String, case_name: String, court_name: String, assigned_to: String, referred_to: String, case_cause: String, jurisdictional_basis: String, demand: String, jury_demand: String, lead_case: String, related_case: String, settlement: String, date_filed: String, date_closed: String, date_last_filed: String)
+Names(case_row_id: String, case_number: String, party_row_count: String, party_type: String, name_row_count: String, name: String)

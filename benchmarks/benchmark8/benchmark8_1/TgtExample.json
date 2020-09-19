@@ -1,0 +1,38 @@
+{
+    "trips": [
+        {
+            "id": "4576",
+            "duration": 63,
+            "start_date": "8/29/2013 14:13",
+            "start_station": [{
+                "id": "66",
+                "name": "South Van Ness at Market"
+            }],
+            "end_date": "8/29/2013 14:14",
+            "end_station": [{
+                "id": "66",
+                "name": "South Van Ness at Market"
+            }],
+            "bike_id": 520,
+            "subscription_type": "Subscriber",
+            "zip_code": "94127"
+        },
+        {
+            "id": "4299",
+            "duration": 83,
+            "start_date": "8/29/2013 12:02",
+            "start_station": [{
+                "id": "68",
+                "name": "South Van Ness at Marke"
+            }],
+            "end_date": "8/29/2013 12:04",
+            "end_station": [{
+                "id": "67",
+                "name": "Market at 10th"
+            }],
+            "bike_id": 319,
+            "subscription_type": "Subscriber",
+            "zip_code": "94103"
+        }
+    ]
+}

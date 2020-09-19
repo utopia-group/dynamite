@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl country?border(__id: Rel, country: StrAttr, length: IntAttr)
+.input country?border
+.decl country(area: StrAttr, border: Rel, capital: StrAttr, car_code: StrAttr, ethnicgroup: Rel, gdp_agri: StrAttr, gdp_ind: StrAttr, gdp_serv: StrAttr, gdp_total: IntAttr, government: StrAttr, indep_date: Rel, infant_mortality: StrAttr, inflation: StrAttr, language: Rel, memberships: StrAttr, name: StrAttr, population: Rel, population_growth: StrAttr, province: Rel, religion: Rel, unemployment: StrAttr)
+.input country
+.decl Border(country_code: StrAttr, neighbor_code: StrAttr, length: IntAttr)
+.output Border(delimiter="\t")
+
+Border(v_Border?country_code, v_Border?neighbor_code, v_Border?length) :-
+    country(_, v_1, _, v_Border?country_code, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _),
+    country?border(v_1, v_Border?neighbor_code, v_Border?length).
+

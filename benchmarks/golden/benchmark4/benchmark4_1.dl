@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl airport(city: StrAttr, country: StrAttr, elevation: StrAttr, gmtOffset: IntAttr, iatacode: StrAttr, latitude: StrAttr, longitude: StrAttr, name: StrAttr)
+.input airport
+.decl Airport(iata_code: StrAttr, country_code: StrAttr, city_code: StrAttr, name: StrAttr, latitude: StrAttr, longitude: StrAttr, elevation: StrAttr, gmt_offset: IntAttr)
+.output Airport(delimiter="\t")
+
+Airport(v_Airport?iata_code, v_Airport?country_code, v_Airport?city_code, v_Airport?name, v_Airport?latitude, v_Airport?longitude, v_Airport?elevation, v_Airport?gmt_offset) :-
+    airport(v_Airport?city_code, v_Airport?country_code, v_Airport?elevation, v_Airport?gmt_offset, v_Airport?iata_code, v_Airport?latitude, v_Airport?longitude, v_Airport?name).
+

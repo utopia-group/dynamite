@@ -1,0 +1,28 @@
+{
+  "review": [
+    {
+      "review_id": "Uf1Ki1yyH_JDKhLvn2e4FQ",
+      "user_id": "bgl3j8yJcRO-00NkUYsXGQ",
+      "business_id": "2LfIuF3_sX6uwe-IR-P0jQ",
+      "stars": 5,
+      "date": "2013-04-28",
+      "text": "What a great place! Modern on Melrose has amazing furniture at great prices. I highly recommend and will be back when I am looking for new pieces.",
+      "useful": 2,
+      "funny": 0,
+      "cool": 1,
+      "type": "review"
+    },
+    {
+      "review_id": "GXQnlRo41C4WykC_IP2Lbw",
+      "user_id": "rWL8bGLRPtYAhX97JnRVXg",
+      "business_id": "KYasaF1nov1bn7phfSgWeg",
+      "stars": 4,
+      "date": "2015-08-15",
+      "text": "Tui was awesome she made me an amazing jackfruit smoothie. I couldn't find jackfruit anywhere except here",
+      "useful": 0,
+      "funny": 0,
+      "cool": 0,
+      "type": "review"
+    }
+  ]
+}

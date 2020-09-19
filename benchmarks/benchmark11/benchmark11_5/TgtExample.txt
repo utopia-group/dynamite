@@ -1,0 +1,4 @@
+tag(movieid: String, moviename: String, time: String, tag: String, userid: String)
+"3200","Last Detail, The (1973)","1498456396","good music","599"
+"5618","Spirited Away (Sen to Chihiro no kamikakushi) (2001)","1137206076","anime","474"
+

@@ -1,0 +1,10 @@
+AtBats(ab_id: Int, batter_id: Int, event: String, g_id: Int, inning: Int, o: Int, p_score: Int, p_throws: String, pitcher_id: Int, stand: String, top: String)
+2015000001,572761,Groundout,201500001,1,1,0,L,452657,S1,True
+2015000002,518792,Double,201500001,2,3,1,L,452657,S2,True
+
+PlayerNames(id: Int, first_name: String, last_name: String)
+452657,Jon,Lester
+572761,Matt,Carpenter
+518792,Jason,Heyward
+123456,Jon,Carpenter
+

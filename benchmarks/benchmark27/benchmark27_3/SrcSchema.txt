@@ -1,0 +1,1 @@
+Attorneys(case_row_id: String, case_number: String, party_row_count: String, party_type: String, attorney_row_count: String, name: String, contactinfo: String, position: String)

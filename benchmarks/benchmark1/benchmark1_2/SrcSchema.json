@@ -1,0 +1,22 @@
+{
+  "business": [
+    {
+      "business_id": String,
+      "name": String,
+      "neighborhood": String,
+      "address": String,
+      "city": String,
+      "state": String,
+      "postal_code": String,
+      "latitude": Float,
+      "longitude": Float,
+      "stars": Float,
+      "review_count": Int,
+      "is_open": Int,
+      "attributes": [String],
+      "categories": [String],
+      "hours": [String],
+      "type": String
+    }
+  ]
+}

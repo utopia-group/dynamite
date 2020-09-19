@@ -1,0 +1,3 @@
+transfer(season: String, fee: String, numericFee: Int, id: String, timestamp: Int)
+"2013/2014", "Free transfer", 0, "/jumplist/transfers/spieler/27932/transfer_id/969874", 1383004800
+"2013/2014", "Free transfer", 0, "/jumplist/transfers/spieler/45006/transfer_id/917512", 1383004800

@@ -1,0 +1,9 @@
+{
+    "neighbourhoods": [{
+        "group": "String",
+        "neighbourhood": [{
+            "id": "String",
+            "name": "String"
+        }]
+    }]
+}

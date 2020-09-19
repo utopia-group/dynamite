@@ -1,0 +1,3 @@
+Airport(iata_code: String, country_code: String, city_code: String, name: String, latitude: Float, longitude: Float, elevation: Float, gmt_offset: Int)
+"KBL", "AFG", "cty-Afghanistan-Kabul", "Kabul Intl", 34.565853, 69.212328, 1792, 5
+"BUQ", "ZW", "cty-Zimbabwe-2", "J M Nkomo Intl", -20.017431, 28.617869, 1329, 2

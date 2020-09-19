@@ -1,0 +1,2 @@
+relationship(fk: String, left: String, right: String)
+"-12011-10-11 15:59:56","1706468","2790543"

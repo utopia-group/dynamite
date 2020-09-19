@@ -1,0 +1,3 @@
+Paper(id: String, title: String, jid: String, pages: String)
+"journals/acta/Saxena96", "Parallel Integer Sorting and Simulation Amongst CRCW Models.", "https://doi.org/10.1007/BF03036466", "607-619"
+"journals/wias/0002YWG013", "A study on dynamic Semantic Web service composition.", "https://doi.org/10.3233/WIA-130266", "125-135"

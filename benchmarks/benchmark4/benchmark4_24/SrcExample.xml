@@ -1,0 +1,32 @@
+<mondial>
+   <sea bordering="sea-Mittelmeer sea-Channel" country="F E" id="sea-Atlantic">
+      <name>Atlantic Ocean</name>
+      <located country="F" province="prov-France-5 prov-France-20"/>
+      <located country="E" province="prov-Spain-2 prov-Spain-13"/>
+      <area>436000</area>
+      <depth>9219</depth>
+   </sea>
+   <sea bordering="sea-Marmarameer" country="AL" id="sea-Mittelmeer">
+      <name>Mediterranean Sea</name>
+      <located country="BIH" province="prov-BIH-1"/>
+      <area>2500000</area>
+      <depth>5267</depth>
+   </sea>
+   <mountain country="PE" id="mount-Yerupaja">
+      <name>Yerupaja</name>
+      <mountains>Cordillera Blanca</mountains>
+      <located country="PE" province="prov-Peru-3"/>
+      <latitude>-10.3</latitude>
+      <longitude>-76.9</longitude>
+      <elevation>6635</elevation>
+   </mountain>
+   <mountain country="BOL RCH" id="mount-Licancabur" type="volcano">
+      <name>Licancabur</name>
+      <mountains>Andes</mountains>
+      <located country="BOL" province="prov-BOL-3"/>
+      <located country="RCH" province="prov-Chile-2"/>
+      <latitude>-22.8</latitude>
+      <longitude>-67.9</longitude>
+      <elevation>5920</elevation>
+   </mountain>
+</mondial>

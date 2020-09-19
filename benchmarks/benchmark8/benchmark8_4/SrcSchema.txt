@@ -1,0 +1,1 @@
+Status(s_id: String, station_id: String, bikes_available: Int, docks_available: Int, time: String)

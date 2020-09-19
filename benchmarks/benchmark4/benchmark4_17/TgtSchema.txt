@@ -1,0 +1,1 @@
+Mountain(mid: String, name: String, mountains: String, elevation: Float, latitude: Float, longitude: Float)

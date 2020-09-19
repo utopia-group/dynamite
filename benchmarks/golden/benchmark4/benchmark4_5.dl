@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl country?population(__id: Rel, measured: StrAttr, nestedContent: IntAttr, year: IntAttr)
+.input country?population
+.decl country(area: StrAttr, border: Rel, capital: StrAttr, car_code: StrAttr, ethnicgroup: Rel, gdp_agri: StrAttr, gdp_ind: StrAttr, gdp_serv: StrAttr, gdp_total: IntAttr, government: StrAttr, indep_date: Rel, infant_mortality: StrAttr, inflation: StrAttr, language: Rel, memberships: StrAttr, name: StrAttr, population: Rel, population_growth: StrAttr, province: Rel, religion: Rel, unemployment: StrAttr)
+.input country
+.decl Country_Population(country_code: StrAttr, year: IntAttr, population: IntAttr)
+.output Country_Population(delimiter="\t")
+
+Country_Population(v_Country_Population?country_code, v_Country_Population?year, v_Country_Population?population) :-
+    country(_, _, _, v_Country_Population?country_code, _, _, _, _, _, _, _, _, _, _, _, _, v_0, _, _, _, _),
+    country?population(v_0, _, v_Country_Population?population, v_Country_Population?year).
+

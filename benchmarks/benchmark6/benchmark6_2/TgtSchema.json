@@ -1,0 +1,10 @@
+{
+    "calendar": [{
+        "listing_id": "Int",
+        "dates": [{
+            "date": "String",
+            "available": "String",
+            "price": "String"
+        }]
+    }]
+}

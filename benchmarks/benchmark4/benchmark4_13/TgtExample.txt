@@ -1,0 +1,4 @@
+Geo_Mountain(mid: String, country_code: String, provinces: String)
+"mount-Yerupaja","PE","prov-Peru-3"
+"mount-Licancabur","BOL","prov-BOL-3"
+"mount-Licancabur","RCH","prov-Chile-2"

@@ -1,0 +1,80 @@
+{
+  "review": [
+    {
+      "review_id": String,
+      "user_id": String,
+      "business_id": String,
+      "stars": Int,
+      "date": String,
+      "text": String,
+      "useful": Int,
+      "funny": Int,
+      "cool": Int,
+      "type": String
+    }
+  ],
+  "business": [
+    {
+      "business_id": String,
+      "name": String,
+      "neighborhood": String,
+      "address": String,
+      "city": String,
+      "state": String,
+      "postal_code": String,
+      "latitude": Float,
+      "longitude": Float,
+      "stars": Float,
+      "review_count": Int,
+      "is_open": Int,
+      "attributes": [String],
+      "categories": [String],
+      "hours": [String],
+      "type": String
+    }
+  ],
+  "checkin": [
+    {
+      "time": [String],
+      "business_id": String,
+      "type": String
+    }
+  ],
+  "tip": [
+    {
+      "text": String,
+      "date": String,
+      "likes": Int,
+      "business_id": String,
+      "user_id": String,
+      "type": String
+    }
+  ],
+  "user": [
+    {
+      "user_id": String,
+      "name": String,
+      "review_count": Int,
+      "yelping_since": String,
+      "friends": [String],
+      "useful": Int,
+      "funny": Int,
+      "cool": Int,
+      "fans": Int,
+      "elite": [String],
+      "average_stars": String,
+      "compliment_hot": Int,
+      "compliment_more": Int,
+      "compliment_profile": Int,
+      "compliment_cute": Int,
+      "compliment_list": Int,
+      "compliment_note": Int,
+      "compliment_plain": Int,
+      "compliment_cool": Int,
+      "compliment_funny": Int,
+      "compliment_writer": Int,
+      "compliment_photos": Int,
+      "type": String
+    }
+  ]
+}

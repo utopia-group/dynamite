@@ -1,0 +1,18 @@
+Calendar(c_id: String, listing_id: String, date: String, available: String, price: String)
+C1, 2015, "2019-09-10", "f", null
+C2, 2015, "2019-05-05", "t", "$76.00"
+C3, 158890, "2019-11-06", "t", "$107.00"
+
+Listings(id: String, name: String, host_id: Int, host_name: String, neighbourhood_group: String, neighbourhood: String, latitude: Float, longitude: Float, room_type: String, price: Int, minimum_nights: Int, number_of_reviews: Int, last_review: String, reviews_per_month: Float, calculated_host_listings_count: Int, availability_365: Int)
+2015, "Berlin-Mitte Value! Quiet courtyard/very central", 2217, "Ian", "Mitte", "Brunnenstr. Sud", 52.53453732241747, 13.402556926822387, "Entire home/apt", 60, 4, 118, "2018-10-28", 3.76, 4, 141
+2695, "Prenzlauer Berg close to Mauerpark", 2986, "Michael", "Pankow", "Prenzlauer Berg Nordwest", 52.54851279221664, 13.404552826587466, "Private room", 17, 2, 6, "2018-10-01", 1.42, 1, 0
+26952, "Prenzlauer Berg close to Mauerpark", 2986, "Michael", "Pankow", "Prenzlauer Berg Nordwest", 52.54851279221664, 13.404552826587466, "Private room", 17, 2, 6, "2018-10-01", 1.42, 1, 0
+
+Neighbourhoods(n_id: String, neighbourhood_group: String, neighbourhood: String)
+N1, "Mitte", "Brunnenstr. Sud"
+N2, "Pankow", "Prenzlauer Berg Nordwest"
+
+Reviews(listing_id: String, id: String, date: String, reviewer_id: Int, reviewer_name: String, comments: String)
+2015, 69544350, "2016-04-11", 7178145, "Rahel", "Mein Freund und ich hatten gute gemutliche vier Nachte in Jans Studio. Es ist unfassbar ruhig und hat sogar ein gedampftes Klavier fur Leute die gerne spielen. Die Lage ist hervorragend und es gibt in der Strasse einen tollen alimentari und eine gunstige weinerei. Das Bad ist sehr alt aber funktionstuchtig und der insgesamte Standard ist ok, ein wenig chaotisch aber dafur hat man das Gefuhl man ist bei jemandem zuhause ! Jan ist ein aufgeschlossener lustiger Mann und auch um frische Handtucher und sonstiges bemuht! Wir danken."
+2015, 69990732, "2016-04-15", 41944715, "Hannah", "Jan was very friendly and welcoming host! The apartment was great and the area is sooo amazing, lots of nice cafes and shops! Enjoyed my time there a lot!"
+2695, 285580354, "2018-07-04", 30733089, "Jason", "I really enjoyed staying at Micha and Nadja's place. It's a cosy real Berlin apartment. You can see it's one they use themselves when they're not on holiday, so I found this a very nice and authentic place to stay. It has everything you need and communication was very good and friendly, and they helped me out with lots of local tips. The area (and apartment itself) is quiet as they describe, but it's still quick and easy to get to the main areas I wanted to explore in Berlin. And it has a lot of places to eat out nearby. I plan to stay there again on my next Berlin holiday!"

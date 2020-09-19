@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl desert(area: StrAttr, country: StrAttr, id: StrAttr, latitude: StrAttr, located: Rel, longitude: StrAttr, name: StrAttr, type: StrAttr)
+.input desert
+.decl Desert(did: StrAttr, name: StrAttr, area: StrAttr, latitude: StrAttr, longitude: StrAttr, countries: StrAttr)
+.output Desert(delimiter="\t")
+
+Desert(v_Desert?did, v_Desert?name, v_Desert?area, v_Desert?latitude, v_Desert?longitude, v_Desert?countries) :-
+    desert(v_Desert?area, v_Desert?countries, v_Desert?did, v_Desert?latitude, _, v_Desert?longitude, v_Desert?name, _).
+

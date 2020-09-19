@@ -1,0 +1,5 @@
+Calendar(c_id: String, listing_id: Int, date: String, available: String, price: String)
+C1, 2015, "2019-09-10", "f", null
+C2, 2015, "2019-05-05", "t", "$76.00"
+C3, 158890, "2019-11-06", "t", "$107.00"
+C4, 158890, "2019-11-05", "t", "$107.00"

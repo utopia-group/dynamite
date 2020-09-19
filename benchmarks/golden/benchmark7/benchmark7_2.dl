@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Attorneys(case_row_id: StrAttr, case_number: StrAttr, party_row_count: StrAttr, party_type: StrAttr, attorney_row_count: StrAttr, name: StrAttr, contactinfo: StrAttr, position: StrAttr)
+.input Attorneys
+.decl attorneyByCases?attorneys(__id: Rel, attorney_row_count: StrAttr, contactinfo: StrAttr, name: StrAttr, party_row_count: StrAttr, party_type: StrAttr, position: StrAttr)
+.decl attorneyByCases(attorneys: Rel, case_number: StrAttr, case_row_id: StrAttr)
+.output attorneyByCases?attorneys(delimiter="\t")
+.output attorneyByCases(delimiter="\t")
+
+attorneyByCases?attorneys(_v_0, v_attorneyByCases?attorneys?attorney_row_count, v_attorneyByCases?attorneys?contactinfo, v_attorneyByCases?attorneys?name, v_attorneyByCases?attorneys?party_row_count, v_attorneyByCases?attorneys?party_type, v_attorneyByCases?attorneys?position), attorneyByCases(_v_0, v_attorneyByCases?case_number, v_attorneyByCases?case_row_id) :-
+    Attorneys(v_attorneyByCases?case_row_id, v_attorneyByCases?case_number, v_attorneyByCases?attorneys?party_row_count, v_attorneyByCases?attorneys?party_type, v_attorneyByCases?attorneys?attorney_row_count, v_attorneyByCases?attorneys?name, v_attorneyByCases?attorneys?contactinfo, v_attorneyByCases?attorneys?position),
+    _v_0 = cat("#", cat(v_attorneyByCases?case_number, cat("#", cat(v_attorneyByCases?case_row_id, "#")))).
+

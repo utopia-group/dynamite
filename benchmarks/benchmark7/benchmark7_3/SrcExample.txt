@@ -1,0 +1,3 @@
+Names(case_row_id: String, case_number: String, party_row_count: String, party_type: String, name_row_count: String, name: String)
+1,0:79-cv-06704-JCP,1,Plaintiff,1,Burroghs Wellcome Co.
+1,0:79-cv-06704-JCP,2,Defendant,2,Generix Drug Corp.

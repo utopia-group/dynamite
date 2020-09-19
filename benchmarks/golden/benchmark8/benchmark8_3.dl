@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Stations(id: StrAttr, name: StrAttr, lat: StrAttr, long: StrAttr, dock_count: IntAttr, city: StrAttr, installation_date: StrAttr)
+.input Stations
+.decl Trips(id: StrAttr, duration: IntAttr, start_date: StrAttr, start_station_name: StrAttr, start_station_id: StrAttr, end_date: StrAttr, end_station_name: StrAttr, end_station_id: StrAttr, bike_id: IntAttr, subscription_type: StrAttr, zip_code: StrAttr)
+.input Trips
+.decl tripStarts(end_id: StrAttr, id: StrAttr, start_lat: StrAttr, start_long: StrAttr)
+.output tripStarts(delimiter="\t")
+
+tripStarts(v_tripStarts?end_id, v_tripStarts?id, v_tripStarts?start_lat, v_tripStarts?start_long) :-
+    Stations(v_Trips?start_station_id_1, _, v_tripStarts?start_lat, v_tripStarts?start_long, _, _, _),
+    Trips(v_tripStarts?id, _, _, _, v_Trips?start_station_id_1, _, _, v_tripStarts?end_id, _, _, _).
+

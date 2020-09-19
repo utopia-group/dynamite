@@ -1,0 +1,3 @@
+Desert(did: String, name: String, area: Float, latitude: Float, longitude: Float, countries: String)
+"desert-Tenere", "Tenere", 600000, 18, 11, "RN TCH"
+"desert-Kalahari", "Kalahari", 1200000, -22, 21, "NAM RB RSA ANG Z"

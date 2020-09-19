@@ -1,0 +1,29 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl review(business_id: StrAttr, cool: IntAttr, date: StrAttr, funny: IntAttr, review_id: StrAttr, stars: IntAttr, text: StrAttr, type: StrAttr, useful: IntAttr, user_id: StrAttr)
+.input review
+.decl business(address: StrAttr, attributes: Rel, business_id: StrAttr, categories: Rel, city: StrAttr, hours: Rel, is_open: IntAttr, latitude: StrAttr, longitude: StrAttr, name: StrAttr, neighborhood: StrAttr, postal_code: StrAttr, review_count: IntAttr, stars: StrAttr, state: StrAttr, type: StrAttr)
+.input business
+.decl tip(business_id: StrAttr, date: StrAttr, likes: IntAttr, text: StrAttr, type: StrAttr, user_id: StrAttr)
+.input tip
+.decl user(average_stars: StrAttr, compliment_cool: IntAttr, compliment_cute: IntAttr, compliment_funny: IntAttr, compliment_hot: IntAttr, compliment_list: IntAttr, compliment_more: IntAttr, compliment_note: IntAttr, compliment_photos: IntAttr, compliment_plain: IntAttr, compliment_profile: IntAttr, compliment_writer: IntAttr, cool: IntAttr, elite: Rel, fans: IntAttr, friends: Rel, funny: IntAttr, name: StrAttr, review_count: IntAttr, type: StrAttr, useful: IntAttr, user_id: StrAttr, yelping_since: StrAttr)
+.input user
+.decl User(_id: StrAttr, cool: IntAttr, fans: IntAttr, funny: IntAttr, name: StrAttr, review_count: IntAttr, useful: IntAttr, yelping_since: StrAttr)
+.output User(delimiter="\t")
+.decl Business(_id: StrAttr, address: StrAttr, city: StrAttr, is_open: IntAttr, latitude: StrAttr, longitude: StrAttr, name: StrAttr, postal_code: StrAttr, review_count: IntAttr, stars: StrAttr, state: StrAttr)
+.output Business(delimiter="\t")
+.decl REVIEWED_BY(_start: StrAttr, _end: StrAttr, date: StrAttr, review_id: StrAttr, stars: IntAttr, text: StrAttr)
+.output REVIEWED_BY(delimiter="\t")
+.decl TIPPED_BY(_start: StrAttr, _end: StrAttr, date: StrAttr, likes: IntAttr, text: StrAttr, type: StrAttr)
+.output TIPPED_BY(delimiter="\t")
+
+User(v_User?_id, v_User?cool, v_User?fans, v_User?funny, v_User?name, v_User?review_count, v_User?useful, v_User?yelping_since) :-
+    user(_, _, _, _, _, _, _, _, _, _, _, _, v_User?cool, _, v_User?fans, _, v_User?funny, v_User?name, v_User?review_count, _, v_User?useful, v_User?_id, v_User?yelping_since).
+Business(v_Business?_id, v_Business?address, v_Business?city, v_Business?is_open, v_Business?latitude, v_Business?longitude, v_Business?name, v_Business?postal_code, v_Business?review_count, v_Business?stars, v_Business?state) :-
+    business(v_Business?address, _, v_Business?_id, _, v_Business?city, _, v_Business?is_open, v_Business?latitude, v_Business?longitude, v_Business?name, _, v_Business?postal_code, v_Business?review_count, v_Business?stars, v_Business?state, _).
+REVIEWED_BY(v_REVIEWED_BY?_start, v_REVIEWED_BY?_end, v_REVIEWED_BY?date, v_REVIEWED_BY?review_id, v_REVIEWED_BY?stars, v_REVIEWED_BY?text) :-
+    review(v_REVIEWED_BY?_start, _, v_REVIEWED_BY?date, _, v_REVIEWED_BY?review_id, v_REVIEWED_BY?stars, v_REVIEWED_BY?text, _, _, v_REVIEWED_BY?_end).
+TIPPED_BY(v_TIPPED_BY?_start, v_TIPPED_BY?_end, v_TIPPED_BY?date, v_TIPPED_BY?likes, v_TIPPED_BY?text, v_TIPPED_BY?type) :-
+    tip(v_TIPPED_BY?_start, v_TIPPED_BY?date, v_TIPPED_BY?likes, v_TIPPED_BY?text, v_TIPPED_BY?type, v_TIPPED_BY?_end).
+

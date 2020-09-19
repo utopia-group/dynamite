@@ -1,0 +1,3 @@
+Business(id: String, name: String, address: String, city: String, state: String, latitude: String, longitude: String, review_count: Int, stars: String)
+"iaunX_af5M5lfT2eEm9FMQ", "Encore Books and Records", "5670 Sherbrooke Rue W", "Montr'eal", "QC", "45.4707675", "-73.6150299", 4, "5.0"
+"lHYMeXf8JH1Q8Dazn9s3Gg", "Discount Tire Store - Charlotte", "7850 N Tryon St", "Charlotte", "NC", "35.295623", "-80.754429", 18, "4.5"

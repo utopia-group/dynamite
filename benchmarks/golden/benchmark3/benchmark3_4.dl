@@ -1,0 +1,26 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl book?isbn(__id: Rel, value: StrAttr)
+.input book?isbn
+.decl book?pages(__id: Rel, value: StrAttr)
+.input book?pages
+.decl book?publisher(__id: Rel, value: StrAttr)
+.input book?publisher
+.decl book?title(__id: Rel, value: StrAttr)
+.input book?title
+.decl book?year(__id: Rel, value: IntAttr)
+.input book?year
+.decl book(author: Rel, ee: Rel, isbn: Rel, key: StrAttr, mdate: StrAttr, pages: Rel, publisher: Rel, school: Rel, title: Rel, year: Rel)
+.input book
+.decl Book(id: StrAttr, title: StrAttr, year: IntAttr, pages: StrAttr, publisher: StrAttr, isbn: StrAttr)
+.output Book(delimiter="\t")
+
+Book(v_Book?id, v_Book?title, v_Book?year, v_Book?pages, v_Book?publisher, v_Book?isbn) :-
+    book(_, _, v_4, v_Book?id, _, v_2, v_3, _, v_0, v_1),
+    book?isbn(v_4, v_Book?isbn),
+    book?publisher(v_3, v_Book?publisher),
+    book?pages(v_2, v_Book?pages),
+    book?year(v_1, v_Book?year),
+    book?title(v_0, v_Book?title).
+

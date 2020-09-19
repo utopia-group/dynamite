@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl business(address: StrAttr, attributes: Rel, business_id: StrAttr, categories: Rel, city: StrAttr, hours: Rel, is_open: IntAttr, latitude: StrAttr, longitude: StrAttr, name: StrAttr, neighborhood: StrAttr, postal_code: StrAttr, review_count: IntAttr, stars: StrAttr, state: StrAttr, type: StrAttr)
+.input business
+.decl Business(id: StrAttr, name: StrAttr, address: StrAttr, city: StrAttr, state: StrAttr, latitude: StrAttr, longitude: StrAttr, review_count: IntAttr, stars: StrAttr)
+.output Business(delimiter="\t")
+
+Business(v_Business?id, v_Business?name, v_Business?address, v_Business?city, v_Business?state, v_Business?latitude, v_Business?longitude, v_Business?review_count, v_Business?stars) :-
+    business(v_Business?address, _, v_Business?id, _, v_Business?city, _, _, v_Business?latitude, v_Business?longitude, v_Business?name, _, _, v_Business?review_count, v_Business?stars, v_Business?state, _).
+

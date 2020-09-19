@@ -1,0 +1,88 @@
+{
+  "airport": [
+    {
+      "iatacode": String,
+      "city": String,
+      "country": String,
+      "name": [{"value": String}],
+      "latitude": String,
+      "longitude": String,
+      "elevation": Float,
+      "gmtOffset": Float
+    }
+  ],
+  "desert": [
+    {
+      "country": String,
+      "id": String,
+      "type": String,
+      "name": [{"value": String}],
+      "located": [
+        {
+          "country": String,
+          "province": String
+        }
+      ],
+      "area": Float,
+      "latitude": Float,
+      "longitude": Float
+    }
+  ],
+  "lake": [
+    {
+      "country": String,
+      "id": String,
+      "name": [{"value": String}],
+      "located": [
+        {
+          "country": String,
+          "province": String
+        }
+      ],
+      "to": [
+        {
+          "water": String,
+          "watertype": String
+        }
+      ],
+      "area": Float,
+      "latitude": Float,
+      "longitude": Float,
+      "elevation": Float,
+      "depth": Float
+    }
+  ],
+  "sea": [
+    {
+      "bordering": String,
+      "country": String,
+      "id": String,
+      "name": [{"value": String}],
+      "located": [
+        {
+          "country": String,
+          "province": String
+        }
+      ],
+      "area": Float,
+      "depth": Float
+    }
+  ],
+  "mountain": [
+    {
+      "country": String,
+      "id": String,
+      "name": [{"value": String}],
+      "mountains": String,
+      "located": [
+        {
+          "country": String,
+          "province": String
+        }
+      ],
+      "latitude": Float,
+      "longitude": Float,
+      "elevation": Float
+    }
+  ]
+}

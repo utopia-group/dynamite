@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl country?religion(__id: Rel, nestedContent: StrAttr, percentage: StrAttr)
+.input country?religion
+.decl country(area: StrAttr, border: Rel, capital: StrAttr, car_code: StrAttr, ethnicgroup: Rel, gdp_agri: StrAttr, gdp_ind: StrAttr, gdp_serv: StrAttr, gdp_total: IntAttr, government: StrAttr, indep_date: Rel, infant_mortality: StrAttr, inflation: StrAttr, language: Rel, memberships: StrAttr, name: StrAttr, population: Rel, population_growth: StrAttr, province: Rel, religion: Rel, unemployment: StrAttr)
+.input country
+.decl Religion(country_code: StrAttr, name: StrAttr, percentage: StrAttr)
+.output Religion(delimiter="\t")
+
+Religion(v_Religion?country_code, v_Religion?name, v_Religion?percentage) :-
+    country(_, _, _, v_Religion?country_code, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, v_1, _),
+    country?religion(v_1, v_Religion?name, v_Religion?percentage).
+

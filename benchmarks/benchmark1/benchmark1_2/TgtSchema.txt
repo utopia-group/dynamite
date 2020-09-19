@@ -1,0 +1,1 @@
+Business(id: String, name: String, address: String, city: String, state: String, latitude: String, longitude: String, review_count: Int, stars: String)

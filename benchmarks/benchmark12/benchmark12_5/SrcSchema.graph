@@ -1,0 +1,84 @@
+[
+  {
+    "type": "node",
+    "labels": [
+      "Player"
+    ],
+    "properties": {
+      "name": "String",
+      "position": "String",
+      "id": "String"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Club"
+    ],
+    "properties": {
+      "name": "String",
+      "id": "String"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Transfer"
+    ],
+    "properties": {
+      "season": "String",
+      "fee": "String",
+      "numericFee": "Int",
+      "id": "String",
+      "timestamp": "Int"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "TransferWithoutFee"
+    ],
+    "properties": {
+      "season": "String",
+      "fee": "String",
+      "id": "String",
+      "timestamp": "Int"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Country"
+    ],
+    "properties": {
+      "name": "String"
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "PLAYS_FOR",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "OF_PLAYER",
+    "properties": {
+      "age": "Int"
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "PART_OF",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "FROM_CLUB",
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "TO_CLUB",
+    "properties": {}
+  }
+]

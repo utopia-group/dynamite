@@ -1,0 +1,3 @@
+Economy(country_code: String, gdp: Int, agriculture: Float, service: Float, industry: Float, inflation: Float, unemployment: Float)
+"AL",12800,19.5,68.5,12,1.7,16.9
+"IR",411900,10.6,44.5,44.9,42.3,16

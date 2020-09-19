@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl RELATED(_start: StrAttr, _end: StrAttr, d3: StrAttr, modification: StrAttr)
+.input RELATED
+.decl relationship(fk: StrAttr, left: StrAttr, right: StrAttr)
+.output relationship(delimiter="\t")
+
+relationship(v_relationship?fk, v_relationship?left, v_relationship?right) :-
+    RELATED(v_relationship?left, v_relationship?right, v_relationship?fk, _).
+

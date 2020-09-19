@@ -1,0 +1,22 @@
+<dblp>
+	<book key="books/daglib/0011409" mdate="2011-04-07">
+		<author>Paul Mutton</author>
+		<title>IRC hacks - 100 industrial-strength tips and tools.</title>
+		<pages>I-XIX; 1-409</pages>
+		<publisher>O'Reilly</publisher>
+		<year>2004</year>
+		<isbn>978-0-596-00687-7</isbn>
+		<ee>http://www.oreilly.de/catalog/irchks/index.html</ee>
+	</book>
+	<book key="books/daglib/0068988" mdate="2017-01-09">
+		<author>Michael Gloger</author>
+		<author>Andrew Woody</author>
+		<title>Implementierung funktionaler Programmiersprachen - Codegenerierung; Speicherverwaltung und Testsysteme fr Sprachen mit verzgerter Auswertung.</title>
+		<pages>I-XV; 1-252</pages>
+		<publisher>Deutscher Universit;tsverlag</publisher>
+		<school>Darmstadt University of Technology; Germany</school>
+		<year>1993</year>
+		<isbn>978-3-8244-2037-7</isbn>
+		<ee>http://d-nb.info/921546149</ee>
+	</book>
+</dblp>

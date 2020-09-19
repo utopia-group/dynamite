@@ -1,0 +1,23 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl movie?rating(__id: Rel, distribution: StrAttr, rank: StrAttr, votes: IntAttr)
+.input movie?rating
+.decl movie?release_dates(__id: Rel, country: StrAttr, date: StrAttr)
+.input movie?release_dates
+.decl movie?running_times(__id: Rel, secs: IntAttr)
+.input movie?running_times
+.decl movie?year(__id: Rel, value: IntAttr)
+.input movie?year
+.decl movie(companies: Rel, countries: Rel, genres: Rel, id: StrAttr, keywords: Rel, kind: StrAttr, languages: Rel, rating: Rel, release_dates: Rel, running_times: Rel, title: StrAttr, year: Rel)
+.input movie
+.decl Movie(id: StrAttr, title: StrAttr, release_year: IntAttr, rating: StrAttr, running_time: IntAttr, country: StrAttr, type: StrAttr)
+.output Movie(delimiter="\t")
+
+Movie(v_Movie?id, v_Movie?title, v_Movie?release_year, v_Movie?rating, v_Movie?running_time, v_Movie?country, v_Movie?type) :-
+    movie(_, _, _, v_Movie?id, _, v_Movie?type, _, v_0, v_1, v_2, v_Movie?title, v_3),
+    movie?release_dates(v_3, v_Movie?country, _),
+    movie?running_times(v_2, v_Movie?running_time),
+    movie?rating(v_1, _, v_Movie?rating, _),
+    movie?year(v_0, v_Movie?release_year).
+

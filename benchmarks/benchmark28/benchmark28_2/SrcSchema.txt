@@ -1,0 +1,1 @@
+Stations(id: String, name: String, lat: Float, long: Float, dock_count: Int, city: String, installation_date: String)

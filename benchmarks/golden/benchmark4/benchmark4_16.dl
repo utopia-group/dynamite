@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl country?language(__id: Rel, nestedContent: StrAttr, percentage: StrAttr)
+.input country?language
+.decl country(area: StrAttr, border: Rel, capital: StrAttr, car_code: StrAttr, ethnicgroup: Rel, gdp_agri: StrAttr, gdp_ind: StrAttr, gdp_serv: StrAttr, gdp_total: IntAttr, government: StrAttr, indep_date: Rel, infant_mortality: StrAttr, inflation: StrAttr, language: Rel, memberships: StrAttr, name: StrAttr, population: Rel, population_growth: StrAttr, province: Rel, religion: Rel, unemployment: StrAttr)
+.input country
+.decl Language(country_code: StrAttr, name: StrAttr, percentage: StrAttr)
+.output Language(delimiter="\t")
+
+Language(v_Language?country_code, v_Language?name, v_Language?percentage) :-
+    country(_, _, _, v_Language?country_code, _, _, _, _, _, _, _, _, _, v_1, _, _, _, _, _, _, _),
+    country?language(v_1, v_Language?name, v_Language?percentage).
+

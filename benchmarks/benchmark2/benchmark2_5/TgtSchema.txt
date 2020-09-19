@@ -1,0 +1,1 @@
+Genre(genre: String, mid: String)

@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl desert?located(__id: Rel, country: StrAttr, province: StrAttr)
+.input desert?located
+.decl desert(area: StrAttr, country: StrAttr, id: StrAttr, latitude: StrAttr, located: Rel, longitude: StrAttr, name: StrAttr, type: StrAttr)
+.input desert
+.decl Geo_Desert(did: StrAttr, country_code: StrAttr, provinces: StrAttr)
+.output Geo_Desert(delimiter="\t")
+
+Geo_Desert(v_Geo_Desert?did, v_Geo_Desert?country_code, v_Geo_Desert?provinces) :-
+    desert(_, _, v_Geo_Desert?did, _, v_1, _, _, _),
+    desert?located(v_1, v_Geo_Desert?country_code, v_Geo_Desert?provinces).
+

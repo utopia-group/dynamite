@@ -1,0 +1,1 @@
+City(code: String, name: String, province_code: String, latitude: Float, longitude: Float)

@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Transfer(_id: StrAttr, fee: StrAttr, id: StrAttr, numericFee: IntAttr, season: StrAttr, timestamp: IntAttr)
+.input Transfer
+.decl transfer(season: StrAttr, fee: StrAttr, numericFee: IntAttr, id: StrAttr, timestamp: IntAttr)
+.output transfer(delimiter="\t")
+
+transfer(v_transfer?season, v_transfer?fee, v_transfer?numericFee, v_transfer?id, v_transfer?timestamp) :-
+    Transfer(_, v_transfer?fee, v_transfer?id, v_transfer?numericFee, v_transfer?season, v_transfer?timestamp).
+

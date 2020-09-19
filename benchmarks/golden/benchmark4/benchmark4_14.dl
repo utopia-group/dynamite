@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl sea?located(__id: Rel, country: StrAttr, province: StrAttr)
+.input sea?located
+.decl sea(area: StrAttr, bordering: StrAttr, country: StrAttr, depth: IntAttr, id: StrAttr, located: Rel, name: StrAttr)
+.input sea
+.decl Geo_Sea(sid: StrAttr, country_code: StrAttr, provinces: StrAttr)
+.output Geo_Sea(delimiter="\t")
+
+Geo_Sea(v_Geo_Sea?sid, v_Geo_Sea?country_code, v_Geo_Sea?provinces) :-
+    sea(_, _, _, _, v_Geo_Sea?sid, v_1, _),
+    sea?located(v_1, v_Geo_Sea?country_code, v_Geo_Sea?provinces).
+

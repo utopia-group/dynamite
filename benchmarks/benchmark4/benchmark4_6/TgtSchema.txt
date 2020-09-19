@@ -1,0 +1,1 @@
+Country(name: String, code: String, capital: String, area: Float)

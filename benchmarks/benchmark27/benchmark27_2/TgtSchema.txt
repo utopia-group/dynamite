@@ -1,0 +1,1 @@
+documents(d_id: String, case_row_id: String, case_name: String, doc_count: Int, attachment: String, date_filed: String, long_description: String, doc_number: Int, short_description: String, upload_date: String)

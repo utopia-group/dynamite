@@ -1,0 +1,7 @@
+Friend(person: String, friends_with: String)
+"1","2"
+"1","4"
+"2","3"
+"2","1"
+"3","2"
+"4","1"

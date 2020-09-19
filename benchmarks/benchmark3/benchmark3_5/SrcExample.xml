@@ -1,0 +1,27 @@
+<dblp>
+	<proceedings key="journals/topnoc/2009-2" mdate="2017-05-18">
+		<editor>Kurt Jensen</editor>
+		<editor>Wil M. P. van der Aalst</editor>
+		<title>Transactions on Petri Nets and Other Models of Concurrency II; Special Issue on Concurrency in Process-Aware Information Systems</title>
+		<volume>5460</volume>
+		<year>2009</year>
+		<ee>https://doi.org/10.1007/978-3-642-00899-3</ee>
+		<isbn>978-3-642-00898-6</isbn>
+		<booktitle>Trans. Petri Nets and Other Models of Concurrency</booktitle>
+		<series href="db/journals/lncs.html">Lecture Notes in Computer Science</series>
+		<publisher>Springer</publisher>
+		<url>db/journals/topnoc/topnoc2.html</url>
+	</proceedings>
+	<proceedings key="journals/thipeac/2009-2" mdate="2017-05-26">
+		<editor>Per Stenstrm</editor>
+		<title>Transactions on High-Performance Embedded Architectures and Compilers II</title>
+		<volume>5470</volume>
+		<year>2010</year>
+		<ee>https://doi.org/10.1007/978-3-642-00904-4</ee>
+		<isbn>978-3-642-00903-7</isbn>
+		<booktitle>Trans. HiPEAC</booktitle>
+		<series href="db/journals/lncs.html">Lectures Notes in Computer Science</series>
+		<publisher>Springers</publisher>
+		<url>db/journals/thipeac/thipeac2.html</url>
+	</proceedings>
+</dblp>

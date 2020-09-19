@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl river?source(__id: Rel, country: StrAttr, elevation: StrAttr, from: Rel, latitude: StrAttr, located: Rel, longitude: StrAttr)
+.input river?source
+.decl river(area: StrAttr, country: StrAttr, estuary: Rel, id: StrAttr, island: StrAttr, length: IntAttr, name: StrAttr, source: Rel, to: Rel)
+.input river
+.decl Source_River(rid: StrAttr, country_code: StrAttr, latitude: StrAttr, longitude: StrAttr, elevation: StrAttr)
+.output Source_River(delimiter="\t")
+
+Source_River(v_Source_River?rid, v_Source_River?country_code, v_Source_River?latitude, v_Source_River?longitude, v_Source_River?elevation) :-
+    river(_, _, _, v_Source_River?rid, _, _, _, v_0, _),
+    river?source(v_0, v_Source_River?country_code, v_Source_River?elevation, _, v_Source_River?latitude, _, v_Source_River?longitude).
+

@@ -1,0 +1,193 @@
+[
+  {
+    "type": "node",
+    "id": "0",
+    "labels": [
+      "Player"
+    ],
+    "properties": {
+      "name": "Rodrigo Moledo",
+      "id": "/rodrigo-moledo/profil/spieler/119434",
+      "position": "Centre-Back"
+    }
+  },
+  {
+    "type": "node",
+    "id": "1",
+    "labels": [
+      "Player"
+    ],
+    "properties": {
+      "name": "Aaron Meijers",
+      "id": "/aaron-meijers/profil/spieler/56836",
+      "position": "Left-Back"
+    }
+  },
+  {
+    "type": "node",
+    "id": "103895",
+    "labels": [
+      "Club"
+    ],
+    "properties": {
+      "name": "Neft. Baku U19",
+      "id": "/neftchi-baku-u19/startseite/verein/19701"
+    }
+  },
+  {
+    "type": "node",
+    "id": "103896",
+    "labels": [
+      "Club"
+    ],
+    "properties": {
+      "name": "G.Osmanpasa Yth",
+      "id": "/gaziosmanpasa-jugend/startseite/verein/45379"
+    }
+  },
+  {
+    "type": "node",
+    "id": "258682",
+    "labels": [
+      "Transfer"
+    ],
+    "properties": {
+      "numericFee": 0,
+      "fee": "Free transfer",
+      "season": "2013/2014",
+      "id": "/jumplist/transfers/spieler/27932/transfer_id/969874",
+      "timestamp": 1383004800
+    }
+  },
+  {
+    "type": "node",
+    "id": "258683",
+    "labels": [
+      "Transfer"
+    ],
+    "properties": {
+      "numericFee": 0,
+      "fee": "Free transfer",
+      "season": "2013/2014",
+      "id": "/jumplist/transfers/spieler/45006/transfer_id/917512",
+      "timestamp": 1383004800
+    }
+  },
+  {
+    "type": "node",
+    "id": "258694",
+    "labels": [
+      "TransferWithoutFee"
+    ],
+    "properties": {
+      "fee": "?",
+      "season": "2013/2014",
+      "id": "/jumplist/transfers/spieler/264696/transfer_id/970389",
+      "timestamp": 1383091200
+    }
+  },
+  {
+    "type": "node",
+    "id": "258695",
+    "labels": [
+      "TransferWithoutFee"
+    ],
+    "properties": {
+      "fee": "-",
+      "season": "2013/2014",
+      "id": "/jumplist/transfers/spieler/124774/transfer_id/1012099",
+      "timestamp": 1383091200
+    }
+  },
+  {
+    "id": "97826",
+    "type": "relationship",
+    "label": "PLAYS_FOR",
+    "start": {
+      "id": "97860",
+      "labels": [
+        "Player"
+      ]
+    },
+    "end": {
+      "id": "97896",
+      "labels": [
+        "Country"
+      ]
+    }
+  },
+  {
+    "id": "97827",
+    "type": "relationship",
+    "label": "PART_OF",
+    "start": {
+      "id": "98076",
+      "labels": [
+        "Club"
+      ]
+    },
+    "end": {
+      "id": "97861",
+      "labels": [
+        "Country"
+      ]
+    }
+  },
+  {
+    "id": "1070485",
+    "type": "relationship",
+    "label": "OF_PLAYER",
+    "properties": {
+      "age": "19"
+    },
+    "start": {
+      "id": "439643",
+      "labels": [
+        "Loan",
+        "Transfer"
+      ]
+    },
+    "end": {
+      "id": "76227",
+      "labels": [
+        "Player"
+      ]
+    }
+  },
+  {
+    "id": "1070486",
+    "type": "relationship",
+    "label": "FROM_CLUB",
+    "start": {
+      "id": "439643",
+      "labels": [
+        "Loan",
+        "Transfer"
+      ]
+    },
+    "end": {
+      "id": "98598",
+      "labels": [
+        "Club"
+      ]
+    }
+  },
+  {
+    "id": "1070487",
+    "type": "relationship",
+    "label": "TO_CLUB",
+    "start": {
+      "id": "439643",
+      "labels": [
+        "Loan",
+        "Transfer"
+      ]
+    },
+    "end": {
+      "id": "100934",
+      "labels": [
+        "Club"
+      ]
+    }
+  }
+]

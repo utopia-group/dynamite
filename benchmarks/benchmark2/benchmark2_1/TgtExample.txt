@@ -1,0 +1,4 @@
+Actor(name: String, character: String, mid: String)
+"Shotgun' Smith; Andrew", "Narrator", "Cellar Secret (2016)"
+"Barrymore; Drew", "theif", "The Libertine (1916)"
+"Alexander; Megan", "TV narrator", "Candie's Harem (2015)"

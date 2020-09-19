@@ -1,0 +1,3 @@
+tag(movieid: String, time: String, tag: String, userid: String)
+"60756","1445714994","funny","2"
+"168248","1493844270","Heroic Bloodshed","610"

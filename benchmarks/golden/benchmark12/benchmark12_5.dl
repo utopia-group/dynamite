@@ -1,0 +1,23 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Club(_id: StrAttr, id: StrAttr, name: StrAttr)
+.input Club
+.decl Country(_id: StrAttr, name: StrAttr)
+.input Country
+.decl PART_OF(_start: StrAttr, _end: StrAttr)
+.input PART_OF
+.decl countryclubs(countryId: StrAttr, clubId: StrAttr)
+.output countryclubs(delimiter="\t")
+.decl country(country_id: StrAttr, country_name: StrAttr)
+.output country(delimiter="\t")
+.decl club(club_id: StrAttr, club_name: StrAttr, club_url: StrAttr)
+.output club(delimiter="\t")
+
+countryclubs(v_countryclubs?countryId, v_countryclubs?clubId) :-
+    PART_OF(v_countryclubs?clubId, v_countryclubs?countryId).
+country(v_country?country_id, v_country?country_name) :-
+    Country(v_country?country_id, v_country?country_name).
+club(v_club?club_id, v_club?club_name, v_club?club_url) :-
+    Club(v_club?club_id, v_club?club_url, v_club?club_name).
+

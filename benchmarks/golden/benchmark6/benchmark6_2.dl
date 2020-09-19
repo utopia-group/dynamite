@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Calendar(c_id: StrAttr, listing_id: IntAttr, date: StrAttr, available: StrAttr, price: StrAttr)
+.input Calendar
+.decl calendar?dates(__id: Rel, available: StrAttr, date: StrAttr, price: StrAttr)
+.decl calendar(dates: Rel, listing_id: IntAttr)
+.output calendar?dates(delimiter="\t")
+.output calendar(delimiter="\t")
+
+calendar?dates(_v_0, v_calendar?dates?available, v_calendar?dates?date, v_calendar?dates?price), calendar(_v_0, v_calendar?listing_id) :-
+    Calendar(_, v_calendar?listing_id, v_calendar?dates?date, v_calendar?dates?available, v_calendar?dates?price),
+    _v_0 = cat("#", cat(v_calendar?listing_id, "#")).
+

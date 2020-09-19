@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl mountain?located(__id: Rel, country: StrAttr, province: StrAttr)
+.input mountain?located
+.decl mountain(country: StrAttr, elevation: IntAttr, id: StrAttr, latitude: StrAttr, located: Rel, longitude: StrAttr, mountains: StrAttr, name: StrAttr)
+.input mountain
+.decl Geo_Mountain(mid: StrAttr, country_code: StrAttr, provinces: StrAttr)
+.output Geo_Mountain(delimiter="\t")
+
+Geo_Mountain(v_Geo_Mountain?mid, v_Geo_Mountain?country_code, v_Geo_Mountain?provinces) :-
+    mountain(_, _, v_Geo_Mountain?mid, _, v_1, _, _, _),
+    mountain?located(v_1, v_Geo_Mountain?country_code, v_Geo_Mountain?provinces).
+

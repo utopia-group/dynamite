@@ -1,0 +1,213 @@
+[
+    {
+        "type": "node",
+        "labels": ["calendar"],
+        "id": "C1",
+        "properties": {
+            "date": "2019-09-10",
+            "available": "f",
+            "price": null
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["calendar"],
+        "id": "C2",
+        "properties": {
+            "date": "2019-05-05",
+            "available": "t",
+            "price": "$76.00"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["calendar"],
+        "id": "C3",
+        "properties": {
+            "date": "2019-11-06",
+            "available": "t",
+            "price": "$107.00"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["listing"],
+        "id": "2015",
+        "properties": {
+            "name": "Berlin-Mitte Value! Quiet courtyard/very central",
+            "host_id": 2217,
+            "host_name": "Ian",
+            "neighbourhood_group": "Mitte",
+            "neighbourhood": "Brunnenstr. Sud",
+            "latitude": 52.53453732241747,
+            "longitude": 13.402556926822387,
+            "room_type": "Entire home/apt",
+            "price": 60,
+            "minimum_nights": 4,
+            "number_of_reviews": 118,
+            "last_review": "2018-10-28",
+            "reviews_per_month": 3.76,
+            "calculated_host_listings_count": 4,
+            "availability_365": 141
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["listing"],
+        "id": "2695",
+        "properties": {
+            "name": "Prenzlauer Berg close to Mauerpark",
+            "host_id": 2986,
+            "host_name": "Michael",
+            "neighbourhood_group": "Pankow",
+            "neighbourhood": "Prenzlauer Berg Nordwest",
+            "latitude": 52.54851279221664,
+            "longitude": 13.404552826587466,
+            "room_type": "Private room",
+            "price": 17,
+            "minimum_nights": 2,
+            "number_of_reviews": 6,
+            "last_review": "2018-10-01",
+            "reviews_per_month": 1.42,
+            "calculated_host_listings_count": 1,
+            "availability_365": 0
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["listing"],
+        "id": "26952",
+        "properties": {
+            "name": "Prenzlauer Berg close to Mauerpark",
+            "host_id": 2986,
+            "host_name": "Michael",
+            "neighbourhood_group": "Pankow",
+            "neighbourhood": "Prenzlauer Berg Nordwest",
+            "latitude": 52.54851279221664,
+            "longitude": 13.404552826587466,
+            "room_type": "Private room",
+            "price": 17,
+            "minimum_nights": 2,
+            "number_of_reviews": 6,
+            "last_review": "2018-10-01",
+            "reviews_per_month": 1.42,
+            "calculated_host_listings_count": 1,
+            "availability_365": 0
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["neighbourhood"],
+        "id": "N1",
+        "properties": {
+            "name": "Brunnenstr. Sud",
+            "group": "Mitte"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["neighbourhood"],
+        "id": "N2",
+        "properties": {
+            "name": "Prenzlauer Berg Nordwest",
+            "group": "Pankow"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["review"],
+        "id": "69544350",
+        "properties": {
+            "date": "2016-04-11",
+            "reviewer_id": 7178145,
+            "reviewer_name": "Rahel",
+            "comments": "Mein Freund und ich hatten gute gemutliche vier Nachte in Jans Studio. Es ist unfassbar ruhig und hat sogar ein gedampftes Klavier fur Leute die gerne spielen. Die Lage ist hervorragend und es gibt in der Strasse einen tollen alimentari und eine gunstige weinerei. Das Bad ist sehr alt aber funktionstuchtig und der insgesamte Standard ist ok, ein wenig chaotisch aber dafur hat man das Gefuhl man ist bei jemandem zuhause ! Jan ist ein aufgeschlossener lustiger Mann und auch um frische Handtucher und sonstiges bemuht! Wir danken."
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["review"],
+        "id": "69990732",
+        "properties": {
+            "date": "2016-04-15",
+            "reviewer_id": 41944715,
+            "reviewer_name": "Hannah",
+            "comments": "Jan was very friendly and welcoming host! The apartment was great and the area is sooo amazing, lots of nice cafes and shops! Enjoyed my time there a lot!"
+        }
+    },
+    {
+        "type": "node",
+        "labels": ["review"],
+        "id": "285580354",
+        "properties": {
+            "date": "2018-07-04",
+            "reviewer_id": 30733089,
+            "reviewer_name": "Jason",
+            "comments": "I really enjoyed staying at Micha and Nadja's place. It's a cosy real Berlin apartment. You can see it's one they use themselves when they're not on holiday, so I found this a very nice and authentic place to stay. It has everything you need and communication was very good and friendly, and they helped me out with lots of local tips. The area (and apartment itself) is quiet as they describe, but it's still quick and easy to get to the main areas I wanted to explore in Berlin. And it has a lot of places to eat out nearby. I plan to stay there again on my next Berlin holiday!"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_CALENDAR",
+        "id": "ID1",
+        "properties": { },
+        "start": { "id": "2015", "labels": ["listing"] },
+        "end": { "id": "C1", "labels": ["calendar"] }
+    },
+    {
+        "type": "relationship",
+        "label": "HAS_CALENDAR",
+        "id": "ID2",
+        "properties": { },
+        "start": { "id": "2015", "labels": ["listing"] },
+        "end": { "id": "C2", "labels": ["calendar"] }
+    },
+    {
+        "type": "relationship",
+        "label": "REVIEWED",
+        "id": "ID3",
+        "properties": { },
+        "start": { "id": "69544350", "labels": ["review"] },
+        "end": { "id": "2015", "labels": ["listing"] }
+    },
+    {
+        "type": "relationship",
+        "label": "REVIEWED",
+        "id": "ID4",
+        "properties": { },
+        "start": { "id": "69990732", "labels": ["review"] },
+        "end": { "id": "2015", "labels": ["listing"] }
+    },
+    {
+        "type": "relationship",
+        "label": "REVIEWED",
+        "id": "ID5",
+        "properties": { },
+        "start": { "id": "285580354", "labels": ["review"] },
+        "end": { "id": "2695", "labels": ["listing"] }
+    },
+    {
+        "type": "relationship",
+        "label": "IN_NEIGHBOURHOOD",
+        "id": "ID6",
+        "properties": { },
+        "start": { "id": "2015", "labels": ["listing"] },
+        "end": { "id": "N1", "labels": ["neighbourhood"] }
+    },
+    {
+        "type": "relationship",
+        "label": "IN_NEIGHBOURHOOD",
+        "id": "ID7",
+        "properties": { },
+        "start": { "id": "2695", "labels": ["listing"] },
+        "end": { "id": "N2", "labels": ["neighbourhood"] }
+    },
+    {
+        "type": "relationship",
+        "label": "IN_NEIGHBOURHOOD",
+        "id": "ID7",
+        "properties": { },
+        "start": { "id": "26952", "labels": ["listing"] },
+        "end": { "id": "N2", "labels": ["neighbourhood"] }
+    }
+]

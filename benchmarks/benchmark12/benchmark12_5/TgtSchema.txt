@@ -1,0 +1,3 @@
+countryclubs(countryId: String, clubId: String)
+country(country_id:String, country_name: String)
+club(club_id: String, club_name: String, club_url: String)

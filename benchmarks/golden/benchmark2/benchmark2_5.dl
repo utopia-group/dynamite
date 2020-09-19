@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl movie?genres(__id: Rel, value: StrAttr)
+.input movie?genres
+.decl movie(companies: Rel, countries: Rel, genres: Rel, id: StrAttr, keywords: Rel, kind: StrAttr, languages: Rel, rating: Rel, release_dates: Rel, running_times: Rel, title: StrAttr, year: Rel)
+.input movie
+.decl Genre(genre: StrAttr, mid: StrAttr)
+.output Genre(delimiter="\t")
+
+Genre(v_Genre?genre, v_Genre?mid) :-
+    movie(_, _, v_0, v_Genre?mid, _, _, _, _, _, _, _, _),
+    movie?genres(v_0, v_Genre?genre).
+

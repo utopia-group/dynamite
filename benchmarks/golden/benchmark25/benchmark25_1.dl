@@ -1,0 +1,15 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl AtBats(ab_id: IntAttr, batter_id: IntAttr, event: StrAttr, g_id: IntAttr, inning: IntAttr, o: IntAttr, p_score: IntAttr, p_throws: StrAttr, pitcher_id: IntAttr, stand: StrAttr, top: StrAttr)
+.input AtBats
+.decl PlayerNames(id: IntAttr, first_name: StrAttr, last_name: StrAttr)
+.input PlayerNames
+.decl atBatPlayers(id: IntAttr, batter_first: StrAttr, batter_last: StrAttr, pitcher_first: StrAttr, pitcher_last: StrAttr)
+.output atBatPlayers(delimiter="\t")
+
+atBatPlayers(v_atBatPlayers?id, v_atBatPlayers?batter_first, v_atBatPlayers?batter_last, v_atBatPlayers?pitcher_first, v_atBatPlayers?pitcher_last) :-
+    PlayerNames(v_AtBats?batter_id_0, v_atBatPlayers?batter_first, v_atBatPlayers?batter_last),
+    PlayerNames(v_AtBats?pitcher_id_0, v_atBatPlayers?pitcher_first, v_atBatPlayers?pitcher_last),
+    AtBats(v_atBatPlayers?id, v_AtBats?batter_id_0, _, _, _, _, _, _, v_AtBats?pitcher_id_0, _, _).
+

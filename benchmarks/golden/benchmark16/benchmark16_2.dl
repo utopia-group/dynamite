@@ -1,0 +1,24 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Player(_id: StrAttr, id: StrAttr, name: StrAttr, position: StrAttr)
+.decl Club(_id: StrAttr, id: StrAttr, name: StrAttr)
+.decl Country(_id: StrAttr, name: StrAttr)
+.decl PLAYS_FOR(_start: StrAttr, _end: StrAttr)
+.decl PART_OF(_start: StrAttr, _end: StrAttr)
+.decl countries?clubs(__id: Rel, id: StrAttr, name: StrAttr, url: StrAttr)
+.decl countries?players(__id: Rel, id: StrAttr, name: StrAttr, position: StrAttr, url: StrAttr)
+.decl countries(clubs: Rel, country: StrAttr, country_name: StrAttr, players: Rel)
+.output countries?clubs(delimiter="\t")
+.output countries?players(delimiter="\t")
+.output countries(delimiter="\t")
+
+countries?clubs(_v_0, v_countries?clubs?id, v_countries?clubs?name, v_countries?clubs?url), countries?players(_v_1, v_countries?players?id, v_countries?players?name, v_countries?players?position, v_countries?players?url), countries(_v_0, v_countries?country, v_countries?country_name, _v_1) :-
+    Player(v_countries?players?id, v_countries?players?url, v_countries?players?name, v_countries?players?position),
+    PART_OF(v_countries?clubs?id, v_countries?country),
+    Country(v_countries?country, v_countries?country_name),
+    PLAYS_FOR(v_countries?players?id, v_countries?country),
+    Club(v_countries?clubs?id, v_countries?clubs?url, v_countries?clubs?name),
+    _v_0 = cat("#", cat(v_countries?country, cat("#", cat(v_countries?country_name, "#")))),
+    _v_1 = cat("#", cat(v_countries?country, cat("#", cat(v_countries?country_name, "#")))).
+

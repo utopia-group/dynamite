@@ -1,0 +1,16 @@
+{
+    "status": [
+        {
+            "station_id": "2",
+            "bikes_available": 2,
+            "docks_available": 25,
+            "time": "2013/08/29 12:06:01"
+        },
+        {
+            "station_id": "2",
+            "bikes_available": 3,
+            "docks_available": 24,
+            "time": "2013/08/29 13:11:01"
+        }
+    ]
+}

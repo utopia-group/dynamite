@@ -1,0 +1,187 @@
+{
+    "article": [
+        {
+            "key": String,
+            "mdate": String,
+            "author": [
+                {
+                    "value": String
+                }
+            ],
+            "title": [
+                {
+                    "value": String
+                }
+            ],
+            "pages": [
+                {
+                    "value": String
+                }
+            ],
+            "year": [
+                {
+                    "value": Int
+                }
+            ],
+            "volume": [
+                {
+                    "value": String
+                }
+            ],
+            "journal": [
+                {
+                    "value": String
+                }
+            ],
+            "number": [
+                {
+                    "value": String
+                }
+            ],
+            "ee": [
+                {
+                    "value": String
+                }
+            ],
+            "url": [
+                {
+                    "value": String
+                }
+            ]
+        }
+    ],
+    "book": [
+        {
+            "key": String,
+            "mdate": String,
+            "author": [
+                { "value" : String }
+            ],
+            "title": [
+                {
+                    "value": String
+                }
+            ],
+            "pages": [
+                {
+                    "value": String
+                }
+            ],
+            "publisher": [
+                {
+                    "value": String
+                }
+            ],
+            "school": [
+                {
+                    "value": String
+                }
+            ],
+            "year": [
+                {
+                    "value": Int
+                }
+            ],
+            "isbn": [
+                {
+                    "value": String
+                }
+            ],
+            "ee": [
+                {
+                    "value": String
+                }
+            ]
+        }
+    ],
+    "proceedings": [
+        {
+            "key": String,
+            "mdate": String,
+            "editor": [
+                {"value" : String}
+            ],
+            "title": [
+                {
+                    "value": String
+                }
+            ],
+            "volume": [
+                {
+                    "value": String
+                }
+            ],
+            "year": [
+                {
+                    "value": Int
+                }
+            ],
+            "ee": [
+                {
+                    "value": String
+                }
+            ],
+            "isbn": [
+                {
+                    "value": String
+                }
+            ],
+            "booktitle": [
+                {
+                    "value": String
+                }
+            ],
+            "series": [{
+                "href": String,
+                "nestedContent": String
+            }
+            ],
+            "publisher": [
+                {
+                    "value": String
+                }
+            ],
+            "url": [
+                {
+                    "value": String
+                }
+            ]
+        }
+    ],
+    "phdthesis": [
+        {
+            "key": String,
+            "mdate": String,
+            "author": [
+                {
+                    "value": String
+                }
+            ],
+            "title": [
+                {
+                    "value": String
+                }
+            ],
+            "pages": [
+                {
+                    "value": String
+                }
+            ],
+            "school": [
+                {
+                    "value": String
+                }
+            ],
+            "year": [
+                {
+                    "value": Int
+                }
+            ],
+            "ee": [
+                {
+                    "value": String
+                }
+            ]
+        }
+    ]
+}

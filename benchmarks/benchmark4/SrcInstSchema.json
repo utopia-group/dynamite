@@ -1,0 +1,226 @@
+{
+  "airport": [
+    {
+      "iatacode": String,
+      "city": String,
+      "country": String,
+      "name": [{"value": String}],
+      "latitude": Float,
+      "longitude": Float,
+      "elevation": Float,
+      "gmtOffset": Float
+    }
+  ],
+  "country": [
+    {
+      "province": [
+        {
+          "capital": String,
+          "country": String,
+          "id": String,
+          "name": [{"value": String}],
+          "area": Float,
+          "population": [
+            {
+              "measured": String,
+              "year": Int,
+              "nestedContent": Int
+            }
+          ],
+          "city": [
+            {
+              "country": String,
+              "id": String,
+              "name": [{"value": String}],
+              "latitude": Float,
+              "longitude": Float,
+              "elevation": Float,
+              "population": [
+                {
+                  "measured": String,
+                  "year": Int,
+                  "nestedContent": Int
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "area": Float,
+      "capital": String,
+      "car_code": String,
+      "memberships": String,
+      "name": [{"value": String}],
+      "population": [
+        {
+          "measured": String,
+          "year": Int,
+          "nestedContent": Int
+        }
+      ],
+      "population_growth": Float,
+      "infant_mortality": Float,
+      "gdp_total": Float,
+      "gdp_agri": Float,
+      "gdp_ind": Float,
+      "gdp_serv": Float,
+      "inflation": Float,
+      "unemployment": Float,
+      "indep_date": [
+        {
+          "from": String,
+          "nestedContent": String
+        }
+      ],
+      "government": String,
+      "ethnicgroup": [
+        {
+          "percentage": Float,
+          "nestedContent": String
+        }
+      ],
+      "religion": [
+        {
+          "percentage": Float,
+          "nestedContent": String
+        }
+      ],
+      "language": [
+        {
+          "percentage": Float,
+          "nestedContent": String
+        }
+      ],
+      "border": [
+        {
+          "country": String,
+          "length": Float
+        }
+      ]
+    }
+  ],
+  "desert": [
+    {
+      "country": String,
+      "id": String,
+      "type": String,
+      "name": [{"value": String}],
+      "located": [
+        {
+          "country": String,
+          "province": String
+        }
+      ],
+      "area": Float,
+      "latitude": Float,
+      "longitude": Float
+    }
+  ],
+  "lake": [
+    {
+      "country": String,
+      "id": String,
+      "name": [{"value": String}],
+      "located": [
+        {
+          "country": String,
+          "province": String
+        }
+      ],
+      "to": [
+        {
+          "water": String,
+          "watertype": String
+        }
+      ],
+      "area": Float,
+      "latitude": Float,
+      "longitude": Float,
+      "elevation": Float,
+      "depth": Float
+    }
+  ],
+  "river": [
+    {
+      "country": String,
+      "id": String,
+      "island": String,
+      "name": [{"value": String}],
+      "to": [
+        {
+          "water": String,
+          "watertype": String
+        }
+      ],
+      "area": Float,
+      "length": Float,
+      "source": [
+        {
+          "country": String,
+          "located": [
+            {
+              "country": String,
+              "province": String
+            }
+          ],
+          "from": [
+            {
+              "water": String,
+              "watertype": String
+            }
+          ],
+          "latitude": Float,
+          "longitude": Float,
+          "elevation": Float
+        }
+      ],
+      "estuary": [
+        {
+          "country": String,
+          "located": [
+            {
+              "country": String,
+              "province": String
+            }
+          ],
+          "latitude": Float,
+          "longitude": Float,
+          "elevation": Float
+        }
+      ]
+    }
+  ],
+  "sea": [
+    {
+      "bordering": String,
+      "country": String,
+      "id": String,
+      "name": [{"value": String}],
+      "located": [
+        {
+          "country": String,
+          "province": String
+        }
+      ],
+      "area": Float,
+      "depth": Float
+    }
+  ],
+  "mountain": [
+    {
+      "country": String,
+      "id": String,
+      "name": [{"value": String}],
+      "mountains": String,
+      "located": [
+        {
+          "country": String,
+          "province": String
+        }
+      ],
+      "latitude": Float,
+      "longitude": Float,
+      "elevation": Float
+    }
+  ]
+}

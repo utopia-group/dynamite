@@ -1,0 +1,4 @@
+Geo_Sea(sid: String, country_code: String, provinces: String)
+"sea-Atlantic","F","prov-France-5 prov-France-20"
+"sea-Atlantic","E","prov-Spain-2 prov-Spain-13"
+"sea-Mittelmeer","BIH","prov-BIH-1"

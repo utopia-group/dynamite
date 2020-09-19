@@ -1,0 +1,4 @@
+Religion(country_code: String, name: String, percentage: Float)
+"AL","Roman Catholic",10
+"AL","Christian Orthodox",20
+"IR","Muslim",99

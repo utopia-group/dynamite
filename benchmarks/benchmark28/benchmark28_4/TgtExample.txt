@@ -1,0 +1,3 @@
+stationStatus(s_id: String, station_id: String, station_name: String, bikes_available: Int, docks_available: Int, time: String)
+S1,66,South Van Ness at Market,2,22,2013/08/29 12:06:01
+S2,67,Market at 10th,3,23,2013/08/29 13:11:01

@@ -1,0 +1,1 @@
+Border(country_code: String, neighbor_code: String, length: Int)

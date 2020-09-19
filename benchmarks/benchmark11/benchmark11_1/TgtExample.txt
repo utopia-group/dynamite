@@ -1,0 +1,3 @@
+rating(rating: String, movieid: String, time: String, userid: String)
+"5.0","3200","955944250","217"
+"5.0","5618","1054037190","20"

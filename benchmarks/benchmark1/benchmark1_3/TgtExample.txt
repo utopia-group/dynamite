@@ -1,0 +1,7 @@
+Checkin(bid: String, time: String)
+"QqFxaqBOaEMhfU-_L9K9-w", "Mon-0:1"
+"QqFxaqBOaEMhfU-_L9K9-w", "Fri-21:1"
+"QqFxaqBOaEMhfU-_L9K9-w", "Thu-22:1"
+"QqFxaqBOaEMhfU-_L9K9-w", "Mon-23:1"
+"mH0ORatxOdgPPs4ZOmikHQ", "Fri-17:1"
+"mH0ORatxOdgPPs4ZOmikHQ", "Wed-22:1"

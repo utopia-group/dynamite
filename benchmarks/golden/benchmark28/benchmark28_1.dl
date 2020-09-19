@@ -1,0 +1,10 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Trips(id: StrAttr, duration: IntAttr, start_date: StrAttr, start_station_name: StrAttr, start_station_id: StrAttr, end_date: StrAttr, end_station_name: StrAttr, end_station_id: StrAttr, bike_id: IntAttr, subscription_type: StrAttr, zip_code: StrAttr)
+.input Trips
+.decl trips(id: StrAttr, duration: IntAttr, start_date: StrAttr, start_station_id: StrAttr, end_date: StrAttr, end_station_id: StrAttr, bike_id: IntAttr, subscription_type: StrAttr, zip_code: StrAttr)
+.output trips(delimiter="\t")
+
+trips(v_trips?id, v_trips?duration, v_trips?start_date, v_trips?start_station_id, v_trips?end_date, v_trips?end_station_id, v_trips?bike_id, v_trips?subscription_type, v_trips?zip_code) :-
+    Trips(v_trips?id, v_trips?duration, v_trips?start_date, _, v_trips?start_station_id, v_trips?end_date, _, v_trips?end_station_id, v_trips?bike_id, v_trips?subscription_type, v_trips?zip_code).

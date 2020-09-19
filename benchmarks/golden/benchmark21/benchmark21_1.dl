@@ -1,0 +1,64 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl AtBats(ab_id: StrAttr, batter_id: StrAttr, event: StrAttr, g_id: StrAttr, inning: IntAttr, o: IntAttr, p_score: IntAttr, p_throws: StrAttr, pitcher_id: StrAttr, stand: StrAttr, top: StrAttr)
+.input AtBats
+.decl Ejections(e_id: StrAttr, ab_id: StrAttr, des: StrAttr, event_num: IntAttr, g_id: StrAttr, player_id: StrAttr, date: StrAttr, BS: StrAttr, CORRECT: StrAttr, team: StrAttr, is_home_team: StrAttr)
+.input Ejections
+.decl Games(attendance: IntAttr, away_final_score: IntAttr, away_team: StrAttr, date: StrAttr, elapsed_time: IntAttr, g_id: StrAttr, home_final_score: IntAttr, home_team: StrAttr, start_time: StrAttr, umpire_1B: StrAttr, umpire_2B: StrAttr, umpire_3B: StrAttr, umpire_HP: StrAttr, venue_name: StrAttr, weather: StrAttr, wind: StrAttr, delay: IntAttr)
+.input Games
+.decl Pitches(p_id: StrAttr, px: StrAttr, pz: StrAttr, start_speed: StrAttr, end_speed: StrAttr, spin_rate: StrAttr, spin_dir: StrAttr, break_angle: StrAttr, break_length: StrAttr, break_y: StrAttr, ax: StrAttr, ay: StrAttr, az: StrAttr, sz_bot: StrAttr, sz_top: StrAttr, type_confidence: StrAttr, vx0: StrAttr, vy0: StrAttr, vz0: StrAttr, x: StrAttr, x0: StrAttr, y: StrAttr, y0: StrAttr, z0: StrAttr, pfx_x: StrAttr, pfx_z: StrAttr, nasty: StrAttr, zone: IntAttr, code: StrAttr, type: StrAttr, pitch_type: StrAttr, event_num: IntAttr, b_score: StrAttr, ab_id: StrAttr, b_count: StrAttr, s_count: StrAttr, outs: StrAttr, pitch_num: StrAttr, on_1b: StrAttr, on_2b: StrAttr, on_3b: StrAttr)
+.input Pitches
+.decl PlayerNames(id: StrAttr, first_name: StrAttr, last_name: StrAttr)
+.input PlayerNames
+.decl atBat(_id: StrAttr, event: StrAttr, inning: IntAttr, o: IntAttr, p_score: IntAttr, p_throws: StrAttr, stand: StrAttr, top: StrAttr)
+.output atBat(delimiter="\t")
+.decl ejection(_id: StrAttr, BS: StrAttr, CORRECT: StrAttr, date: StrAttr, des: StrAttr, event_num: IntAttr, is_home_team: StrAttr, player_id: StrAttr, team: StrAttr)
+.output ejection(delimiter="\t")
+.decl game(_id: StrAttr, attendance: IntAttr, away_final_score: IntAttr, away_team: StrAttr, date: StrAttr, delay: IntAttr, elapsed_time: IntAttr, home_final_score: IntAttr, home_team: StrAttr, start_time: StrAttr, umpire_1B: StrAttr, umpire_2B: StrAttr, umpire_3B: StrAttr, umpire_HP: StrAttr, venue_name: StrAttr, weather: StrAttr, wind: StrAttr)
+.output game(delimiter="\t")
+.decl pitch(_id: StrAttr, ax: StrAttr, ay: StrAttr, az: StrAttr, b_count: StrAttr, b_score: StrAttr, break_angle: StrAttr, break_length: StrAttr, break_y: StrAttr, code: StrAttr, end_speed: StrAttr, event_num: IntAttr, nasty: StrAttr, on_1b: StrAttr, on_2b: StrAttr, on_3b: StrAttr, outs: StrAttr, pfx_x: StrAttr, pfx_z: StrAttr, pitch_num: StrAttr, pitch_type: StrAttr, px: StrAttr, pz: StrAttr, s_count: StrAttr, spin_dir: StrAttr, spin_rate: StrAttr, start_speed: StrAttr, sz_bot: StrAttr, sz_top: StrAttr, type: StrAttr, type_confidence: StrAttr, vx0: StrAttr, vy0: StrAttr, vz0: StrAttr, x: StrAttr, x0: StrAttr, y: StrAttr, y0: StrAttr, z0: StrAttr, zone: IntAttr)
+.output pitch(delimiter="\t")
+.decl playerName(_id: StrAttr, first_name: StrAttr, last_name: StrAttr)
+.output playerName(delimiter="\t")
+.decl BATTER_OF(_start: StrAttr, _end: StrAttr)
+.output BATTER_OF(delimiter="\t")
+.decl PITCHER_OF(_start: StrAttr, _end: StrAttr)
+.output PITCHER_OF(delimiter="\t")
+.decl EJECTION_ATBAT(_start: StrAttr, _end: StrAttr)
+.output EJECTION_ATBAT(delimiter="\t")
+.decl EJECTED_IN(_start: StrAttr, _end: StrAttr)
+.output EJECTED_IN(delimiter="\t")
+.decl HAS_ATBAT(_start: StrAttr, _end: StrAttr)
+.output HAS_ATBAT(delimiter="\t")
+.decl HAS_EJECTION(_start: StrAttr, _end: StrAttr)
+.output HAS_EJECTION(delimiter="\t")
+.decl HAS_PITCH(_start: StrAttr, _end: StrAttr)
+.output HAS_PITCH(delimiter="\t")
+
+atBat(v_atBat?_id, v_atBat?event, v_atBat?inning, v_atBat?o, v_atBat?p_score, v_atBat?p_throws, v_atBat?stand, v_atBat?top) :-
+    AtBats(v_atBat?_id, _, v_atBat?event, _, v_atBat?inning, v_atBat?o, v_atBat?p_score, v_atBat?p_throws, _, v_atBat?stand, v_atBat?top).
+ejection(v_ejection?_id, v_ejection?BS, v_ejection?CORRECT, v_ejection?date, v_ejection?des, v_ejection?event_num, v_ejection?is_home_team, v_ejection?player_id, v_ejection?team) :-
+    Ejections(v_ejection?_id, _, v_ejection?des, v_ejection?event_num, _, v_ejection?player_id, v_ejection?date, v_ejection?BS, v_ejection?CORRECT, v_ejection?team, v_ejection?is_home_team).
+game(v_game?_id, v_game?attendance, v_game?away_final_score, v_game?away_team, v_game?date, v_game?delay, v_game?elapsed_time, v_game?home_final_score, v_game?home_team, v_game?start_time, v_game?umpire_1B, v_game?umpire_2B, v_game?umpire_3B, v_game?umpire_HP, v_game?venue_name, v_game?weather, v_game?wind) :-
+    Games(v_game?attendance, v_game?away_final_score, v_game?away_team, v_game?date, v_game?elapsed_time, v_game?_id, v_game?home_final_score, v_game?home_team, v_game?start_time, v_game?umpire_1B, v_game?umpire_2B, v_game?umpire_3B, v_game?umpire_HP, v_game?venue_name, v_game?weather, v_game?wind, v_game?delay).
+pitch(v_pitch?_id, v_pitch?ax, v_pitch?ay, v_pitch?az, v_pitch?b_count, v_pitch?b_score, v_pitch?break_angle, v_pitch?break_length, v_pitch?break_y, v_pitch?code, v_pitch?end_speed, v_pitch?event_num, v_pitch?nasty, v_pitch?on_1b, v_pitch?on_2b, v_pitch?on_3b, v_pitch?outs, v_pitch?pfx_x, v_pitch?pfx_z, v_pitch?pitch_num, v_pitch?pitch_type, v_pitch?px, v_pitch?pz, v_pitch?s_count, v_pitch?spin_dir, v_pitch?spin_rate, v_pitch?start_speed, v_pitch?sz_bot, v_pitch?sz_top, v_pitch?type, v_pitch?type_confidence, v_pitch?vx0, v_pitch?vy0, v_pitch?vz0, v_pitch?x, v_pitch?x0, v_pitch?y, v_pitch?y0, v_pitch?z0, v_pitch?zone) :-
+    Pitches(v_pitch?_id, v_pitch?px, v_pitch?pz, v_pitch?start_speed, v_pitch?end_speed, v_pitch?spin_rate, v_pitch?spin_dir, v_pitch?break_angle, v_pitch?break_length, v_pitch?break_y, v_pitch?ax, v_pitch?ay, v_pitch?az, v_pitch?sz_bot, v_pitch?sz_top, v_pitch?type_confidence, v_pitch?vx0, v_pitch?vy0, v_pitch?vz0, v_pitch?x, v_pitch?x0, v_pitch?y, v_pitch?y0, v_pitch?z0, v_pitch?pfx_x, v_pitch?pfx_z, v_pitch?nasty, v_pitch?zone, v_pitch?type, v_pitch?code, v_pitch?pitch_type, v_pitch?event_num, v_pitch?b_score, _, v_pitch?outs, v_pitch?s_count, v_pitch?b_count, v_pitch?pitch_num, v_pitch?on_2b, v_pitch?on_1b, v_pitch?on_3b).
+playerName(v_playerName?_id, v_playerName?first_name, v_playerName?last_name) :-
+    PlayerNames(v_playerName?_id, v_playerName?first_name, v_playerName?last_name).
+BATTER_OF(v_BATTER_OF?_start, v_BATTER_OF?_end) :-
+    AtBats(v_BATTER_OF?_end, v_BATTER_OF?_start, _, _, _, _, _, _, _, _, _).
+PITCHER_OF(v_PITCHER_OF?_start, v_PITCHER_OF?_end) :-
+    AtBats(v_PITCHER_OF?_end, _, _, _, _, _, _, _, v_PITCHER_OF?_start, _, _).
+EJECTION_ATBAT(v_EJECTION_ATBAT?_start, v_EJECTION_ATBAT?_end) :-
+    Ejections(v_EJECTION_ATBAT?_start, v_EJECTION_ATBAT?_end, _, _, _, _, _, _, _, _, _).
+EJECTED_IN(v_EJECTED_IN?_start, v_EJECTED_IN?_end) :-
+    Ejections(v_EJECTED_IN?_end, _, _, _, _, v_EJECTED_IN?_start, _, _, _, _, _),
+    PlayerNames(v_EJECTED_IN?_start, _, _).
+HAS_ATBAT(v_HAS_ATBAT?_start, v_HAS_ATBAT?_end) :-
+    AtBats(v_HAS_ATBAT?_end, _, _, v_HAS_ATBAT?_start, _, _, _, _, _, _, _).
+HAS_EJECTION(v_HAS_EJECTION?_start, v_HAS_EJECTION?_end) :-
+    Ejections(v_HAS_EJECTION?_end, _, _, _, v_HAS_EJECTION?_start, _, _, _, _, _, _).
+HAS_PITCH(v_HAS_PITCH?_start, v_HAS_PITCH?_end) :-
+    Pitches(v_HAS_PITCH?_end, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, v_HAS_PITCH?_start, _, _, _, _, _, _, _).
+

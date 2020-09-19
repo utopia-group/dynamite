@@ -1,0 +1,9 @@
+{
+  "relationship": [
+    {
+      "fk": "String",
+      "left": "String",
+      "right": "String"
+    }
+  ]
+}

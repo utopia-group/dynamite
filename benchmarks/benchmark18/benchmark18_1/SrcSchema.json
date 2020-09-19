@@ -1,0 +1,51 @@
+{
+  "crew": [
+    {
+      "id": String,
+      "roles": [
+        {
+          "_id": String,
+          "title": String,
+          "role": String,
+          "character": String
+        }
+      ]
+    }
+  ],
+  "movie": [{
+      "id": String,
+      "title": String,
+      "kind": String,
+      "countries": [{
+          "value": String
+      }],
+      "genres": [{
+          "value": String
+      }],
+      "keywords": [{
+          "value": String
+      }],
+      "languages": [{
+          "name": String
+      }],
+      "year": [{
+          "value": Int
+      }],
+      "companies": [{
+          "name": String,
+          "type": String
+      }],
+      "rating": [{
+        "rank": Float,
+        "votes": Int,
+        "distribution": String
+      }],
+      "release_dates": [{
+          "country": String,
+          "date": String
+      }],
+      "running_times": [{
+          "secs": Int
+      }]
+  }]
+}

@@ -1,0 +1,1 @@
+Producer(name: String, mid: String, note: String)

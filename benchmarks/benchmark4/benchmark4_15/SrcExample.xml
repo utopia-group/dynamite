@@ -1,0 +1,38 @@
+<mondial>
+   <desert country="RN TCH" id="desert-Tenere" type="sand">
+      <name>Tenere</name>
+      <located country="RN" province="prov-RN-1 prov-RN-7 prov-RN-8"/>
+      <area>600000</area>
+      <latitude>18</latitude>
+      <longitude>11</longitude>
+   </desert>
+   <desert country="NAM RB RSA ANG Z" id="desert-Kalahari">
+      <name>Kalahari</name>
+      <located country="ANG" province="prov-Angola-15 prov-Angola-14"/>
+      <located country="RSA" province="prov-South-Africa-9"/>
+      <area>1200000</area>
+      <latitude>-22</latitude>
+      <longitude>21</longitude>
+   </desert>
+   <lake country="A D CH" id="lake-Bodensee">
+      <name>Bodensee</name>
+      <located country="A" province="prov-Austria-4"/>
+      <located country="D" province="prov-Germany-2 prov-Germany-3"/>
+      <to water="river-Rhein" watertype="river"/>
+      <area>538.5</area>
+      <latitude>47.6</latitude>
+      <longitude>9.4</longitude>
+      <elevation>395</elevation>
+      <depth>254</depth>
+   </lake>
+   <lake country="D" id="lake-Chiemsee">
+      <name>Chiemsee</name>
+      <located country="C" province="prov-Germany-3"/>
+      <to water="river-Alz" watertype="river"/>
+      <area>80</area>
+      <latitude>47.9</latitude>
+      <longitude>12.4</longitude>
+      <elevation>518</elevation>
+      <depth>73</depth>
+   </lake>
+</mondial>

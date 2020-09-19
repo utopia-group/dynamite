@@ -1,0 +1,4 @@
+Geo_Lake(lid: String, country_code: String, provinces: String)
+"lake-Bodensee","A","prov-Austria-4"
+"lake-Bodensee","D","prov-Germany-2 prov-Germany-3"
+"lake-Chiemsee","C","prov-Germany-3"

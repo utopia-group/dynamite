@@ -1,0 +1,19 @@
+Attorneys(case_row_id: String, case_number: String, party_row_count: String, party_type: String, attorney_row_count: String, name: String, contactinfo: String, position: String)
+54973,01-Jan-1970,306263,Plaintiff,845125,ANDREW T. BERRY,"MCCARTER & ENGLISH, LLP; FOUR GATEWAY CENTER; 100 MULBERRY STREET; PO BOX 652; NEWARK, NJ 07101-0652; (973) 622-4444",TERMINATED: 08/11/2009; LEAD ATTORNEY; ATTORNEY TO BE NOTICED
+54973,01-Jan-1970,306268,Defendant,845164,ERIC I. ABRAHAM,"HILL WALLACK, LLP; 21 Roszel Road; PRINCETON, NJ 08543; (609) 734-6358; Email: eia@hillwallack.com",LEAD ATTORNEY; ATTORNEY TO BE NOTICED
+
+Cases(case_row_id: String, case_number: String, pacer_id: String, case_name: String, court_name: String, assigned_to: String, referred_to: String, case_cause: String, jurisdictional_basis: String, demand: String, jury_demand: String, lead_case: String, related_case: String, settlement: String, date_filed: String, date_closed: String, date_last_filed: String)
+427,0:00-cv-00019,1338,Banner Engineering v. Harris Instrument,UNITED STATES DISTRICT COURT DISTRICT OF MINNESOTA,A1,R1,C1,J1,DD1,J2,L1,R2,S1,2000-01-04,2000-03-09,2000-03-02
+54973,01-Jan-1970,223949,"ASTRAZENECA AB et al v. SANDOZ, INC.",UNITED STATES DISTRICT COURT DISTRICT OF NEW JERSEY,Judge Joel A. Pisano,Magistrate Judge Tonianne J. Bongiovanni,35:271 Patent Infringement,Federal Question,DD2,J3,L2,R3,S2,2009-01-14,2011-06-02,DD3
+
+Documents(d_id: String, case_row_id: String, case_number: String, doc_count: Int, attachment: String, date_filed: String, long_description: String, doc_number: Int, short_description: String, upload_date: String)
+D1,427,0:00-cv-00019,1,0,2000-01-04,COMPLAINT - Summons issued. Assigned to Judge Ann D. Montgomery per patent list and referred to Magistrate Judge Arthur J. Boylan. Receipt 232554. (28 pgs) (cc: Patent office) (MKC),1,Complaint,
+D2,427,0:00-cv-00019,2,0,2000-01-13,SUMONS - RETURN OF SERVICE executed upon defendant Harris Instrument on 1/6/00. (3 pgs) (MKC),2,Summons Returned Executed,
+D3,54973,01-Jan-1970,1,0,2009-01-14,"COMPLAINT against SANDOZ, INC. ( Filing fee $ 350 receipt number 2349082.), filed by ASTRAZENECA AB, AKTIEBOLAGET HASSLE, ASTRAZENECA LP, KBI INC,, KBI-E INC..(kak) (Entered: 01/15/2009)",1,,DD4
+
+Names(case_row_id: String, case_number: String, party_row_count: String, party_type: String, name_row_count: String, name: String)
+54973,01-Jan-1970,306270,Counter Claimant,399948,"SANDOZ, INC."
+54973,01-Jan-1970,306271,Counter Defendant,399949,ASTRAZENECA AB
+
+PacerCases(p_id: String, case_name: String, court_code: String, court_name: String, date_closed: String, case_number: String, pacer_id: String, date_filed: String)
+P1,"Davis v. Favelle Favco Cranes, et al",txsd,Texas Southern District Court,08/13/2001,1:2000-cv-00003,3,2000-01-03

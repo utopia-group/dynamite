@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl phdthesis?author(__id: Rel, value: StrAttr)
+.input phdthesis?author
+.decl phdthesis(author: Rel, ee: Rel, key: StrAttr, mdate: StrAttr, pages: Rel, school: Rel, title: Rel, year: Rel)
+.input phdthesis
+.decl AuthorThesis(name: StrAttr, tid: StrAttr)
+.output AuthorThesis(delimiter="\t")
+
+AuthorThesis(v_AuthorThesis?name, v_AuthorThesis?tid) :-
+    phdthesis(v_0, _, v_AuthorThesis?tid, _, _, _, _, _),
+    phdthesis?author(v_0, v_AuthorThesis?name).
+

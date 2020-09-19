@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl movie?companies(__id: Rel, name: StrAttr, type: StrAttr)
+.input movie?companies
+.decl movie(companies: Rel, countries: Rel, genres: Rel, id: StrAttr, keywords: Rel, kind: StrAttr, languages: Rel, rating: Rel, release_dates: Rel, running_times: Rel, title: StrAttr, year: Rel)
+.input movie
+.decl Company(mid: StrAttr, name: StrAttr, type: StrAttr)
+.output Company(delimiter="\t")
+
+Company(v_Company?mid, v_Company?name, v_Company?type) :-
+    movie(v_0, _, _, v_Company?mid, _, _, _, _, _, _, _, _),
+    movie?companies(v_0, v_Company?name, v_Company?type).
+

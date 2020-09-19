@@ -1,0 +1,3 @@
+River(rid: String, name: String, area: Float, length: Int, to: String)
+"river-Ness","Ness",1850,12,"sea-Nordsee"
+"river-Shannon","Shannon",15695,360,"sea-Atlantic"

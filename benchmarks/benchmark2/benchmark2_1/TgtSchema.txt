@@ -1,0 +1,1 @@
+Actor(name: String, character: String, mid: String)

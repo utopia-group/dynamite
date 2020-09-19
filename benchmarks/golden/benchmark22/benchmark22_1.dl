@@ -1,0 +1,44 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Calendar(c_id: StrAttr, listing_id: StrAttr, date: StrAttr, available: StrAttr, price: StrAttr)
+.input Calendar
+.decl Listings(id: StrAttr, name: StrAttr, host_id: IntAttr, host_name: StrAttr, neighbourhood_group: StrAttr, neighbourhood: StrAttr, latitude: StrAttr, longitude: StrAttr, room_type: StrAttr, price: IntAttr, minimum_nights: IntAttr, number_of_reviews: IntAttr, last_review: StrAttr, reviews_per_month: StrAttr, calculated_host_listings_count: IntAttr, availability_365: IntAttr)
+.input Listings
+.decl Reviews(listing_id: StrAttr, id: StrAttr, date: StrAttr, reviewer_id: IntAttr, reviewer_name: StrAttr, comments: StrAttr)
+.input Reviews
+.decl Neighbourhoods(n_id: StrAttr, neighbourhood_group: StrAttr, neighbourhood: StrAttr)
+.input Neighbourhoods
+.decl calendar(_id: StrAttr, available: StrAttr, date: StrAttr, price: StrAttr)
+.input calendar
+.output calendar(delimiter="\t")
+.decl listing(_id: StrAttr, availability_365: IntAttr, calculated_host_listings_count: IntAttr, host_id: IntAttr, host_name: StrAttr, last_review: StrAttr, latitude: StrAttr, longitude: StrAttr, minimum_nights: IntAttr, name: StrAttr, number_of_reviews: IntAttr, price: IntAttr, reviews_per_month: StrAttr, room_type: StrAttr)
+.output listing(delimiter="\t")
+.decl neighbourhood(_id: StrAttr, group: StrAttr, name: StrAttr)
+.output neighbourhood(delimiter="\t")
+.decl review(_id: StrAttr, comments: StrAttr, date: StrAttr, reviewer_id: IntAttr, reviewer_name: StrAttr)
+.output review(delimiter="\t")
+.decl HAS_CALENDAR(_start: StrAttr, _end: StrAttr)
+.output HAS_CALENDAR(delimiter="\t")
+.decl IN_NEIGHBOURHOOD(_start: StrAttr, _end: StrAttr)
+.output IN_NEIGHBOURHOOD(delimiter="\t")
+.decl REVIEWED(_start: StrAttr, _end: StrAttr)
+.output REVIEWED(delimiter="\t")
+
+calendar(v_calendar?_id, v_calendar?available, v_calendar?date, v_calendar?price) :-
+    Calendar(v_calendar?_id, _, v_calendar?date, v_calendar?available, v_calendar?price).
+listing(v_listing?_id, v_listing?availability_365, v_listing?calculated_host_listings_count, v_listing?host_id, v_listing?host_name, v_listing?last_review, v_listing?latitude, v_listing?longitude, v_listing?minimum_nights, v_listing?name, v_listing?number_of_reviews, v_listing?price, v_listing?reviews_per_month, v_listing?room_type) :-
+    Listings(v_listing?_id, v_listing?name, v_listing?host_id, v_listing?host_name, _, _, v_listing?latitude, v_listing?longitude, v_listing?room_type, v_listing?price, v_listing?minimum_nights, v_listing?number_of_reviews, v_listing?last_review, v_listing?reviews_per_month, v_listing?calculated_host_listings_count, v_listing?availability_365).
+neighbourhood(v_neighbourhood?_id, v_neighbourhood?group, v_neighbourhood?name) :-
+    Neighbourhoods(v_neighbourhood?_id, v_neighbourhood?group, v_neighbourhood?name).
+review(v_review?_id, v_review?comments, v_review?date, v_review?reviewer_id, v_review?reviewer_name) :-
+    Reviews(_, v_review?_id, v_review?date, v_review?reviewer_id, v_review?reviewer_name, v_review?comments).
+HAS_CALENDAR(v_HAS_CALENDAR?_start, v_HAS_CALENDAR?_end) :-
+    Calendar(v_HAS_CALENDAR?_end, v_HAS_CALENDAR?_start, _, _, _),
+    Reviews(v_HAS_CALENDAR?_start, _, _, _, _, _).
+IN_NEIGHBOURHOOD(v_IN_NEIGHBOURHOOD?_start, v_IN_NEIGHBOURHOOD?_end) :-
+    Neighbourhoods(v_IN_NEIGHBOURHOOD?_end, _, v_Neighbourhoods?neighbourhood_0),
+    Listings(v_IN_NEIGHBOURHOOD?_start, _, _, _, _, v_Neighbourhoods?neighbourhood_0, _, _, _, _, _, _, _, _, _, _).
+REVIEWED(v_REVIEWED?_start, v_REVIEWED?_end) :-
+    Reviews(v_REVIEWED?_end, v_REVIEWED?_start, _, _, _, _).
+

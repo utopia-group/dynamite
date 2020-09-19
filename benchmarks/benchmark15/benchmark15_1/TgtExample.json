@@ -1,0 +1,36 @@
+{
+  "movies": [
+    {
+      "movieid": "3200",
+      "genres": "Drama",
+      "title": "Last Detail, The (1973)",
+      "ratings": [
+        {
+          "id": "3430",
+          "rating": "5.0",
+          "time": "955944250",
+          "userid": "217"
+        }
+      ]
+    },
+    {
+      "genres": "Fantasy",
+      "movieid": "5618",
+      "title": "Spirited Away (Sen to Chihiro no kamikakushi) (2001)",
+      "ratings": [
+        {
+          "id": "1",
+          "rating": "5.0",
+          "time": "1054037190",
+          "userid": "20"
+        },
+        {
+          "id": "14003",
+          "rating": "4.0",
+          "time": "1443200445",
+          "userid": "63"
+        }
+      ]
+    }
+  ]
+}

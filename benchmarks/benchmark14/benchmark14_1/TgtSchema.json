@@ -1,0 +1,9 @@
+{
+    "related": [{
+        "designation_left": "String",
+        "designation_right": "String",
+        "x": "Float",
+        "y": "Float",
+        "area": "Float"
+    }]
+}

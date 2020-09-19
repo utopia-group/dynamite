@@ -1,0 +1,4 @@
+RELabout?_start -> Rating?_id
+RELabout?_end -> Movie?_id
+alsosaid?_start -> None?_id
+alsosaid?_end -> None?_id

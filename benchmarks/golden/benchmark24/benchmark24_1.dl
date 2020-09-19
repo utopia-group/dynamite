@@ -1,0 +1,37 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Stations(id: StrAttr, name: StrAttr, lat: StrAttr, long: StrAttr, dock_count: IntAttr, city: StrAttr, installation_date: StrAttr)
+.input Stations
+.decl Status(id: StrAttr, station_id: StrAttr, bikes_available: IntAttr, docks_available: IntAttr, time: StrAttr)
+.input Status
+.decl Trips(id: StrAttr, duration: IntAttr, start_date: StrAttr, start_station_name: StrAttr, start_station_id: StrAttr, end_date: StrAttr, end_station_name: StrAttr, end_station_id: StrAttr, bike_id: IntAttr, subscription_type: StrAttr, zip_code: StrAttr)
+.input Trips
+.decl Weather(w_id: StrAttr, date: StrAttr, max_temperature_f: StrAttr, mean_temperature_f: StrAttr, min_temperature_f: StrAttr, max_dew_point_f: StrAttr, mean_dew_point_f: StrAttr, min_dew_point_f: StrAttr, max_humidity: StrAttr, mean_humidity: StrAttr, min_humidity: StrAttr, max_sea_level_pressure_inches: StrAttr, mean_sea_level_pressure_inches: StrAttr, min_sea_level_pressure_inches: StrAttr, max_visibility_miles: StrAttr, mean_visibility_miles: StrAttr, min_visibility_miles: StrAttr, max_wind_Speed_mph: StrAttr, mean_wind_speed_mph: StrAttr, max_gust_speed_mph: StrAttr, precipitation_inches: StrAttr, cloud_cover: StrAttr, events: StrAttr, wind_dir_degrees: StrAttr, zip_code: StrAttr)
+.input Weather
+.decl station(_id: StrAttr, city: StrAttr, dock_count: IntAttr, installation_date: StrAttr, lat: StrAttr, long: StrAttr, name: StrAttr)
+.output station(delimiter="\t")
+.decl status(_id: StrAttr, bikes_available: IntAttr, docks_available: IntAttr, time: StrAttr)
+.output status(delimiter="\t")
+.decl trip(_id: StrAttr, bike_id: IntAttr, duration: IntAttr, subscription_type: StrAttr, zip_code: StrAttr)
+.output trip(delimiter="\t")
+.decl weather(_id: StrAttr, cloud_cover: StrAttr, date: StrAttr, events: StrAttr, max_dew_point_f: StrAttr, max_gust_speed_mph: StrAttr, max_humidity: StrAttr, max_sea_level_pressure_inches: StrAttr, max_temperature_f: StrAttr, max_visibility_miles: StrAttr, max_wind_Speed_mph: StrAttr, mean_dew_point_f: StrAttr, mean_humidity: StrAttr, mean_sea_level_pressure_inches: StrAttr, mean_temperature_f: StrAttr, mean_visibility_miles: StrAttr, mean_wind_speed_mph: StrAttr, min_dew_point_f: StrAttr, min_humidity: StrAttr, min_sea_level_pressure_inches: StrAttr, min_temperature_f: StrAttr, min_visibility_miles: StrAttr, precipitation_inches: StrAttr, wind_dir_degrees: StrAttr, zip_code: StrAttr)
+.output weather(delimiter="\t")
+.decl STARTS_AT(_start: StrAttr, _end: StrAttr, start_date: StrAttr)
+.output STARTS_AT(delimiter="\t")
+.decl ENDS_AT(_start: StrAttr, _end: StrAttr, end_date: StrAttr)
+.output ENDS_AT(delimiter="\t")
+
+station(v_station?_id, v_station?city, v_station?dock_count, v_station?installation_date, v_station?lat, v_station?long, v_station?name) :-
+    Stations(v_station?_id, v_station?name, v_station?lat, v_station?long, v_station?dock_count, v_station?city, v_station?installation_date).
+status(v_status?_id, v_status?bikes_available, v_status?docks_available, v_status?time) :-
+    Status(v_status?_id, _, v_status?bikes_available, v_status?docks_available, v_status?time).
+trip(v_trip?_id, v_trip?bike_id, v_trip?duration, v_trip?subscription_type, v_trip?zip_code) :-
+    Trips(v_trip?_id, v_trip?duration, _, _, _, _, _, _, v_trip?bike_id, v_trip?subscription_type, v_trip?zip_code).
+weather(v_weather?_id, v_weather?cloud_cover, v_weather?date, v_weather?events, v_weather?max_dew_point_f, v_weather?max_gust_speed_mph, v_weather?max_humidity, v_weather?max_sea_level_pressure_inches, v_weather?max_temperature_f, v_weather?max_visibility_miles, v_weather?max_wind_Speed_mph, v_weather?mean_dew_point_f, v_weather?mean_humidity, v_weather?mean_sea_level_pressure_inches, v_weather?mean_temperature_f, v_weather?mean_visibility_miles, v_weather?mean_wind_speed_mph, v_weather?min_dew_point_f, v_weather?min_humidity, v_weather?min_sea_level_pressure_inches, v_weather?min_temperature_f, v_weather?min_visibility_miles, v_weather?precipitation_inches, v_weather?wind_dir_degrees, v_weather?zip_code) :-
+    Weather(v_weather?_id, v_weather?date, v_weather?max_temperature_f, v_weather?mean_temperature_f, v_weather?min_temperature_f, v_weather?max_dew_point_f, v_weather?mean_dew_point_f, v_weather?min_dew_point_f, v_weather?max_humidity, v_weather?mean_humidity, v_weather?min_humidity, v_weather?max_sea_level_pressure_inches, v_weather?mean_sea_level_pressure_inches, v_weather?min_sea_level_pressure_inches, v_weather?max_visibility_miles, v_weather?mean_visibility_miles, v_weather?min_visibility_miles, v_weather?max_wind_Speed_mph, v_weather?mean_wind_speed_mph, v_weather?max_gust_speed_mph, v_weather?precipitation_inches, v_weather?cloud_cover, v_weather?events, v_weather?wind_dir_degrees, v_weather?zip_code).
+STARTS_AT(v_STARTS_AT?_start, v_STARTS_AT?_end, v_STARTS_AT?start_date) :-
+    Trips(v_STARTS_AT?_start, _, v_STARTS_AT?start_date, _, v_STARTS_AT?_end, _, _, _, _, _, _).
+ENDS_AT(v_ENDS_AT?_start, v_ENDS_AT?_end, v_ENDS_AT?end_date) :-
+    Trips(v_ENDS_AT?_start, _, _, _, _, v_ENDS_AT?end_date, _, v_ENDS_AT?_end, _, _, _).
+

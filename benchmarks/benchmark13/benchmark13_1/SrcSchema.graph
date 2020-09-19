@@ -1,0 +1,19 @@
+[
+    {
+        "type": "node",
+        "labels": ["Node"],
+        "properties": {
+          "birthgendertweettags": "String",
+          "categorykeywords": "String",
+          "modification": "String"
+        }
+    },
+    {
+        "type": "relationship",
+        "label": "RELATED",
+        "properties": {
+          "modification": "String",
+          "d3": "String"
+        }
+    }
+]

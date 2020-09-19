@@ -1,0 +1,1 @@
+ejections(e_id: String, ab_id: Int, des: String, event_num: Int, g_id: Int, player_first: String, player_last: String, date: String, BS: String, CORRECT: String, team: String, is_home_team: String)

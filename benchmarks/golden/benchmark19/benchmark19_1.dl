@@ -1,0 +1,109 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl article?crossref(__id: Rel, value: StrAttr)
+.input article?crossref
+.decl article?journal(__id: Rel, value: StrAttr)
+.input article?journal
+.decl article?number(__id: Rel, value: StrAttr)
+.input article?number
+.decl article?pages(__id: Rel, value: StrAttr)
+.input article?pages
+.decl article?title(__id: Rel, value: StrAttr)
+.input article?title
+.decl article?url(__id: Rel, value: StrAttr)
+.input article?url
+.decl article?volume(__id: Rel, value: StrAttr)
+.input article?volume
+.decl article(author: Rel, crossref: Rel, ee: Rel, journal: Rel, key: StrAttr, mdate: StrAttr, number: Rel, pages: Rel, title: Rel, url: Rel, volume: Rel, year: Rel)
+.input article
+.decl book?author(__id: Rel, value: StrAttr)
+.input book?author
+.decl book(author: Rel, ee: Rel, isbn: Rel, key: StrAttr, mdate: StrAttr, pages: Rel, publisher: Rel, school: Rel, title: Rel, year: Rel)
+.input book
+.decl proceedings(booktitle: Rel, editor: Rel, ee: Rel, isbn: Rel, key: StrAttr, mdate: StrAttr, publisher: Rel, series: Rel, title: Rel, url: Rel, volume: Rel, year: Rel)
+.input proceedings
+.decl phdthesis(author: Rel, ee: Rel, key: StrAttr, mdate: StrAttr, pages: Rel, school: Rel, title: Rel, year: Rel)
+.input phdthesis
+.decl Author(_id: StrAttr)
+.output Author(delimiter="\t")
+.decl ArticleTitle(_id: StrAttr)
+.output ArticleTitle(delimiter="\t")
+.decl ArticlePages(_id: StrAttr)
+.output ArticlePages(delimiter="\t")
+.decl ArticleVolume(_id: StrAttr)
+.output ArticleVolume(delimiter="\t")
+.decl ArticleJournal(_id: StrAttr)
+.output ArticleJournal(delimiter="\t")
+.decl ArticleNumber(_id: StrAttr)
+.output ArticleNumber(delimiter="\t")
+.decl Article(_id: StrAttr, date: StrAttr)
+.output Article(delimiter="\t")
+.decl Book(_id: StrAttr, date: StrAttr)
+.output Book(delimiter="\t")
+.decl Proceedings(_id: StrAttr, date: StrAttr)
+.output Proceedings(delimiter="\t")
+.decl PhdThesis(_id: StrAttr, date: StrAttr)
+.output PhdThesis(delimiter="\t")
+.decl CROSSREF(_start: StrAttr, _end: StrAttr)
+.output CROSSREF(delimiter="\t")
+.decl WROTE(_start: StrAttr, _end: StrAttr)
+.output WROTE(delimiter="\t")
+.decl HAS_TITLE(_start: StrAttr, _end: StrAttr)
+.output HAS_TITLE(delimiter="\t")
+.decl HAS_PAGES(_start: StrAttr, _end: StrAttr)
+.output HAS_PAGES(delimiter="\t")
+.decl HAS_VOLUME(_start: StrAttr, _end: StrAttr)
+.output HAS_VOLUME(delimiter="\t")
+.decl HAS_JOURNAL(_start: StrAttr, _end: StrAttr)
+.output HAS_JOURNAL(delimiter="\t")
+.decl HAS_NUMBER(_start: StrAttr, _end: StrAttr)
+.output HAS_NUMBER(delimiter="\t")
+
+Author(v_Author?_id) :-
+    book?author(_, v_Author?_id).
+ArticleTitle(v_ArticleTitle?_id) :-
+    article(_, _, _, _, _, _, _, _, v_0, _, _, _),
+    article?title(v_0, v_ArticleTitle?_id).
+ArticlePages(v_ArticlePages?_id) :-
+    article(_, _, _, _, _, _, _, v_0, _, _, _, _),
+    article?pages(v_0, v_ArticlePages?_id).
+ArticleVolume(v_ArticleVolume?_id) :-
+    article(_, _, _, _, _, _, _, _, _, _, v_0, _),
+    article?volume(v_0, v_ArticleVolume?_id).
+ArticleJournal(v_ArticleJournal?_id) :-
+    article(_, _, _, v_0, _, _, _, _, _, _, _, _),
+    article?journal(v_0, v_ArticleJournal?_id).
+ArticleNumber(v_ArticleNumber?_id) :-
+    article(_, _, _, _, _, _, v_0, _, _, _, _, _),
+    article?number(v_0, v_ArticleNumber?_id).
+Article(v_Article?_id, v_Article?date) :-
+    article(_, _, _, _, v_Article?_id, v_Article?date, _, _, _, _, _, _).
+Book(v_Book?_id, v_Book?date) :-
+    book(_, _, _, v_Book?_id, v_Book?date, _, _, _, _, _).
+Proceedings(v_Proceedings?_id, v_Proceedings?date) :-
+    proceedings(_, _, _, _, v_Proceedings?_id, v_Proceedings?date, _, _, _, _, _, _).
+PhdThesis(v_PhdThesis?_id, v_PhdThesis?date) :-
+    phdthesis(_, _, v_PhdThesis?_id, v_PhdThesis?date, _, _, _, _).
+CROSSREF(v_CROSSREF?_start, v_CROSSREF?_end) :-
+    article(_, v_0, _, _, v_CROSSREF?_start, _, _, _, _, _, _, _),
+    article?crossref(v_0, v_CROSSREF?_end).
+WROTE(v_WROTE?_start, v_WROTE?_end) :-
+    book(v_0, _, _, v_WROTE?_end, _, _, _, _, _, _),
+    book?author(v_0, v_WROTE?_start).
+HAS_TITLE(v_HAS_TITLE?_start, v_HAS_TITLE?_end) :-
+    article(_, _, _, _, v_HAS_TITLE?_start, _, _, _, v_0, _, _, _),
+    article?title(v_0, v_HAS_TITLE?_end).
+HAS_PAGES(v_HAS_PAGES?_start, v_HAS_PAGES?_end) :-
+    article(_, _, _, _, v_HAS_PAGES?_start, _, _, v_0, _, _, _, _),
+    article?pages(v_0, v_HAS_PAGES?_end).
+HAS_VOLUME(v_HAS_VOLUME?_start, v_HAS_VOLUME?_end) :-
+    article(_, _, _, _, v_HAS_VOLUME?_start, _, _, _, _, _, v_0, _),
+    article?volume(v_0, v_HAS_VOLUME?_end).
+HAS_JOURNAL(v_HAS_JOURNAL?_start, v_HAS_JOURNAL?_end) :-
+    article(_, _, _, v_0, v_HAS_JOURNAL?_start, _, _, _, _, _, _, _),
+    article?journal(v_0, v_HAS_JOURNAL?_end).
+HAS_NUMBER(v_HAS_NUMBER?_start, v_HAS_NUMBER?_end) :-
+    article(_, _, _, _, v_HAS_NUMBER?_start, _, v_0, _, _, _, _, _),
+    article?number(v_0, v_HAS_NUMBER?_end).
+

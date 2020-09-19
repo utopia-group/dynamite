@@ -1,0 +1,2 @@
+Ejections(e_id: String, ab_id: Int, des: String, event_num: Int, g_id: Int, player_id: Int, date: String, BS: String, CORRECT: String, team: String, is_home_team: String)
+PlayerNames(id: Int, first_name: String, last_name: String)

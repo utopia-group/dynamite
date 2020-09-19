@@ -1,0 +1,13 @@
+{
+  "crew": [
+    {
+      "id": String,
+      "roles": [{
+          "title": String,
+          "role": String,
+          "character": String,
+          "note": String
+       }]
+    }
+  ]
+}

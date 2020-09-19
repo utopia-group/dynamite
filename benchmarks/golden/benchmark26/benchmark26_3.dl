@@ -1,0 +1,10 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Neighbourhoods(n_id: StrAttr, neighbourhood_group: StrAttr, neighbourhood: StrAttr)
+.input Neighbourhoods
+.decl neighbourhoods(neighbourhood_group: StrAttr, neighbourhood: StrAttr)
+.output neighbourhoods(delimiter="\t")
+
+neighbourhoods(v_neighbourhoods?neighbourhood_group, v_neighbourhoods?neighbourhood) :-
+    Neighbourhoods(_, v_neighbourhoods?neighbourhood_group, v_neighbourhoods?neighbourhood).

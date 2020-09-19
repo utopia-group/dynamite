@@ -1,0 +1,79 @@
+[
+  {
+    "type": "node",
+    "labels": [
+      "Crew"
+    ],
+    "properties": {}
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Movie"
+    ],
+    "properties": {
+      "name": "String",
+      "kind": "String"
+    }
+  },
+  {
+    "type": "relationship",
+    "label": "PARTICIPATES_IN",
+    "properties": {
+      "role": "String",
+      "character": "String"
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Country"
+    ],
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_COUNTRY",
+    "properties": {
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Genre"
+    ],
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_GENRE",
+    "properties": {
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Keyword"
+    ],
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_KEYWORD",
+    "properties": {
+    }
+  },
+  {
+    "type": "node",
+    "labels": [
+      "Language"
+    ],
+    "properties": {}
+  },
+  {
+    "type": "relationship",
+    "label": "HAS_LANGUAGE",
+    "properties": {
+    }
+  }
+]

@@ -1,0 +1,1 @@
+Politics(country_code: String, independence_date: String, dependent: String, government_type: String)

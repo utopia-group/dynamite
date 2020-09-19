@@ -1,0 +1,5 @@
+Border(country_code: String, neighbor_code: String, length: Int)
+"AL", "MNE", 172
+"AL", "KOS", 112
+"IR", "TR", 499
+"IR", "AFG", 936

@@ -1,0 +1,1 @@
+Province_Population(province_code: String, year: Int, population: Int)

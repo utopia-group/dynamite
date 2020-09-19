@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Player(_id: StrAttr, id: StrAttr, name: StrAttr, position: StrAttr)
+.input Player
+.decl player(name: StrAttr, position: StrAttr, id: StrAttr)
+.output player(delimiter="\t")
+
+player(v_player?name, v_player?position, v_player?id) :-
+    Player(_, v_player?id, v_player?name, v_player?position).
+

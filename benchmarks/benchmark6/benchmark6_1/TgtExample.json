@@ -1,0 +1,55 @@
+{
+  "listings": [
+    {
+      "id": 2015,
+      "name": "Berlin-Mitte Value! Quiet courtyard/very central",
+      "host_id": 2217,
+      "host_name": "Ian",
+      "neighbourhood_group": "Mitte",
+      "neighbourhood": "Brunnenstr. Sud",
+      "latitude": 52.53453732241747,
+      "longitude": 13.402556926822387,
+      "room_type": "Entire home/apt",
+      "price": 60,
+      "minimum_nights": 4,
+      "availability_365": 141,
+      "reviews": [
+        {
+          "id": 69544350,
+          "date": "2016-04-11",
+          "reviewer_id": 7178145,
+          "reviewer_name": "Rahel",
+          "comments": "Mein Freund und ich hatten gute gemutliche vier Nachte in Jans Studio. Es ist unfassbar ruhig und hat sogar ein gedampftes Klavier fur Leute die gerne spielen. Die Lage ist hervorragend und es gibt in der Strasse einen tollen alimentari und eine gunstige weinerei. Das Bad ist sehr alt aber funktionstuchtig und der insgesamte Standard ist ok, ein wenig chaotisch aber dafur hat man das Gefuhl man ist bei jemandem zuhause ! Jan ist ein aufgeschlossener lustiger Mann und auch um frische Handtucher und sonstiges bemuht! Wir danken."
+        }, {
+          "id": 69990732,
+          "date": "2016-04-15",
+          "reviewer_id": 41944715,
+          "reviewer_name": "Hannah",
+          "comments": "Jan was very friendly and welcoming host! The apartment was great and the area is sooo amazing, lots of nice cafes and shops! Enjoyed my time there a lot!"
+        }
+      ]
+    }, {
+      "id": 2695,
+      "name": "Prenzlauer Berg close to Mauerpark",
+      "host_id": 2986,
+      "host_name": "Michael",
+      "neighbourhood_group": "Pankow",
+      "neighbourhood": "Prenzlauer Berg Nordwest",
+      "latitude": 52.54851279221664,
+      "longitude": 13.404552826587466,
+      "room_type": "Private room",
+      "price": 17,
+      "minimum_nights": 2,
+      "availability_365": 0,
+      "reviews": [
+        {
+          "id": 285580354,
+          "date": "2018-07-04",
+          "reviewer_id": 30733089,
+          "reviewer_name": "Jason",
+          "comments": "I really enjoyed staying at Micha and Nadja's place. It's a cosy real Berlin apartment. You can see it's one they use themselves when they're not on holiday, so I found this a very nice and authentic place to stay. It has everything you need and communication was very good and friendly, and they helped me out with lots of local tips. The area (and apartment itself) is quiet as they describe, but it's still quick and easy to get to the main areas I wanted to explore in Berlin. And it has a lot of places to eat out nearby. I plan to stay there again on my next Berlin holiday!"
+        }
+      ]
+    }
+  ]
+}

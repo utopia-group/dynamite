@@ -1,0 +1,1 @@
+trips(id: String, duration: Int, start_date: String, start_station_id: String, end_date: String, end_station_id: String, bike_id: Int, subscription_type: String, zip_code: String)

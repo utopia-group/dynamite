@@ -1,0 +1,9 @@
+{
+  "checkin": [
+    {
+      "time": [String],
+      "business_id": String,
+      "type": String
+    } 
+  ]
+}

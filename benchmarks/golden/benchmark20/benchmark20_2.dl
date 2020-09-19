@@ -1,0 +1,84 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl airport?name(__id: Rel, value: StrAttr)
+.input airport?name
+.decl airport(city: StrAttr, country: StrAttr, elevation: StrAttr, gmtOffset: StrAttr, iatacode: StrAttr, latitude: StrAttr, longitude: StrAttr, name: Rel)
+.input airport
+.decl desert?located(__id: Rel, country: StrAttr, province: StrAttr)
+.input desert?located
+.decl desert?name(__id: Rel, value: StrAttr)
+.input desert?name
+.decl desert(area: StrAttr, country: StrAttr, id: StrAttr, latitude: StrAttr, located: Rel, longitude: StrAttr, name: Rel, type: StrAttr)
+.input desert
+.decl mountain?located(__id: Rel, country: StrAttr, province: StrAttr)
+.input mountain?located
+.decl mountain?name(__id: Rel, value: StrAttr)
+.input mountain?name
+.decl mountain(country: StrAttr, elevation: StrAttr, id: StrAttr, latitude: StrAttr, located: Rel, longitude: StrAttr, mountains: StrAttr, name: Rel)
+.input mountain
+.decl Airport(_id: StrAttr, city: StrAttr, country: StrAttr, elevation: StrAttr, gmtOffset: StrAttr, latitude: StrAttr, longitude: StrAttr)
+.input Airport
+.output Airport(delimiter="\t")
+.decl AirportName(_id: StrAttr)
+.output AirportName(delimiter="\t")
+.decl Desert(_id: StrAttr, area: StrAttr, country: StrAttr, latitude: StrAttr, longitude: StrAttr, type: StrAttr)
+.output Desert(delimiter="\t")
+.decl DesertName(_id: StrAttr)
+.output DesertName(delimiter="\t")
+.decl DesertLocation(_id: StrAttr, country: StrAttr)
+.output DesertLocation(delimiter="\t")
+.decl Mountain(_id: StrAttr, country: StrAttr, elevation: StrAttr, latitude: StrAttr, longitude: StrAttr, mountains: StrAttr)
+.output Mountain(delimiter="\t")
+.decl MountainName(_id: StrAttr)
+.output MountainName(delimiter="\t")
+.decl MountainLocation(_id: StrAttr, country: StrAttr)
+.output MountainLocation(delimiter="\t")
+.decl AIRPORT_NAME(_start: StrAttr, _end: StrAttr)
+.output AIRPORT_NAME(delimiter="\t")
+.decl DESERT_NAME(_start: StrAttr, _end: StrAttr)
+.output DESERT_NAME(delimiter="\t")
+.decl DESERT_LOCATION(_start: StrAttr, _end: StrAttr)
+.output DESERT_LOCATION(delimiter="\t")
+.decl MOUNTAIN_NAME(_start: StrAttr, _end: StrAttr)
+.output MOUNTAIN_NAME(delimiter="\t")
+.decl MOUNTAIN_LOCATION(_start: StrAttr, _end: StrAttr)
+.output MOUNTAIN_LOCATION(delimiter="\t")
+
+Airport(v_Airport?_id, v_Airport?city, v_Airport?country, v_Airport?elevation, v_Airport?gmtOffset, v_Airport?latitude, v_Airport?longitude) :-
+    airport(v_Airport?city, v_Airport?country, v_Airport?elevation, v_Airport?gmtOffset, v_Airport?_id, v_Airport?latitude, v_Airport?longitude, _).
+AirportName(v_AirportName?_id) :-
+    airport(_, _, _, _, _, _, _, v_0),
+    airport?name(v_0, v_AirportName?_id).
+Desert(v_Desert?_id, v_Desert?area, v_Desert?country, v_Desert?latitude, v_Desert?longitude, v_Desert?type) :-
+    desert(v_Desert?area, v_Desert?country, v_Desert?_id, v_Desert?latitude, _, v_Desert?longitude, _, v_Desert?type).
+DesertName(v_DesertName?_id) :-
+    desert(_, _, _, _, _, _, v_0, _),
+    desert?name(v_0, v_DesertName?_id).
+DesertLocation(v_DesertLocation?_id, v_DesertLocation?country) :-
+    desert(_, _, _, _, v_1, _, _, _),
+    desert?located(v_1, v_DesertLocation?country, v_DesertLocation?_id).
+Mountain(v_Mountain?_id, v_Mountain?country, v_Mountain?elevation, v_Mountain?latitude, v_Mountain?longitude, v_Mountain?mountains) :-
+    mountain(v_Mountain?country, v_Mountain?elevation, v_Mountain?_id, v_Mountain?latitude, _, v_Mountain?longitude, v_Mountain?mountains, _).
+MountainName(v_MountainName?_id) :-
+    mountain(_, _, _, _, _, _, _, v_0),
+    mountain?name(v_0, v_MountainName?_id).
+MountainLocation(v_MountainLocation?_id, v_MountainLocation?country) :-
+    mountain(_, _, _, _, v_1, _, _, _),
+    mountain?located(v_1, v_MountainLocation?country, v_MountainLocation?_id).
+AIRPORT_NAME(v_AIRPORT_NAME?_start, v_AIRPORT_NAME?_end) :-
+    airport(_, _, _, _, v_AIRPORT_NAME?_start, _, _, v_0),
+    airport?name(v_0, v_AIRPORT_NAME?_end).
+DESERT_NAME(v_DESERT_NAME?_start, v_DESERT_NAME?_end) :-
+    desert(_, _, v_DESERT_NAME?_start, _, _, _, v_0, _),
+    desert?name(v_0, v_DESERT_NAME?_end).
+DESERT_LOCATION(v_DESERT_LOCATION?_start, v_DESERT_LOCATION?_end) :-
+    desert(_, _, v_DESERT_LOCATION?_start, _, v_0, _, _, _),
+    desert?located(v_0, _, v_DESERT_LOCATION?_end).
+MOUNTAIN_NAME(v_MOUNTAIN_NAME?_start, v_MOUNTAIN_NAME?_end) :-
+    mountain(_, _, v_MOUNTAIN_NAME?_start, _, _, _, _, v_0),
+    mountain?name(v_0, v_MOUNTAIN_NAME?_end).
+MOUNTAIN_LOCATION(v_MOUNTAIN_LOCATION?_start, v_MOUNTAIN_LOCATION?_end) :-
+    mountain(_, _, v_MOUNTAIN_LOCATION?_start, _, v_0, _, _, _),
+    mountain?located(v_0, _, v_MOUNTAIN_LOCATION?_end).
+

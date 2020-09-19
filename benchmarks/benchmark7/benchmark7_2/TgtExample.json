@@ -1,0 +1,40 @@
+{
+    "attorneyByCases": [
+        {
+            "case_row_id": "14",
+            "case_number": "0:92-cv-00398-MJP",
+            "attorneys": [
+                {
+                    "party_row_count": "40",
+                    "party_type": "Plaintiff",
+                    "attorney_row_count": "1",
+                    "name": "Joel Wyman Collins , Jr",
+                    "contactinfo": "Collins and Lacy; PO Box 12487; Columbia, SC 29211; 803-256-2660; Fax: 803-771-4484; Email: jcollins@collinsandlacy.com",
+                    "position": "LEAD ATTORNEY; ATTORNEY TO BE NOTICED"
+                },
+                {
+                    "party_row_count": "41",
+                    "party_type": "Plaintiff",
+                    "attorney_row_count": "2",
+                    "name": "Joel Wyman Collins , Jr",
+                    "contactinfo": "(See above for address)",
+                    "position": "LEAD ATTORNEY; ATTORNEY TO BE NOTICED"
+                }
+            ]
+        },
+        {
+            "case_row_id": "38",
+            "case_number": "0:89-cv-06934-NCR",
+            "attorneys": [
+                {
+                    "party_row_count": "118",
+                    "party_type": "Plaintiff",
+                    "attorney_row_count": "26",
+                    "name": "David Berten",
+                    "contactinfo": "Bartlit Beck Herman Palenchar & Scott; 54 W Hubbard Street; Suite 300; Chicago, IL 60610; 312-494-4444",
+                    "position": "LEAD ATTORNEY; ATTORNEY TO BE NOTICED"
+                }
+            ]
+        }
+    ]
+}

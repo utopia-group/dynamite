@@ -1,0 +1,1 @@
+Movie(id: String, title: String, release_year: Int, rating: Float, running_time: Int, country: String, type: String)

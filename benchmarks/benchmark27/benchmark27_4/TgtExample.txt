@@ -1,0 +1,3 @@
+names(case_row_id: String, case_number: String, case_name: String, party_row_count: String, party_type: String, name_row_count: String, name: String)
+427,0:00-cv-00019,Banner Engineering v. Harris Instrument,2,Plaintiff,3,Burroghs Wellcome Co.
+54973,01-Jan-1970,"ASTRAZENECA AB et al v. SANDOZ, INC.",2,Defendant,2,Generix Drug Corp.

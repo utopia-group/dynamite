@@ -1,0 +1,72 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl crew?roles(__id: Rel, _id: StrAttr, character: StrAttr, role: StrAttr, title: StrAttr)
+.input crew?roles
+.decl crew(id: StrAttr, roles: Rel)
+.input crew
+.decl movie?countries(__id: Rel, value: StrAttr)
+.input movie?countries
+.decl movie?genres(__id: Rel, value: StrAttr)
+.input movie?genres
+.decl movie?keywords(__id: Rel, value: StrAttr)
+.input movie?keywords
+.decl movie?languages(__id: Rel, name: StrAttr)
+.input movie?languages
+.decl movie(companies: Rel, countries: Rel, genres: Rel, id: StrAttr, keywords: Rel, kind: StrAttr, languages: Rel, rating: Rel, release_dates: Rel, running_times: Rel, title: StrAttr, year: Rel)
+.input movie
+.decl Crew(_id: StrAttr)
+.output Crew(delimiter="\t")
+.decl Movie(_id: StrAttr, kind: StrAttr, name: StrAttr)
+.output Movie(delimiter="\t")
+.decl Country(_id: StrAttr)
+.output Country(delimiter="\t")
+.decl Genre(_id: StrAttr)
+.output Genre(delimiter="\t")
+.decl Keyword(_id: StrAttr)
+.output Keyword(delimiter="\t")
+.decl Language(_id: StrAttr)
+.output Language(delimiter="\t")
+.decl PARTICIPATES_IN(_start: StrAttr, _end: StrAttr, character: StrAttr, role: StrAttr)
+.output PARTICIPATES_IN(delimiter="\t")
+.decl HAS_COUNTRY(_start: StrAttr, _end: StrAttr)
+.output HAS_COUNTRY(delimiter="\t")
+.decl HAS_GENRE(_start: StrAttr, _end: StrAttr)
+.output HAS_GENRE(delimiter="\t")
+.decl HAS_KEYWORD(_start: StrAttr, _end: StrAttr)
+.output HAS_KEYWORD(delimiter="\t")
+.decl HAS_LANGUAGE(_start: StrAttr, _end: StrAttr)
+.output HAS_LANGUAGE(delimiter="\t")
+
+Crew(v_Crew?_id) :-
+    crew(v_Crew?_id, _).
+Movie(v_Movie?_id, v_Movie?kind, v_Movie?name) :-
+    movie(_, _, _, v_Movie?name, _, v_Movie?kind, _, _, _, _, v_Movie?_id, _).
+Country(v_Country?_id) :-
+    movie(_, v_1, _, _, _, _, _, _, _, _, _, _),
+    movie?countries(v_1, v_Country?_id).
+Genre(v_Genre?_id) :-
+    movie(_, _, v_0, _, _, _, _, _, _, _, _, _),
+    movie?genres(v_0, v_Genre?_id).
+Keyword(v_Keyword?_id) :-
+    movie(_, _, _, _, v_0, _, _, _, _, _, _, _),
+    movie?keywords(v_0, v_Keyword?_id).
+Language(v_Language?_id) :-
+    movie(_, _, _, _, _, _, v_0, _, _, _, _, _),
+    movie?languages(v_0, v_Language?_id).
+PARTICIPATES_IN(v_PARTICIPATES_IN?_start, v_PARTICIPATES_IN?_end, v_PARTICIPATES_IN?character, v_PARTICIPATES_IN?role) :-
+    crew(v_PARTICIPATES_IN?_start, v_2),
+    crew?roles(v_2, _, v_PARTICIPATES_IN?character, v_PARTICIPATES_IN?role, v_PARTICIPATES_IN?_end).
+HAS_COUNTRY(v_HAS_COUNTRY?_start, v_HAS_COUNTRY?_end) :-
+    movie(_, v_1, _, _, _, _, _, _, _, _, v_HAS_COUNTRY?_end, _),
+    movie?countries(v_1, v_HAS_COUNTRY?_start).
+HAS_GENRE(v_HAS_GENRE?_start, v_HAS_GENRE?_end) :-
+    movie(_, _, v_0, _, _, _, _, _, _, _, v_HAS_GENRE?_end, _),
+    movie?genres(v_0, v_HAS_GENRE?_start).
+HAS_KEYWORD(v_HAS_KEYWORD?_start, v_HAS_KEYWORD?_end) :-
+    movie(_, _, _, _, v_0, _, _, _, _, _, v_HAS_KEYWORD?_end, _),
+    movie?keywords(v_0, v_HAS_KEYWORD?_start).
+HAS_LANGUAGE(v_HAS_LANGUAGE?_start, v_HAS_LANGUAGE?_end) :-
+    movie(_, _, _, _, _, _, v_0, _, _, _, v_HAS_LANGUAGE?_end, _),
+    movie?languages(v_0, v_HAS_LANGUAGE?_start).
+

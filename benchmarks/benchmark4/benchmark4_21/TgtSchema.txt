@@ -1,0 +1,1 @@
+Province(code: String, name: String, country_code: String, area: Float, capital: String)

@@ -1,0 +1,10 @@
+Category(bid: String, category: String)
+"iaunX_af5M5lfT2eEm9FMQ", "Shopping"
+"iaunX_af5M5lfT2eEm9FMQ", "Bookstores"
+"iaunX_af5M5lfT2eEm9FMQ", "Books"
+"iaunX_af5M5lfT2eEm9FMQ", "Mags"
+"iaunX_af5M5lfT2eEm9FMQ", "Music & Video"
+"lHYMeXf8JH1Q8Dazn9s3Gg", "Tires"
+"lHYMeXf8JH1Q8Dazn9s3Gg", "Automotive"
+"lHYMeXf8JH1Q8Dazn9s3Gg", "Auto Parts & Supplies"
+"lHYMeXf8JH1Q8Dazn9s3Gg", "Wheel & Rim Repair"

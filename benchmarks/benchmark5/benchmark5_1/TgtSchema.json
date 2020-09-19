@@ -1,0 +1,23 @@
+{
+    "atBats": [{
+        "ab_id": "Int",
+        "batter": [{
+            "id": "Int",
+            "first_name": "String",
+            "last_name": "String"
+        }],
+        "event": "String",
+        "g_id": "Int",
+        "inning": "Int",
+        "o": "Int",
+        "p_score": "Int",
+        "p_throws": "String",
+        "pitcher": [{
+            "id": "Int",
+            "first_name": "String",
+            "last_name": "String"
+        }],
+        "stand": "String",
+        "top": "String"
+    }]
+}

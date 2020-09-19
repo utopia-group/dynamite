@@ -1,0 +1,1 @@
+Sea(sid: String, name: String, area: Float, depth: Int)

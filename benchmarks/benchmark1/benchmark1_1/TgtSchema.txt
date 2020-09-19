@@ -1,0 +1,1 @@
+Review(rid: String, uid: String, bid: String, text: String, stars: Int, date: String)

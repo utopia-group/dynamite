@@ -1,0 +1,10 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Stations(id: StrAttr, name: StrAttr, lat: StrAttr, long: StrAttr, dock_count: IntAttr, city: StrAttr, installation_date: StrAttr)
+.input Stations
+.decl stations(id: StrAttr, name: StrAttr, lat: StrAttr, long: StrAttr, dock_count: IntAttr, city: StrAttr, installation_date: StrAttr)
+.output stations(delimiter="\t")
+
+stations(v_stations?id, v_stations?name, v_stations?lat, v_stations?long, v_stations?dock_count, v_stations?city, v_stations?installation_date) :-
+    Stations(v_stations?id, v_stations?name, v_stations?lat, v_stations?long, v_stations?dock_count, v_stations?city, v_stations?installation_date).

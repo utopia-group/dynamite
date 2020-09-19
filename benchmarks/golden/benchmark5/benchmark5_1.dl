@@ -1,0 +1,21 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl AtBats(ab_id: IntAttr, batter_id: IntAttr, event: StrAttr, g_id: IntAttr, inning: IntAttr, o: IntAttr, p_score: IntAttr, p_throws: StrAttr, pitcher_id: IntAttr, stand: StrAttr, top: StrAttr)
+.input AtBats
+.decl PlayerNames(id: IntAttr, first_name: StrAttr, last_name: StrAttr)
+.input PlayerNames
+.decl atBats?batter(__id: Rel, first_name: StrAttr, id: IntAttr, last_name: StrAttr)
+.decl atBats?pitcher(__id: Rel, first_name: StrAttr, id: IntAttr, last_name: StrAttr)
+.decl atBats(ab_id: IntAttr, batter: Rel, event: StrAttr, g_id: IntAttr, inning: IntAttr, o: IntAttr, p_score: IntAttr, p_throws: StrAttr, pitcher: Rel, stand: StrAttr, top: StrAttr)
+.output atBats?batter(delimiter="\t")
+.output atBats?pitcher(delimiter="\t")
+.output atBats(delimiter="\t")
+
+atBats?batter(_v_0, v_atBats?batter?first_name, v_atBats?batter?id, v_atBats?batter?last_name), atBats?pitcher(_v_1, v_atBats?pitcher?first_name, v_atBats?pitcher?id, v_atBats?pitcher?last_name), atBats(v_atBats?ab_id, _v_0, v_atBats?event, v_atBats?g_id, v_atBats?inning, v_atBats?o, v_atBats?p_score, v_atBats?p_throws, _v_1, v_atBats?stand, v_atBats?top) :-
+    AtBats(v_atBats?ab_id, v_atBats?batter?id, v_atBats?event, v_atBats?g_id, v_atBats?inning, v_atBats?o, v_atBats?p_score, v_atBats?p_throws, v_atBats?pitcher?id, v_atBats?stand, v_atBats?top),
+    PlayerNames(v_atBats?batter?id, v_atBats?batter?first_name, v_atBats?batter?last_name),
+    PlayerNames(v_atBats?pitcher?id, v_atBats?pitcher?first_name, v_atBats?pitcher?last_name),
+    _v_0 = cat("#", cat(v_atBats?ab_id, cat("#", cat(v_atBats?event, cat("#", cat(v_atBats?g_id, cat("#", cat(v_atBats?inning, cat("#", cat(v_atBats?o, cat("#", cat(v_atBats?p_score, cat("#", cat(v_atBats?p_throws, cat("#", cat(v_atBats?stand, cat("#", cat(v_atBats?top, "#")))))))))))))))))),
+    _v_1 = cat("#", cat(v_atBats?ab_id, cat("#", cat(v_atBats?event, cat("#", cat(v_atBats?g_id, cat("#", cat(v_atBats?inning, cat("#", cat(v_atBats?o, cat("#", cat(v_atBats?p_score, cat("#", cat(v_atBats?p_throws, cat("#", cat(v_atBats?stand, cat("#", cat(v_atBats?top, "#")))))))))))))))))).
+

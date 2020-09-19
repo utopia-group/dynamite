@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl user?friends(__id: Rel, value: StrAttr)
+.input user?friends
+.decl user(average_stars: StrAttr, compliment_cool: IntAttr, compliment_cute: IntAttr, compliment_funny: IntAttr, compliment_hot: IntAttr, compliment_list: IntAttr, compliment_more: IntAttr, compliment_note: IntAttr, compliment_photos: IntAttr, compliment_plain: IntAttr, compliment_profile: IntAttr, compliment_writer: IntAttr, cool: IntAttr, elite: Rel, fans: IntAttr, friends: Rel, funny: IntAttr, name: StrAttr, review_count: IntAttr, type: StrAttr, useful: IntAttr, user_id: StrAttr, yelping_since: StrAttr)
+.input user
+.decl Friend(person: StrAttr, friends_with: StrAttr)
+.output Friend(delimiter="\t")
+
+Friend(v_Friend?person, v_Friend?friends_with) :-
+    user(_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, v_1, _, _, _, _, _, v_Friend?friends_with, _),
+    user?friends(v_1, v_Friend?person).
+

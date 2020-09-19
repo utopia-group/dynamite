@@ -1,0 +1,29 @@
+{
+  "user": [
+    {
+      "user_id": String,
+      "name": String,
+      "review_count": Int,
+      "yelping_since": String,
+      "friends": [String],
+      "useful": Int,
+      "funny": Int,
+      "cool": Int,
+      "fans": Int,
+      "elite": [String],
+      "average_stars": String,
+      "compliment_hot": Int,
+      "compliment_more": Int,
+      "compliment_profile": Int,
+      "compliment_cute": Int,
+      "compliment_list": Int,
+      "compliment_note": Int,
+      "compliment_plain": Int,
+      "compliment_cool": Int,
+      "compliment_funny": Int,
+      "compliment_writer": Int,
+      "compliment_photos": Int,
+      "type": String
+    }
+  ]
+}

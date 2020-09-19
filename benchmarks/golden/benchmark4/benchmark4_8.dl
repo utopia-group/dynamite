@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl country(area: StrAttr, border: Rel, capital: StrAttr, car_code: StrAttr, ethnicgroup: Rel, gdp_agri: StrAttr, gdp_ind: StrAttr, gdp_serv: StrAttr, gdp_total: IntAttr, government: StrAttr, indep_date: Rel, infant_mortality: StrAttr, inflation: StrAttr, language: Rel, memberships: StrAttr, name: StrAttr, population: Rel, population_growth: StrAttr, province: Rel, religion: Rel, unemployment: StrAttr)
+.input country
+.decl Economy(country_code: StrAttr, gdp: IntAttr, agriculture: StrAttr, service: StrAttr, industry: StrAttr, inflation: StrAttr, unemployment: StrAttr)
+.output Economy(delimiter="\t")
+
+Economy(v_Economy?country_code, v_Economy?gdp, v_Economy?agriculture, v_Economy?service, v_Economy?industry, v_Economy?inflation, v_Economy?unemployment) :-
+    country(_, _, _, v_Economy?country_code, _, v_Economy?agriculture, v_Economy?industry, v_Economy?service, v_Economy?gdp, _, _, _, v_Economy?inflation, _, _, _, _, _, _, _, v_Economy?unemployment).
+

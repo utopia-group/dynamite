@@ -1,0 +1,16 @@
+{
+  "review": [
+    {
+      "review_id": String,
+      "user_id": String,
+      "business_id": String,
+      "stars": Int,
+      "date": String,
+      "text": String,
+      "useful": Int,
+      "funny": Int,
+      "cool": Int,
+      "type": String
+    }
+  ]
+}

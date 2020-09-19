@@ -1,0 +1,47 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Attorneys(case_row_id: StrAttr, case_number: StrAttr, party_row_count: StrAttr, party_type: StrAttr, attorney_row_count: StrAttr, name: StrAttr, contactinfo: StrAttr, position: StrAttr)
+.input Attorneys
+.decl Cases(case_row_id: StrAttr, case_number: StrAttr, pacer_id: StrAttr, case_name: StrAttr, court_name: StrAttr, assigned_to: StrAttr, referred_to: StrAttr, case_cause: StrAttr, jurisdictional_basis: StrAttr, demand: StrAttr, jury_demand: StrAttr, lead_case: StrAttr, related_case: StrAttr, settlement: StrAttr, date_filed: StrAttr, date_closed: StrAttr, date_last_filed: StrAttr)
+.input Cases
+.decl Documents(d_id: StrAttr, case_row_id: StrAttr, case_number: StrAttr, doc_count: IntAttr, attachment: StrAttr, date_filed: StrAttr, long_description: StrAttr, doc_number: IntAttr, short_description: StrAttr, upload_date: StrAttr)
+.input Documents
+.decl Names(case_row_id: StrAttr, case_number: StrAttr, party_row_count: StrAttr, party_type: StrAttr, name_row_count: StrAttr, name: StrAttr)
+.input Names
+.decl PacerCases(p_id: StrAttr, case_name: StrAttr, court_code: StrAttr, court_name: StrAttr, date_closed: StrAttr, case_number: StrAttr, pacer_id: StrAttr, date_filed: StrAttr)
+.input PacerCases
+.decl attorney(_id: StrAttr, contactinfo: StrAttr, name: StrAttr, party_row_count: StrAttr, party_type: StrAttr, position: StrAttr)
+.output attorney(delimiter="\t")
+.decl case(_id: StrAttr, assigned_to: StrAttr, case_cause: StrAttr, case_name: StrAttr, case_number: StrAttr, court_name: StrAttr, date_closed: StrAttr, date_filed: StrAttr, date_last_filed: StrAttr, demand: StrAttr, jurisdictional_basis: StrAttr, jury_demand: StrAttr, lead_case: StrAttr, pacer_id: StrAttr, referred_to: StrAttr, related_case: StrAttr, settlement: StrAttr)
+.output case(delimiter="\t")
+.decl document(_id: StrAttr, attachment: StrAttr, date_filed: StrAttr, doc_count: IntAttr, doc_number: IntAttr, long_description: StrAttr, short_description: StrAttr, upload_date: StrAttr)
+.output document(delimiter="\t")
+.decl name(_id: StrAttr, name: StrAttr, party_row_count: StrAttr, party_type: StrAttr)
+.output name(delimiter="\t")
+.decl pacerCases(_id: StrAttr, case_name: StrAttr, case_number: StrAttr, court_code: StrAttr, court_name: StrAttr, date_closed: StrAttr, date_filed: StrAttr, pacer_id: StrAttr)
+.output pacerCases(delimiter="\t")
+.decl HAS_DOCUMENT(_start: StrAttr, _end: StrAttr)
+.output HAS_DOCUMENT(delimiter="\t")
+.decl HAS_ATTORNEY(_start: StrAttr, _end: StrAttr)
+.output HAS_ATTORNEY(delimiter="\t")
+.decl HAS_NAME(_start: StrAttr, _end: StrAttr)
+.output HAS_NAME(delimiter="\t")
+
+attorney(v_attorney?_id, v_attorney?contactinfo, v_attorney?name, v_attorney?party_row_count, v_attorney?party_type, v_attorney?position) :-
+    Attorneys(_, _, v_attorney?party_row_count, v_attorney?party_type, v_attorney?_id, v_attorney?name, v_attorney?contactinfo, v_attorney?position).
+case(v_case?_id, v_case?assigned_to, v_case?case_cause, v_case?case_name, v_case?case_number, v_case?court_name, v_case?date_closed, v_case?date_filed, v_case?date_last_filed, v_case?demand, v_case?jurisdictional_basis, v_case?jury_demand, v_case?lead_case, v_case?pacer_id, v_case?referred_to, v_case?related_case, v_case?settlement) :-
+    Cases(v_case?_id, v_case?case_number, v_case?pacer_id, v_case?case_name, v_case?court_name, v_case?assigned_to, v_case?referred_to, v_case?case_cause, v_case?jurisdictional_basis, v_case?demand, v_case?jury_demand, v_case?lead_case, v_case?related_case, v_case?settlement, v_case?date_filed, v_case?date_closed, v_case?date_last_filed).
+document(v_document?_id, v_document?attachment, v_document?date_filed, v_document?doc_count, v_document?doc_number, v_document?long_description, v_document?short_description, v_document?upload_date) :-
+    Documents(v_document?_id, _, _, v_document?doc_count, v_document?attachment, v_document?date_filed, v_document?long_description, v_document?doc_number, v_document?short_description, v_document?upload_date).
+name(v_name?_id, v_name?name, v_name?party_row_count, v_name?party_type) :-
+    Names(_, _, v_name?party_row_count, v_name?party_type, v_name?_id, v_name?name).
+pacerCases(v_pacerCases?_id, v_pacerCases?case_name, v_pacerCases?case_number, v_pacerCases?court_code, v_pacerCases?court_name, v_pacerCases?date_closed, v_pacerCases?date_filed, v_pacerCases?pacer_id) :-
+    PacerCases(v_pacerCases?_id, v_pacerCases?case_name, v_pacerCases?court_code, v_pacerCases?court_name, v_pacerCases?date_closed, v_pacerCases?case_number, v_pacerCases?pacer_id, v_pacerCases?date_filed).
+HAS_DOCUMENT(v_HAS_DOCUMENT?_start, v_HAS_DOCUMENT?_end) :-
+    Documents(v_HAS_DOCUMENT?_end, v_HAS_DOCUMENT?_start, _, _, _, _, _, _, _, _).
+HAS_ATTORNEY(v_HAS_ATTORNEY?_start, v_HAS_ATTORNEY?_end) :-
+    Attorneys(v_HAS_ATTORNEY?_start, _, _, _, v_HAS_ATTORNEY?_end, _, _, _).
+HAS_NAME(v_HAS_NAME?_start, v_HAS_NAME?_end) :-
+    Names(v_HAS_NAME?_start, _, _, _, v_HAS_NAME?_end, _).
+

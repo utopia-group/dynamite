@@ -1,0 +1,65 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl lake?located(__id: Rel, country: StrAttr, province: StrAttr)
+.input lake?located
+.decl lake?name(__id: Rel, value: StrAttr)
+.input lake?name
+.decl lake(area: StrAttr, country: StrAttr, depth: StrAttr, elevation: StrAttr, id: StrAttr, latitude: StrAttr, located: Rel, longitude: StrAttr, name: Rel, to: Rel)
+.input lake
+.decl sea?located(__id: Rel, country: StrAttr, province: StrAttr)
+.input sea?located
+.decl sea?name(__id: Rel, value: StrAttr)
+.input sea?name
+.decl sea(area: StrAttr, bordering: StrAttr, country: StrAttr, depth: StrAttr, id: StrAttr, located: Rel, name: Rel)
+.input sea
+.decl Lake(_id: StrAttr, area: StrAttr, country: StrAttr, depth: StrAttr, elevation: StrAttr, latitude: StrAttr, longitude: StrAttr)
+.output Lake(delimiter="\t")
+.decl LakeName(_id: StrAttr)
+.output LakeName(delimiter="\t")
+.decl LakeLocation(_id: StrAttr, country: StrAttr)
+.output LakeLocation(delimiter="\t")
+.decl Sea(_id: StrAttr, area: StrAttr, bordering: StrAttr, country: StrAttr, depth: StrAttr)
+.output Sea(delimiter="\t")
+.decl SeaName(_id: StrAttr)
+.output SeaName(delimiter="\t")
+.decl SeaLocation(_id: StrAttr, country: StrAttr)
+.output SeaLocation(delimiter="\t")
+.decl LAKE_NAME(_start: StrAttr, _end: StrAttr)
+.output LAKE_NAME(delimiter="\t")
+.decl LAKE_LOCATION(_start: StrAttr, _end: StrAttr)
+.output LAKE_LOCATION(delimiter="\t")
+.decl SEA_NAME(_start: StrAttr, _end: StrAttr)
+.output SEA_NAME(delimiter="\t")
+.decl SEA_LOCATION(_start: StrAttr, _end: StrAttr)
+.output SEA_LOCATION(delimiter="\t")
+
+Lake(v_Lake?_id, v_Lake?area, v_Lake?country, v_Lake?depth, v_Lake?elevation, v_Lake?latitude, v_Lake?longitude) :-
+    lake(v_Lake?area, v_Lake?country, v_Lake?depth, v_Lake?elevation, v_Lake?_id, v_Lake?latitude, _, v_Lake?longitude, _, _).
+LakeName(v_LakeName?_id) :-
+    lake(_, _, _, _, _, _, _, _, v_0, _),
+    lake?name(v_0, v_LakeName?_id).
+LakeLocation(v_LakeLocation?_id, v_LakeLocation?country) :-
+    lake(_, _, _, _, _, _, v_1, _, _, _),
+    lake?located(v_1, v_LakeLocation?country, v_LakeLocation?_id).
+Sea(v_Sea?_id, v_Sea?area, v_Sea?bordering, v_Sea?country, v_Sea?depth) :-
+    sea(v_Sea?area, v_Sea?bordering, v_Sea?country, v_Sea?depth, v_Sea?_id, _, _).
+SeaName(v_SeaName?_id) :-
+    sea(_, _, _, _, _, _, v_0),
+    sea?name(v_0, v_SeaName?_id).
+SeaLocation(v_SeaLocation?_id, v_SeaLocation?country) :-
+    sea(_, _, _, _, _, v_1, _),
+    sea?located(v_1, v_SeaLocation?country, v_SeaLocation?_id).
+LAKE_NAME(v_LAKE_NAME?_start, v_LAKE_NAME?_end) :-
+    lake(_, _, _, _, v_LAKE_NAME?_start, _, _, _, v_0, _),
+    lake?name(v_0, v_LAKE_NAME?_end).
+LAKE_LOCATION(v_LAKE_LOCATION?_start, v_LAKE_LOCATION?_end) :-
+    lake(_, _, _, _, v_LAKE_LOCATION?_start, _, v_0, _, _, _),
+    lake?located(v_0, _, v_LAKE_LOCATION?_end).
+SEA_NAME(v_SEA_NAME?_start, v_SEA_NAME?_end) :-
+    sea(_, _, _, _, v_SEA_NAME?_start, _, v_0),
+    sea?name(v_0, v_SEA_NAME?_end).
+SEA_LOCATION(v_SEA_LOCATION?_start, v_SEA_LOCATION?_end) :-
+    sea(_, _, _, _, v_SEA_LOCATION?_start, v_0, _),
+    sea?located(v_0, _, v_SEA_LOCATION?_end).
+

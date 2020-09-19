@@ -1,0 +1,164 @@
+[
+  {
+    "type": "node",
+    "id": "39657",
+    "labels": [
+      "Player"
+    ],
+    "properties": {
+      "name": "Ahmed Benhemine",
+      "position": "Defender",
+      "id": "/ahmed-benhemine/profil/spieler/308009"
+    }
+  },
+  {
+    "type": "node",
+    "id": "39259",
+    "labels": [
+      "Player"
+    ],
+    "properties": {
+      "name": "Michel ElA3i",
+      "id": "/michel-eloi/profil/spieler/215874",
+      "position": "Defensive Midfield"
+    }
+  },
+  {
+    "type": "node",
+    "id": "97861",
+    "labels": [
+      "Country"
+    ],
+    "properties": {
+      "name": "Brazil"
+    }
+  },
+  {
+    "type": "node",
+    "id": "97862",
+    "labels": [
+      "Country"
+    ],
+    "properties": {
+      "name": "France"
+    }
+  },
+  {
+    "type": "node",
+    "id": "98076",
+    "labels": [
+      "Club"
+    ],
+    "properties": {
+      "name": "GrAmio",
+      "id": "/gremio-foot-ball-porto-alegrense/startseite/verein/210"
+    }
+  },
+  {
+    "type": "node",
+    "id": "98083",
+    "labels": [
+      "Club"
+    ],
+    "properties": {
+      "name": "AtlActico-MG",
+      "id": "/atletico-mineiro/startseite/verein/330"
+    }
+  },
+  {
+    "type": "node",
+    "id": "98189",
+    "labels": [
+      "Club"
+    ],
+    "properties": {
+      "name": "Strasbourg U19",
+      "id": "/racing-strassburg-u19/startseite/verein/11199"
+    }
+  },
+  {
+    "id": "97827",
+    "type": "relationship",
+    "label": "PART_OF",
+    "start": {
+      "id": "98076",
+      "labels": [
+        "Club"
+      ]
+    },
+    "end": {
+      "id": "97861",
+      "labels": [
+        "Country"
+      ]
+    }
+  },
+  {
+    "id": "97940",
+    "type": "relationship",
+    "label": "PART_OF",
+    "start": {
+      "id": "98189",
+      "labels": [
+        "Club"
+      ]
+    },
+    "end": {
+      "id": "97862",
+      "labels": [
+        "Country"
+      ]
+    }
+  },
+  {
+    "id": "97834",
+    "type": "relationship",
+    "label": "PART_OF",
+    "start": {
+      "id": "98083",
+      "labels": [
+        "Club"
+      ]
+    },
+    "end": {
+      "id": "97861",
+      "labels": [
+        "Country"
+      ]
+    }
+  },
+  {
+    "id": "397",
+    "type": "relationship",
+    "label": "PLAYS_FOR",
+    "start": {
+      "id": "39657",
+      "labels": [
+        "Player"
+      ]
+    },
+    "end": {
+      "id": "97862",
+      "labels": [
+        "Country"
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "type": "relationship",
+    "label": "PLAYS_FOR",
+    "start": {
+      "id": "39259",
+      "labels": [
+        "Player"
+      ]
+    },
+    "end": {
+      "id": "97861",
+      "labels": [
+        "Country"
+      ]
+    }
+  }
+]

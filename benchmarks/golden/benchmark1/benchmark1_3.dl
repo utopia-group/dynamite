@@ -1,0 +1,14 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl checkin?time(__id: Rel, value: StrAttr)
+.input checkin?time
+.decl checkin(business_id: StrAttr, time: Rel, type: StrAttr)
+.input checkin
+.decl Checkin(bid: StrAttr, time: StrAttr)
+.output Checkin(delimiter="\t")
+
+Checkin(v_Checkin?bid, v_Checkin?time) :-
+    checkin(v_Checkin?bid, v_0, _),
+    checkin?time(v_0, v_Checkin?time).
+

@@ -1,0 +1,7 @@
+Ejections(e_id: String, ab_id: Int, des: String, event_num: Int, g_id: Int, player_id: Int, date: String, BS: String, CORRECT: String, team: String, is_home_team: String)
+E1,2015003219,San Diego Padres center fielder Will Venable ejected by HP umpire Tripp Gibson III.,732,201500044,461416,4/9/15,,C1,sdn,TRUE
+
+PlayerNames(id: Int, first_name: String, last_name: String)
+461416,Will,Venable
+452657,Jon,Lester
+

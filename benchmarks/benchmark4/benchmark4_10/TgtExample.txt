@@ -1,0 +1,4 @@
+Ethnicity(country_code: String, name: String, percentage: Float)
+"AL","Albanian",95
+"AL","Greek",3
+"IR","Persian",51

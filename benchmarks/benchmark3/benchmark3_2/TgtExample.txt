@@ -1,0 +1,6 @@
+AuthorPaper(name: String, pid: String)
+"Sanjeev Saxena", "journals/acta/Saxena96"
+"Yingjie Li 0002", "journals/wias/0002YWG013"
+"Xueli Yu", "journals/wias/0002YWG013"
+"Rui Wang", "journals/wias/0002YWG013"
+"Lili Geng", "journals/wias/0002YWG013"

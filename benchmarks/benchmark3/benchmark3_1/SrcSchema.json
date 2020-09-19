@@ -1,0 +1,46 @@
+{
+    "book": [
+        {
+            "key": String,
+            "mdate": String,
+            "author": [
+                { "value" : String }
+            ],
+            "title": [
+                {
+                    "value": String
+                }
+            ],
+            "pages": [
+                {
+                    "value": String
+                }
+            ],
+            "publisher": [
+                {
+                    "value": String
+                }
+            ],
+            "school": [
+                {
+                    "value": String
+                }
+            ],
+            "year": [
+                {
+                    "value": Int
+                }
+            ],
+            "isbn": [
+                {
+                    "value": String
+                }
+            ],
+            "ee": [
+                {
+                    "value": String
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+   	"retina": [
+   		{
+	   		"coarse": "gc",
+	   		"x": 110.903,
+	   		"name": "1",
+	   		"y": 76.635,
+	   		"certainty": "M",
+	   		"z": 43.5341,
+	   		"macneil_type": "m1",
+	   		"id": "n0",
+	   		"designation": "gc10-40",
+	   		"volgyi_type": "G11"
+	    },
+	    {
+            "coarse": "nac",
+            "x": 58.1994,
+            "name": "46",
+            "y": 76.7234,
+            "certainty": "c1",
+            "z": 76.4259,
+            "macneil_type": "m2",
+            "id": "n45",
+            "designation": "ac11-68",
+            "volgyi_type": "v1"
+	    },
+	    {
+	    	"coarse": "nac",
+            "x": 58.1994,
+            "name": "46",
+            "y": 76.7234,
+            "certainty": "c1",
+            "z": 76.4259,
+            "macneil_type": "m2",
+            "id": "n45",
+            "designation": "2",
+            "volgyi_type": "v1"
+	    }
+	]
+}

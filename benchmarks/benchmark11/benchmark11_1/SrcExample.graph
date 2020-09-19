@@ -1,0 +1,78 @@
+[
+  {
+    "type": "node",
+    "id": "0",
+    "labels": [
+      "Tag"
+    ],
+    "properties": {
+      "movieid": "60756",
+      "time": "1445714994",
+      "tag": "funny",
+      "userid": "2"
+    }
+  },
+  {
+    "type": "node",
+    "id": "3429",
+    "labels": [
+      "Tag"
+    ],
+    "properties": {
+      "movieid": "168248",
+      "time": "1493844270",
+      "tag": "Heroic Bloodshed",
+      "userid": "610"
+    }
+  },
+  {
+    "type": "node",
+    "id": "3430",
+    "labels": [
+      "Rating"
+    ],
+    "properties": {
+      "rating": "5.0",
+      "movieid": "3200",
+      "time": "955944250",
+      "userid": "217"
+    }
+  },
+  {
+    "type": "node",
+    "id": "1",
+    "labels": [
+      "Rating"
+    ],
+    "properties": {
+      "rating": "5.0",
+      "movieid": "5618",
+      "time": "1054037190",
+      "userid": "20"
+    }
+  },
+  {
+    "type": "node",
+    "id": "3439",
+    "labels": [
+      "Movie"
+    ],
+    "properties": {
+      "genres": "Fantasy",
+      "movieid": "1",
+      "title": "Toy Story (1995)"
+    }
+  },
+  {
+    "type": "node",
+    "id": "3440",
+    "labels": [
+      "Movie"
+    ],
+    "properties": {
+      "genres": "Fantasy",
+      "movieid": "2",
+      "title": "Jumanji (1995)"
+    }
+  }
+]

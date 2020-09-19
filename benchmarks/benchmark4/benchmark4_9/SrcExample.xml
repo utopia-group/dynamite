@@ -1,0 +1,37 @@
+<mondial>
+   <river country="GB" id="river-Ness" island="island-GreatBritain">
+      <name>Ness</name>
+      <to water="sea-Nordsee" watertype="sea"/>
+      <area>1850</area>
+      <length>12</length>
+      <source country="GBs">
+         <located country="GB" province="prov-gb-10"/>
+         <from water="lake-LochNess" watertype="lake"/>
+         <latitude>57.41</latitude>
+         <longitude>-4.33</longitude>
+         <elevation>16</elevation>
+      </source>
+      <estuary country="GBe">
+         <located country="GB" province="prov-gb-10"/>
+         <latitude>57.49</latitude>
+         <longitude>-4.22</longitude>
+         <elevation>0</elevation>
+      </estuary>
+   </river>
+   <river country="IRL" id="river-Shannon" island="island-Ireland">
+      <name>Shannon</name>
+      <to water="sea-Atlantic" watertype="sea"/>
+      <area>15695</area>
+      <length>360</length>
+      <source country="IRLs">
+         <latitude>54.23</latitude>
+         <longitude>-7.93</longitude>
+         <elevation>76</elevation>
+      </source>
+      <estuary country="IRLe">
+         <latitude>52.57</latitude>
+         <longitude>-9.70</longitude>
+         <elevation>1</elevation>
+      </estuary>
+   </river>
+</mondial>

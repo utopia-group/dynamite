@@ -1,0 +1,29 @@
+{
+  "player": [
+    {
+      "name": "String", 
+      "position": "String", 
+      "id": "String" 
+    }
+  ], "club": [
+    {
+      "name": "String",
+      "id": "String"
+    }
+  ], "transfer": [
+    {
+      "season": "String", 
+      "fee": "String",
+      "numericFee": "Int",
+      "id": "String",
+      "timestamp": "Int"
+    }
+  ], "transferWithoutFee": [
+    {
+      "season": "String", 
+      "fee": "String",
+      "id": "String",
+      "timestamp": "Int"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "crew": [
+    {
+      "id": "Shotgun' Smith; Andrew",
+      "roles": [
+        {
+          "title": "Divas Hit the Road (2014) {(1.8)}",
+          "role": "director",
+          "character": "NCD1",
+          "note": "nnd1"
+        },
+        {
+          "title": "Cellar Secret (2016)",
+          "role": "actor",
+          "character": "Narrator",
+          "note": "nope"
+        },
+        {
+          "title": "Reina de Corazones (2016)",
+          "role": "producer",
+          "character": "ncp1",
+          "note": "(assistant producer)"
+        },
+        {
+          "title": "From Heaven to Earth (2005)",
+          "role": "writer",
+          "character": "NWD1",
+          "note": "nwd1"
+        }
+      ]
+    },
+    {
+      "id": "Barrymore; Drew",
+      "roles": [
+        {
+          "title": "Al salir de clase (1997) {Desesperados (#1.92)}",
+          "role": "writer",
+          "character": "NWD2",
+          "note": "nwd2"
+        },
+        {
+          "title": "Animal (2014/I)",
+          "role": "producer",
+          "character": "no",
+          "note": "(executive producer)"
+        },
+        {
+          "title": "Shaan E Elaahi (1995)",
+          "role": "director",
+          "character": "NCD2",
+          "note": "nnd2"
+        },
+        {
+          "title": "Pariah (1998)",
+          "role": "actress",
+          "character": "Lavender Mob",
+          "note": "nope2"
+        },
+        {
+          "title": "The Libertine (1916)",
+          "role": "actor",
+          "character": "theif",
+          "note": "np1"
+        }
+      ]
+    },
+    {
+      "id": "Alexander; Megan",
+      "roles": [
+        {
+          "title": "Coffee Group (2015)",
+          "role": "actress",
+          "character": "Barista",
+          "note": "empty"
+        },
+        {
+          "title": "Candie's Harem (2015)",
+          "role": "actor",
+          "character": "TV narrator",
+          "note": "nothing"
+        }
+      ]
+    }
+  ]
+}

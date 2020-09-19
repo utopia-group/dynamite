@@ -1,0 +1,158 @@
+{
+  "review": [
+    {
+      "review_id": "Uf1Ki1yyH_JDKhLvn2e4FQ",
+      "user_id": "bgl3j8yJcRO-00NkUYsXGQ",
+      "business_id": "2LfIuF3_sX6uwe-IR-P0jQ",
+      "stars": 5,
+      "date": "2013-04-28",
+      "text": "What a great place! Modern on Melrose has amazing furniture at great prices. I highly recommend and will be back when I am looking for new pieces.",
+      "useful": 2,
+      "funny": 0,
+      "cool": 1,
+      "type": "review"
+    },
+    {
+      "review_id": "GXQnlRo41C4WykC_IP2Lbw",
+      "user_id": "rWL8bGLRPtYAhX97JnRVXg",
+      "business_id": "KYasaF1nov1bn7phfSgWeg",
+      "stars": 4,
+      "date": "2015-08-15",
+      "text": "Tui was awesome she made me an amazing jackfruit smoothie. I couldn't find jackfruit anywhere except here",
+      "useful": 0,
+      "funny": 0,
+      "cool": 0,
+      "type": "review"
+    }
+  ],
+  "business": [
+    {
+      "business_id": "2LfIuF3_sX6uwe-IR-P0jQ",
+      "name": "Modern On Melrose",
+      "address": "4610 N 7th Ave",
+      "city": "Phoenix",
+      "state": "AZ",
+      "postal_code": "85013",
+      "latitude": 33.5040543,
+      "longitude": -112.082813,
+      "stars": 4.0,
+      "review_count": 15,
+      "is_open": 0,
+      "attributes": [
+        "BikeParking: True",
+        "BusinessAcceptsCreditCards: True",
+        "BusinessParking: {'garage': False, 'street': True, 'validated': False, 'lot': True, 'valet': False}",
+        "ByAppointmentOnly: False",
+        "RestaurantsPriceRange2: 3"
+      ],
+      "categories": [
+        "Home & Garden",
+        "Antiques",
+        "Home Decor",
+        "Shopping"
+      ],
+      "hours": [
+        "Monday 11:0-17:0",
+        "Tuesday 11:0-17:0",
+        "Wednesday 11:0-17:0",
+        "Thursday 11:0-17:0",
+        "Friday 11:0-17:0",
+        "Saturday 11:0-17:0",
+        "Sunday 11:0-17:0"
+      ],
+      "type": "business"
+    },
+    {
+      "business_id": "KYasaF1nov1bn7phfSgWeg",
+      "name": "BAMBU",
+      "neighborhood": "Chinatown",
+      "address": "4810 Spring Mountain Rd, Ste B",
+      "city": "Las Vegas",
+      "state": "NV",
+      "postal_code": "89102",
+      "latitude": 36.1266029,
+      "longitude": -115.2062431,
+      "stars": 4.0,
+      "review_count": 204,
+      "is_open": 1,
+      "attributes": [
+        "Alcohol: none",
+        "BikeParking: False",
+        "BusinessAcceptsCreditCards: True",
+        "BusinessParking: {'garage': False, 'street': False, 'validated': False, 'lot': True, 'valet': False}",
+        "ByAppointmentOnly: False",
+        "Caters: False",
+        "GoodForMeal: {'dessert': False, 'latenight': False, 'lunch': False, 'dinner': False, 'breakfast': False, 'brunch': False}",
+        "OutdoorSeating: False",
+        "RestaurantsPriceRange2: 1",
+        "RestaurantsTakeOut: True",
+        "WiFi: free"
+      ],
+      "categories": [
+        "Juice Bars & Smoothies",
+        "Coffee & Tea",
+        "Bubble Tea",
+        "Food",
+        "Desserts"
+      ],
+      "hours": [
+        "Monday 11:0-22:0",
+        "Tuesday 11:0-22:0",
+        "Wednesday 11:0-22:0",
+        "Thursday 11:0-22:0",
+        "Friday 11:0-23:0",
+        "Saturday 11:0-23:0",
+        "Sunday 11:0-22:30"
+      ],
+      "type": "business"
+    }
+  ],
+  "user": [
+    {
+      "user_id": "bgl3j8yJcRO-00NkUYsXGQ",
+      "name": "Amy",
+      "review_count": 77,
+      "yelping_since": "2009-01-21",
+      "friends": [
+        "LprByrLVa0AGCxOTYPeUmA",
+        "OLqkIgIaKFOgttxeaUiSww"
+      ],
+      "useful": 25,
+      "funny": 9,
+      "cool": 5,
+      "fans": 7,
+      "elite": [
+        "2009"
+      ],
+      "average_stars": 3.8
+    },
+    {
+      "user_id": "rWL8bGLRPtYAhX97JnRVXg",
+      "name": "Axle",
+      "review_count": 15,
+      "yelping_since": "2011-06-01",
+      "friends": [
+        "Mnlmkg8TArdw9boHxILxLQ",
+        "trgv0g2J_M_C070Uk6x1Wg"
+      ],
+      "useful": 2,
+      "funny": 14,
+      "cool": 16,
+      "fans": 1,
+      "elite": [
+        "None"
+      ],
+      "average_stars": 3.88
+    }
+  ],
+  "tip": [
+    {
+      "text": "Make sure you mix your Bambu dessert well before sipping from it! And the wifi password is: 7026297726",
+      "date": "2016-06-15",
+      "likes": 69,
+      "business_id": "KYasaF1nov1bn7phfSgWeg",
+      "user_id": "rWL8bGLRPtYAhX97JnRVXg",
+      "type": "tip"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+City(code: String, name: String, province_code: String, latitude: Float, longitude: Float)
+"cty-Albania-Tirane", "Tirana", "prov-Albania-2", 41.33, 19.82
+"stadt-Shkoder-AL-AL", "Shkodr", "prov-Albania-2", 42.07, 19.5
+"cty-Iran-14", "Orumiyeh", "prov-Iran-2", 37.56, 45.07
+"cty-Iran-5", "Tabriz", "prov-Iran-3", 38.07, 46.3

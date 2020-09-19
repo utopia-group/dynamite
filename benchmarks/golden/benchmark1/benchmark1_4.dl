@@ -1,0 +1,11 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl tip(business_id: StrAttr, date: StrAttr, likes: IntAttr, text: StrAttr, type: StrAttr, user_id: StrAttr)
+.input tip
+.decl Tip(bid: StrAttr, uid: StrAttr, text: StrAttr, likes: IntAttr, date: StrAttr)
+.output Tip(delimiter="\t")
+
+Tip(v_Tip?bid, v_Tip?uid, v_Tip?text, v_Tip?likes, v_Tip?date) :-
+    tip(v_Tip?bid, v_Tip?date, v_Tip?likes, v_Tip?text, _, v_Tip?uid).
+

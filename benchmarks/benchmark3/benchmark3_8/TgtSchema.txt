@@ -1,0 +1,1 @@
+Proceeding(id: String, title: String, volume: String, year: Int, publisher: String, isbn: String, series: String)

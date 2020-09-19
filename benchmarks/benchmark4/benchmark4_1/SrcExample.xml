@@ -1,0 +1,16 @@
+<mondial>
+   <airport iatacode="KBL" city="cty-Afghanistan-Kabul" country="AFG">
+      <name>Kabul Intl</name>
+      <latitude>34.565853</latitude>
+      <longitude>69.212328</longitude>
+      <elevation>1792</elevation>
+      <gmtOffset>5</gmtOffset>
+   </airport>
+   <airport iatacode="BUQ" city="cty-Zimbabwe-2" country="ZW">
+      <name>J M Nkomo Intl</name>
+      <latitude>-20.017431</latitude>
+      <longitude>28.617869</longitude>
+      <elevation>1329</elevation>
+      <gmtOffset>2</gmtOffset>
+   </airport>
+</mondial>

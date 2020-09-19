@@ -1,0 +1,20 @@
+{
+  "tip": [
+    {
+      "text": "Get here early enough to have dinner.",
+      "date": "2012-07-15",
+      "likes": 0,
+      "business_id": "tJRDll5yqpZwehenzE2cSg",
+      "user_id": "zcTZk7OG8ovAmh_fenH21g",
+      "type": "tip"
+    },
+    {
+      "text": "Cool vibe; fun flavors; good!!",
+      "date": "2016-11-19",
+      "likes": 1,
+      "business_id": "g38NqtZvSJ3lHt1APN13aw",
+      "user_id": "m53bM64d0w-9YmTUCANlMQ",
+      "type": "tip"
+    }
+  ]
+}

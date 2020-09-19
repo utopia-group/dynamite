@@ -1,0 +1,3 @@
+Sea(sid: String, name: String, area: Float, depth: Int)
+"sea-Atlantic","Atlantic Ocean",436000,9219
+"sea-Mittelmeer","Mediterranean Sea",2500000,5267

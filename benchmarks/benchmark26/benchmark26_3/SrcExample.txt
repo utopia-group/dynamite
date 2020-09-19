@@ -1,0 +1,3 @@
+Neighbourhoods(n_id: String, neighbourhood_group: String, neighbourhood: String)
+N1, "Charlottenburg-Wilm.", "Barstrabe"
+N2, "Charlottenburg-Wilm.", "Charlottenburg Nord"

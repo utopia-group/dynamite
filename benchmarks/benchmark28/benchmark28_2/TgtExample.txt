@@ -1,0 +1,4 @@
+stations(id: String, name: String, lat: Float, long: Float, dock_count: Int, city: String, installation_date: String)
+66,South Van Ness at Market,37.774814,-122.418954,19,City1,8/23/2013
+67,Market at 10th,37.776619000000004,-122.41738500000001,27,City2,8/23/2013
+68,Yerba Buena Center of the Arts (3rd @ Howard),37.784878000000006,-122.40101399999999,20,City3,8/23/2013

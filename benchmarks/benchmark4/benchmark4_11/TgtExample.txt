@@ -1,0 +1,4 @@
+Geo_Desert(did: String, country_code: String, provinces: String)
+"desert-Tenere", "RN", "prov-RN-1 prov-RN-7 prov-RN-8"
+"desert-Kalahari", "ANG", "prov-Angola-15 prov-Angola-14"
+"desert-Kalahari", "RSA", "prov-South-Africa-9"

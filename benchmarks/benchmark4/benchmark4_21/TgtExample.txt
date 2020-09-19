@@ -1,0 +1,4 @@
+Province(code: String, name: String, country_code: String, area: Float, capital: String)
+"prov-Albania-2","West Albania Prov","ALkey",10411,"cty-Albania-14"
+"prov-Iran-2","West Azarbayejan","IRkey",37411,"cty-Iran-14"
+"prov-Iran-3","East Azarbayejan","IRkey2",29711,"cty-Iran-5"

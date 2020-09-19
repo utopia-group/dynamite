@@ -1,0 +1,3 @@
+movie(genres: String, movieid: String, title: String)
+"Fantasy","1","Toy Story (1995)"
+"Fantasy","2","Jumanji (1995)"

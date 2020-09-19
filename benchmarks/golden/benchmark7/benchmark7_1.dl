@@ -1,0 +1,17 @@
+.type IntAttr
+.type StrAttr
+.type Rel
+.decl Cases(case_row_id: StrAttr, case_number: StrAttr, pacer_id: StrAttr, case_name: StrAttr, court_name: StrAttr, assigned_to: StrAttr, referred_to: StrAttr, case_cause: StrAttr, jurisdictional_basis: StrAttr, demand: StrAttr, jury_demand: StrAttr, lead_case: StrAttr, related_case: StrAttr, settlement: StrAttr, date_filed: StrAttr, date_closed: StrAttr, date_last_filed: StrAttr)
+.input Cases
+.decl Documents(d_id: StrAttr, case_row_id: StrAttr, case_number: StrAttr, doc_count: IntAttr, attachment: StrAttr, date_filed: StrAttr, long_description: StrAttr, doc_number: IntAttr, short_description: StrAttr, upload_date: StrAttr)
+.input Documents
+.decl caseDocs?documents(__id: Rel, attachment: StrAttr, date_filed: StrAttr, doc_count: IntAttr, doc_number: IntAttr, long_description: StrAttr, short_description: StrAttr, upload_date: StrAttr)
+.decl caseDocs(assigned_to: StrAttr, case_row_id: StrAttr, date_closed: StrAttr, date_filed: StrAttr, date_last_filed: StrAttr, documents: Rel, referred_to: StrAttr)
+.output caseDocs?documents(delimiter="\t")
+.output caseDocs(delimiter="\t")
+
+caseDocs?documents(_v_0, v_caseDocs?documents?attachment, v_caseDocs?documents?date_filed, v_caseDocs?documents?doc_count, v_caseDocs?documents?doc_number, v_caseDocs?documents?long_description, v_caseDocs?documents?short_description, v_caseDocs?documents?upload_date), caseDocs(v_caseDocs?assigned_to, v_caseDocs?case_row_id, v_caseDocs?date_closed, v_caseDocs?date_filed, v_caseDocs?date_last_filed, _v_0, v_caseDocs?referred_to) :-
+    Documents(_, v_caseDocs?case_row_id, _, v_caseDocs?documents?doc_count, v_caseDocs?documents?attachment, v_caseDocs?documents?date_filed, v_caseDocs?documents?long_description, v_caseDocs?documents?doc_number, v_caseDocs?documents?short_description, v_caseDocs?documents?upload_date),
+    Cases(v_caseDocs?case_row_id, _, _, _, _, v_caseDocs?assigned_to, v_caseDocs?referred_to, _, _, _, _, _, _, _, v_caseDocs?date_filed, v_caseDocs?date_closed, v_caseDocs?date_last_filed),
+    _v_0 = cat("#", cat(v_caseDocs?assigned_to, cat("#", cat(v_caseDocs?case_row_id, cat("#", cat(v_caseDocs?date_closed, cat("#", cat(v_caseDocs?date_filed, cat("#", cat(v_caseDocs?date_last_filed, cat("#", cat(v_caseDocs?referred_to, "#")))))))))))).
+
